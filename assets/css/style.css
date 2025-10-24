@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+
+  /* background-color: #635A53 !important; */
+}
+:root {
+  /* Couleurs principales */
+  --color-primary: #0C4B82;      /* Bleu principal */
+  --color-secondary: #2e2d2b;    /* Gris foncé / noir chaud */
+  --color-secondary2: #0b0b0b
+ ;    /* Gris foncé / noir chaud */
+  --color-text: #ffffff;         /* Blanc */
+
+  /* Variantes */
+  --color-primary-light: #156bb5; /* Variante plus claire du bleu */
+  --color-secondary-light: #3c3b38; /* Variante plus claire du gris */
+  --color-text-muted: #cccccc;    /* Texte secondaire */
+
+  /* Arrière-plans */
+  --background-dark: var(--color-secondary);
+  --background-light: #f5f5f5;
+
+  /* Bordures et effets */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-secondary2)
+  !important;
+  color: var(--color-text) !important;
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1;
+  /* background-color: #584E4D; */
+  padding-top: 100px;
+}
+
+/* Header Styles */
+.main-header {
+  /* background-color: #584E4D !important; */
+  backdrop-filter: blur(13px);
+  padding: 15px 0;
+  border-bottom: 1px solid #1a1a1a;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.navbar {
+  padding: 0 !important;
+  /* background-color: #584E4D!important; */
+}
+
+.navbar-brand.logo a {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--color-primary) !important;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px #0C4B82, 0 0 50px #156bb5;
+}
+.navbar-brand.logo a img {
+width: 50px;
+height: 50px;
+}
+.navbar-brand.logo.underline {
+    width: 0.3125rem;
+    height: 0.25rem;
+    background-color: var(--color-primary);
+    border-radius: 0.125rem;
+    margin-top: 5px;
+    transition: width 0.3s ease;
+}
+.nav-menu {
+  gap: 15px;
+}
+
+.nav-menu .nav-link {
+  color: #fff !important;
+  font-size: 16px;
+  padding: 8px 15px !important;
+  transition: color 0.3s;
+}
+.photo img{
+  display: flex;
+  border: 1px solid red;
+}
+
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link.active {
+  color: var(--color-primary) !important;
+}
+
+
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem #0c4b8292 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 45px 0;
+  
+}
+
+.greeting {
+  color: var(--color-primary) !important;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.highlight {
+  color: var(--color-primary-light) !important;
+  font-size: 35px;
+  text-shadow: ;
+}
+.parcours {
+  min-height: calc(100vh - 3px);
+  display: flex;
+  align-items: center;
+  padding: 45px 0;
+}
+.hero-description {
+  font-size: 16px;
+  color: #b3b3b3 !important;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  padding: 14px 32px !important;
+  font-size: 16px !important;
+  border-radius: 4px !important;
+  transition: all 0.3s;
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+.hero-buttons .btn-primary {
+  background-color:var(--color-primary) !important;
+  border: 1px solid var(--color-primary-light) !important;
+  color: #fff !important;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: var(--color-primary-light) !important;
+  border-color: var(--color-primary-light) !important;
+  color: #fff !important;
+}
+
+.hero-buttons .btn-secondary {
+  background-color: transparent !important;
+  color: var(--color-primary-light) !important;
+  border: 1px solid var(--color-primary-light) !important;
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: var(--color-primary) !important;
+  color: #fff !important;
+  border-color: var(--color-primary-light) !important;
+}
+
+.hero-image {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer */
+.main-footer {
+  /* background-color: #0a0a0a !important; */
+  padding: 30px 0;
+  /* border-top: 1px solid #1a1a1a; */
+  margin-top: 60px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.hero-title{
+  max-width: 800px;
+}
+
+.main-footer p {
+  /* color: #808080 !important; */
+  font-size: 14px;
+}
+
+
+/* parcours */
+/* ----- Structure globale ----- */
+.resumeArticle {
+  position: relative;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Inter", "Poppins", sans-serif;
+  color: var(--color-primary);
+  background: var(--color-secondary2);
+}
+
+/* Ligne verticale centrale */
+#line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-primary);
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+/* Containers principaux */
+.veryBigestContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* ----- Éléments de la timeline ----- */
+.bigResumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Bloc de chaque expérience */
+.resumeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+/* Les cercles de la timeline */
+.check {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 3px solid var(--color-primary-light);
+  border-radius: 50%;
+  z-index: 10;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.check:hover {
+  transform: scale(1.2);      
+  background: var(--color-primary);
+}
+
+/* ----- Côté gauche et droit ----- */
+.companyContainer,
+.companyContainerLeft {
+  flex: 1;
+  background: var(--color-secondary);
+  padding: 1.5rem;
+  border-radius: 1rem;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.companyContainer:hover,
+.companyContainerLeft:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Contenu entreprise ----- */
+.company {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.pictureContainer {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.pictureContainer > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Exemple de logos fictifs */
+.digitalInsure { background-image: url("https://softwarerepublique.eu/wp-content/uploads/2023/07/logo-efrei.png"); }
+.chc { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKdjBvnmfAooHzk26uaHTm04CZoXNFSTG9A&s"); }
+.iut { background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEzg2vbgBwFrEnIdUXxG6nsSamkSnXvzIjg&s"); }
+
+/* ----- Texte ----- */
+.textContainer h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+  color: var(--color-primary);
+}
+
+.textContainer p {
+  margin: 0.2rem 0;
+  color: var(--background-light);
+  font-size: 0.95rem;
+}
+
+/* ----- Dates ----- */
+.resumeDate,
+.resumeDateLeft {
+  font-size: 0.9rem;
+  color:#0C4B82 ;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  #line {
+    left: 8px;
+    transform: none;
+  }
+
+  .resumeContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .check {
+    margin-left: 0.5rem;
+  }
+
+  .companyContainer,
+  .companyContainerLeft {
+    width: 100%;
+  }
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 800px) {
+  .hero-title {
+    font-size: 42px;
+  }
+  .hero-section {
+  /* min-height: calc(100vh - 80px); */
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  
+}
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+}
