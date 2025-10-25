@@ -7,6 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<?php include('includes/script.php'); ?>
 <body>
   <?php include('includes/header.php'); ?>
   
@@ -39,9 +40,13 @@ Dans ce portfolio, vous trouverez :
        
       </div>
     </section>
-    <br><br><br>
+    <br><br>
     <section class="parcours" id="about">
       <?php include('includes/about.php'); ?>
+    </section>
+    <br><br>
+    <section id="contact">
+      <?php include('includes/contact.php'); ?>
     </section>
   </main>
   
@@ -152,6 +157,42 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialisation au chargement
   updateActiveSection();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggler = document.querySelector('.navbar-toggler');
+  const menu = document.querySelector('#navbarNav'); // ton menu à ouvrir/fermer
+  const links = document.querySelectorAll('.navbar-nav .nav-link');
+
+  // Toggle menu au clic sur le bouton
+  toggler.addEventListener('click', () => {
+    menu.classList.toggle('show'); // ouvre/ferme le menu
+  });
+
+  // Fermer le menu quand on clique sur un lien
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      }
+    });
+  });
+
+  // Fermer le menu quand la souris quitte la zone du menu
+  menu.addEventListener('mouseleave', () => {
+    if (menu.classList.contains('show')) {
+      menu.classList.remove('show');
+    }
+  });
+
+  // Optionnel : fermer si on clique en dehors du menu
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !toggler.contains(e.target)) {
+      menu.classList.remove('show');
+    }
+  });
+});
+
+
 </script>
 
 </body>

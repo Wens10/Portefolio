@@ -76,14 +76,7 @@ main {
 width: 50px;
 height: 50px;
 }
-.navbar-brand.logo.underline {
-    width: 0.3125rem;
-    height: 0.25rem;
-    background-color: var(--color-primary);
-    border-radius: 0.125rem;
-    margin-top: 5px;
-    transition: width 0.3s ease;
-}
+
 .nav-menu {
   gap: 15px;
 }
@@ -93,11 +86,10 @@ height: 50px;
   font-size: 16px;
   padding: 8px 15px !important;
   transition: color 0.3s;
+  cursor: none;
+  text-decoration: none;
 }
-.photo img{
-  display: flex;
-  border: 1px solid red;
-}
+
 
 .nav-menu .nav-link:hover,
 .nav-menu .nav-link.active {
@@ -107,7 +99,7 @@ height: 50px;
 
 
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem #0c4b8292 !important;
+  box-shadow: 0 0 0 0.25rem transparent !important;
 }
 
 /* Hero Section */
@@ -287,14 +279,14 @@ height: 50px;
   background: var(--color-secondary);
   padding: 1.5rem;
   border-radius: 1rem;  
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px var(--color-primary);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .companyContainer:hover,
 .companyContainerLeft:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px var(--color-primary-light);
 }
 
 /* ----- Contenu entreprise ----- */
@@ -371,6 +363,10 @@ height: 50px;
 
 
 
+
+
+
+
 /* Responsive Adjustments */
 @media (max-width: 800px) {
   .hero-title {
@@ -383,6 +379,8 @@ height: 50px;
   padding: 10px 0;
   
 }
+
+
   .hero-section {
     text-align: center;
   }
