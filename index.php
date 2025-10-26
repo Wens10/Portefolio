@@ -26,7 +26,7 @@ Dans ce portfolio, vous trouverez :
 <ul> <li>Mes projets réalisés en cours et en autonomie</li> <li>Mes compétences techniques et fonctionnelles</li> <li>Mon parcours académique et professionnel</li> </ul> </p>
             <p></p>
             <div class="hero-buttons d-grid gap-3 d-lg-flex justify-content-lg-start">
-              <a href="#Projet" class="btn btn-primary btn-sm">Projets</a>
+              <a href="projets.php" class="btn btn-primary btn-sm">Projets</a>
               <a href="#contact" class="btn btn-secondary btn-sm">Contact</a>
             </div>
 
@@ -40,13 +40,27 @@ Dans ce portfolio, vous trouverez :
        
       </div>
     </section>
-    <br><br>
-    <section class="parcours" id="about">
-      <?php include('includes/about.php'); ?>
+    <section>
+      <h2 style="text-align: center; color: var(--color-primary);">Tableau de synthese & Curriculum Vitae</h2>
+      <br>
+      <div class="d-flex flex-column flex-lg-row justify-content-center w-100">
+        <embed src="assets/images/TB DE SYNTHESE.pdf" type="application/pdf" width="100%" class="col-12 col-lg-5 mb-4 mb-lg-0 me-lg-4" height="900px" style="border: none;" />
+        <embed src="assets/images/Mon CV.pdf" type="application/pdf" width="100%" class="col-12 col-lg-5" height="900px" style="border: none;" />
+      </div>
     </section>
     <br><br>
+    <section class="parcours" id="about">
+
+      <div class="d-flex justify-content-center w-100">
+        <?php include('includes/about.php'); ?>
+      </div>
+    </section>
+    <br><br><br>
     <section id="contact">
+      <h2 style="text-align: center; color: var(--color-primary);">Contact</h2>
+      <div class="d-flex justify-content-center w-100">
       <?php include('includes/contact.php'); ?>
+      </div>
     </section>
   </main>
   

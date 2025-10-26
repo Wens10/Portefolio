@@ -36,7 +36,7 @@
               <a class="nav-link active" href="index.php#home">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Parcours</a>
+              <a class="nav-link" href="index.php#about">Parcours</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="projets.php">Projets</a>

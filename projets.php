@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/projets.css">
 </head>
+<?php include('includes/script.php'); ?>
 <body>
     <?php include('includes/header.php'); ?>
 <style>
@@ -32,55 +33,7 @@
   --border-color: rgba(255, 255, 255, 0.1);
   --shadow-color: rgba(0, 0, 0, 0.2);
 }
-        @media (max-width: 768px) {
-            .navbar {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                right: 20px;
-                background-color: #333;
-                padding: 10px;
-                width: 200px;
-                border-radius: 8px;
-                opacity: 0;
-                transform: translateY(-10px);
-                transition: all 0.3s ease;
-                z-index: 1000;
-            }
 
-            .navbar.visible {
-                display: flex;
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            .hamburger {
-                display: block;
-                font-size: 28px;
-                background: none;
-                border: none;
-                color: white;
-                cursor: pointer;
-                position: absolute;
-                top: 40px;
-                right: 20px;
-                z-index: 1001;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .hamburger {
-                display: none;
-            }
-
-            .navbar {
-                display: flex !important;
-                position: static;
-                opacity: 1 !important;
-                transform: none !important;
-            }
-        }
     </style>
 </head>
 
@@ -89,11 +42,13 @@
         <main>
             <section class="portfolio-section" style="padding: 32px 0;">
                 <h1 style="text-align:center; margin-bottom: 36px; color: var(--color-primary);">Mes Projets</h1>
+                <div id="definitionBox">
+                </div> <br>
                 <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
                     <!-- Projet 1 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="/img/Capture d'écran 2025-05-20 175153.png" alt="Jeu du Serpent"
+                            <img src="assets/images/SNAKE.png" alt="Jeu du Serpent"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
@@ -116,7 +71,7 @@
                     <!-- Projet 2 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="/img/webix.png" alt="CréaWebix"
+                            <img src="assets/images/webix.png" alt="CréaWebix"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
@@ -146,7 +101,7 @@
                     <!-- Projet 3 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="/img/Capture d'écran 2025-10-03 161119.png" alt="E-Learning" 
+                            <img src="assets/images/Capture d'écran 2025-10-03 161119.png" alt="E-Learning" 
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
@@ -172,7 +127,7 @@
                     <!-- Projet 4 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="/img/quiz champions.png" alt="Monuments Quiz Champions"
+                            <img src="assets/images/quiz champions.png" alt="Monuments Quiz Champions"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
@@ -195,8 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="definitionBox">
-                </div>
+
             </section>
         </main>
         <script>
