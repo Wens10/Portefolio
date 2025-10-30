@@ -10,7 +10,7 @@
                                     </div>
                                     <div class="textContainer">
                                         <h3>EFREI - PARIS</h3>
-                                        <p>BTS SERVICES INFORMATIQUES AUX ORGANISATIONS(SLAM)</p>
+                                        <p><strong>BTS SERVICES INFORMATIQUES AUX ORGANISATIONS(SLAM)</strong></p>
                                         <p>
 
 Le BTS SIO option SLAM forme des spécialistes du développement d’applications et de sites web.
@@ -35,7 +35,7 @@ Ils conçoivent, programment et maintiennent des solutions logicielles pour les 
                                     </div>
                                     <div class="textContainer">
                                         <h3>HEMIP - CONGO</h3>
-                                        <p>MAINTENANCE INDUSTRIELLES</p>
+                                        <p><strong>MAINTENANCE INDUSTRIELLES</strong></p>
                                         <p>Dans cette formation j'ai acqueri des connaissance en électricité, mécannique et électronique j'ai pu égalemment fait du dévéloppemnt en C+ avec arduino</p>
                                     </div>
                                     </div>
@@ -52,7 +52,7 @@ Ils conçoivent, programment et maintiennent des solutions logicielles pour les 
                                     </div>
                                     <div class="textContainer">
                                         <h3>INSTITUT POLYTECHNIQUE PIERRE PRIE - CONGO</h3>
-                                        <p>BAC (E) GENIE INDUSTRIELLES</p>
+                                        <p><strong>BAC (E) GENIE INDUSTRIELLES</strong></p>
                                         <p>Dans cette formation j'ai eu de bonne base en mathématique en dessin industrielles et en physique chimie cela à été très passionnant pour moi et ma permet une bonne capacité à m'adapté</p>
                                     </div>
                                 </div>
