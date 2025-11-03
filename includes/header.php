@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav nav-menu">
             <li class="nav-item">
-              <a class="nav-link active" href="index.php#home">Accueil</a>
+              <a class="nav-link" href="index.php#home">Accueil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.php#about">Parcours</a>

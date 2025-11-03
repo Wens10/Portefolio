@@ -91,9 +91,80 @@ height: 50px;
 }
 
 
+.nav-menu .nav-link {
+  position: relative;
+  transition: color 0.25s ease, transform 0.15s ease;
+  will-change: color, transform;
+  display: inline-block;
+  padding-bottom: 6px; /* espace pour l'underline animé */
+}
+
+/* Ligne animée sous le lien */
+.nav-menu .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  border-radius: 3px;
+  transform: translateX(-50%);
+  transition: width 0.32s cubic-bezier(.2,.9,.2,1);
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+/* État hover / actif : couleur + soulevé + underline */
 .nav-menu .nav-link:hover,
 .nav-menu .nav-link.active {
   color: var(--color-primary) !important;
+  transform: translateY(-3px);
+  text-shadow: 0 8px 24px rgba(12,75,130,0.08);
+}
+
+.nav-menu .nav-link:hover::after,
+.nav-menu .nav-link.active::after {
+  width: 60%;
+}
+
+/* Effet "press" */
+.nav-menu .nav-link:active {
+  transform: translateY(-1px) scale(0.995);
+}
+
+/* Focus accessible */
+.nav-menu .nav-link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(12,75,130,0.08);
+  border-radius: 6px;
+}
+
+/* Petite icône d'accent animé (facultatif, si vous ajoutez <span class="accent"> dans le lien) */
+.nav-menu .nav-link .accent {
+  display: inline-block;
+  margin-left: 8px;
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  transform-origin: center;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  opacity: 0.9;
+}
+.nav-menu .nav-link:hover .accent,
+.nav-menu .nav-link.active .accent {
+  transform: scale(1.4);
+  opacity: 1;
+}
+
+/* Respect de la préférence "reduced motion" */
+@media (prefers-reduced-motion: reduce) {
+  .nav-menu .nav-link,
+  .nav-menu .nav-link::after,
+  .nav-menu .nav-link .accent {
+    transition: none !important;
+  }
 }
 
 
