@@ -1,21 +1,4 @@
 
-<!-- Navbar -->
-<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.php">Wenceslas BOUITY</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.php">À propos</a></li>
-        <li class="nav-item"><a class="nav-link" href="projets.php">Projets</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
 
 <header class="main-header" style="position: fixed; width: 100%; top:0; left:0;">
   <div class="container">
@@ -42,10 +25,10 @@
               <a class="nav-link" href="projets.php">Projets</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">BTS SIO</a>
+              <a class="nav-link" href="bts_sio.php">BTS SIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonial">Veille Technologique</a>
+              <a class="nav-link" href="veille.php">Veille Technologique</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.php#contact">Contact</a>

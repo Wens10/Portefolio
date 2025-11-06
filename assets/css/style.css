@@ -7,7 +7,7 @@
 html, body {
   height: 100%;
   margin: 0;
-
+  cursor: none;
   /* background-color: #635A53 !important; */
 }
 :root {
@@ -70,7 +70,7 @@ main {
   font-weight: bold;
   color: var(--color-primary) !important;
   letter-spacing: 2px;
-  text-shadow: 0 0 12px #0C4B82, 0 0 50px #156bb5;
+  
 }
 .navbar-brand.logo a img {
 width: 50px;
@@ -82,12 +82,13 @@ height: 50px;
 }
 
 .nav-menu .nav-link {
-  color: #fff !important;
+  color: rgb(98, 98, 98) !important;
   font-size: 16px;
   padding: 8px 15px !important;
   transition: color 0.3s;
   cursor: none;
   text-decoration: none;
+  text-shadow: #033fca 5px 0px 20px;
 }
 
 
@@ -120,7 +121,7 @@ height: 50px;
 .nav-menu .nav-link.active {
   color: var(--color-primary) !important;
   transform: translateY(-3px);
-  text-shadow: 0 8px 24px rgba(12,75,130,0.08);
+  
 }
 
 .nav-menu .nav-link:hover::after,
@@ -136,7 +137,7 @@ height: 50px;
 /* Focus accessible */
 .nav-menu .nav-link:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 6px rgba(12,75,130,0.08);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
   border-radius: 6px;
 }
 
@@ -199,7 +200,7 @@ height: 50px;
 .highlight {
   color: var(--color-primary-light) !important;
   font-size: 35px;
-  text-shadow: ;
+ 
 }
 .parcours {
   min-height: calc(100vh - 3px);

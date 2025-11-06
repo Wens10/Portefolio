@@ -20,8 +20,8 @@
                         <div class="contact-info">
                             <h3>Mes coordonnées</h3>
                             <p><strong>Email :</strong> <a
-                                    href="mailto:judebouity19@gmail.com">judebouity19@gmail.com</a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+33601462715">+33 6 01 46 27 15</a></p>
+                                    href="mailto:judebouity19@gmail.com" style="cursor: none; color: whitesmoke;">judebouity19@gmail.com</a></p>
+                            <p><strong>Téléphone :</strong> <a href="tel:+33601462715" style="cursor: none; color: whitesmoke;">+33 6 01 46 27 15</a></p>
                             <h3>Localisation</h3>
                             <p>Nemours, France</p>
                         </div>

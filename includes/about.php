@@ -35,8 +35,8 @@ Ils conçoivent, programment et maintiennent des solutions logicielles pour les 
                                     </div>
                                     <div class="textContainer">
                                         <h3>HEMIP - CONGO</h3>
-                                        <p><strong>MAINTENANCE INDUSTRIELLES</strong></p>
-                                        <p>Dans cette formation j'ai acqueri des connaissance en électricité, mécannique et électronique j'ai pu égalemment fait du dévéloppemnt en C+ avec arduino</p>
+                                        <p><strong>MAINTENANCE INDUSTRIELLE</strong></p>
+                                        <p>Dans cette formation, j’ai acquis des connaissances en électricité, en mécanique et en électronique. J’ai également fait du développement en C++ avec Arduino.</p>
                                     </div>
                                     </div>
                                 </div>
@@ -52,8 +52,8 @@ Ils conçoivent, programment et maintiennent des solutions logicielles pour les 
                                     </div>
                                     <div class="textContainer">
                                         <h3>INSTITUT POLYTECHNIQUE PIERRE PRIE - CONGO</h3>
-                                        <p><strong>BAC (E) GENIE INDUSTRIELLES</strong></p>
-                                        <p>Dans cette formation j'ai eu de bonne base en mathématique en dessin industrielles et en physique chimie cela à été très passionnant pour moi et ma permet une bonne capacité à m'adapté</p>
+                                        <p><strong>BAC (E) GENIE INDUSTRIEL</strong></p>
+                                        <p>Dans cette formation, j'ai eu de bonnes bases en mathématiques, en dessin industriel et en physique-chimie. Cela a été très passionnant pour moi et m'a permis une bonne capacité à m'adapter.</p>
                                     </div>
                                 </div>
                             </div>

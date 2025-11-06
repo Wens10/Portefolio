@@ -27,10 +27,22 @@ Dans ce portfolio, vous trouverez :
 <ul> <li>Mes projets réalisés en cours et en autonomie</li> <li>Mes compétences techniques et fonctionnelles</li> <li>Mon parcours académique et professionnel</li> </ul> </p>
             <p></p>
             <div class="hero-buttons d-grid gap-3 d-lg-flex justify-content-lg-start">
-              <a href="projets.php" class="btn btn-primary btn-sm">Projets</a>
-              <a href="#contact" class="btn btn-secondary btn-sm">Contact</a>
+              <a href="projets.php" class="btn btn-primary btn-sm" style="cursor: none;">Projets</a>
+              <a href="#contact" class="btn btn-secondary btn-sm" style="cursor: none;">Contact</a>
             </div>
+            <br>
 
+                            <div class="social-icons">
+                 <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank" style ="text-decoration: none; cursor: none;">
+                   <img src="assets/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn" style="width: 40px; height: 40px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;">
+                 </a>
+                 <a href="https://www.instagram.com/mr_wenss/" target="_blank" style ="text-decoration: none; cursor: none;">
+                   <img src="assets/images/instagram-circle.svg" alt="Instagram" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;">
+                 </a>
+                 <a href="https://github.com/Wens10" target="_blank" style ="text-decoration: none; cursor: none; ">
+                   <img src="assets/images/github (1).svg" alt="Github" style="width: 40px; height: 40px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;">
+                 </a>
+                </div>
 
           </div>
 
