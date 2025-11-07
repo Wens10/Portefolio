@@ -12,7 +12,7 @@ html, body {
 }
 :root {
   /* Couleurs principales */
-  --color-primary: #0C4B82;      /* Bleu principal */
+  --color-primary: #3C35FC;      /* Bleu principal */
   --color-secondary: #2e2d2b;    /* Gris foncé / noir chaud */
   --color-secondary2: #0b0b0b
  ;    /* Gris foncé / noir chaud */
@@ -50,7 +50,7 @@ main {
 
 /* Header Styles */
 .main-header {
-  /* background-color: #584E4D !important; */
+  background-color:#09090990 !important;
   backdrop-filter: blur(13px);
   padding: 15px 0;
   border-bottom: 1px solid #1a1a1a;
@@ -82,13 +82,14 @@ height: 50px;
 }
 
 .nav-menu .nav-link {
-  color: rgb(98, 98, 98) !important;
+  color: whitesmoke!important;
   font-size: 16px;
+  font-weight: 500;
   padding: 8px 15px !important;
   transition: color 0.3s;
   cursor: none;
   text-decoration: none;
-  text-shadow: #033fca 5px 0px 20px;
+ 
 }
 
 
@@ -409,6 +410,121 @@ height: 50px;
   font-weight: 500;
   white-space: nowrap;
 }
+/* BTS SIO */
+          /* BTS SIO Section Styling */
+          .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            background: linear-gradient(165deg, rgba(12, 75, 130, 0.15), rgba(11, 11, 11, 0.9));
+            border: 2px solid rgba(21, 107, 181, 0.3);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px rgba(21, 107, 181, 0.2),
+                        inset 0 0 20px rgba(21, 107, 181, 0.1);
+          }
+
+          .about-content h2 {
+            color: var(--color-primary);
+            font-size: 2.8rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 2rem;
+            background: linear-gradient(90deg, #0C4B82, #156bb5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(21, 107, 181, 0.5);
+          }
+
+          .about-content p {
+            color: #e0e0e0;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+          }
+
+          .about-span {
+            color: #156bb5;
+            font-weight: 600;
+            font-size: 1.2rem;
+            padding: 0.3rem 1rem;
+            background: rgba(21, 107, 181, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(21, 107, 181, 0.3);
+            box-shadow: 0 0 10px rgba(21, 107, 181, 0.2);
+          }
+
+          .option {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin: 2.5rem 0;
+          }
+
+          .para_1 {
+            padding: 2rem;
+            background: rgba(12, 75, 130, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(21, 107, 181, 0.3);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+          }
+
+          .para_1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent, rgba(21, 107, 181, 0.1));
+            pointer-events: none;
+          }
+
+          .para_1:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 30px rgba(21, 107, 181, 0.2);
+            border-color: rgba(21, 107, 181, 0.6);
+          }
+
+          .para_1 ul {
+            list-style: none;
+            padding-left: 1rem;
+          }
+
+          .para_1 li {
+            color: #e0e0e0;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+          }
+
+          .para_1 li::before {
+            content: "›";
+            color: #156bb5;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(21, 107, 181, 0.5);
+          }
+
+          @media (max-width: 768px) {
+            .option {
+              grid-template-columns: 1fr;
+            }
+            
+            .about-content {
+              padding: 1.5rem;
+            }
+            
+            .about-content h2 {
+              font-size: 2.2rem;
+            }
+          }
 
 /* ----- Responsive ----- */
 @media (max-width: 768px) {

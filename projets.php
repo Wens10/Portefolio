@@ -62,9 +62,7 @@
                                 <li>Mouvement fluide du serpent</li>
                                 <li>Collisions avec les murs et la nourriture</li>
                                 <li>Gestion des scores</li>
-                                <li>Responsive design</li>
-                            </ul><br><br><br>
-
+                            </ul><br>
                             <a href="#" class="access-btn" target="_blank">Accéder au projet</a><br><br>
                             <a href="#" class="access-btn">Liens GitHub</a>
                         </div>
@@ -91,9 +89,6 @@
                             <ul style="color:#bbb; margin-bottom: 16px;">
                                 <li>Présentation de l'entreprise</li>
                                 <li>Présentation des services</li>
-                                <li>Présentation des projets réalisés</li>
-                                <li>Formulaire de contact</li>
-                                <li>Design responsive</li>
                             </ul>
                             <a href="#" class="access-btn" target="_blank">Accéder au projet</a><br><br>
                             <a href="https://github.com/Wens10/CreaWebix" class="access-btn" target="_blank">Liens GitHub</a>
@@ -112,14 +107,12 @@
                                     data-definition="wordpress est un système de gestion de contenu open source, utilisé pour créer des sites web et des blogs.">WordPress</span>
                                 et personnalisé en <span class="skill"
                                     data-definition="CSS est un langage de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML.">CSS</span>
-                                sur certaines pages. <br><br>
+                                sur certaines pages.<br>
                                 NB : Le site à été réalisé en équipes lors d'un projet de cours.
                             </p>
                             <ul style="color:#bbb; margin-bottom: 16px;">
                                 <li>présentation de l'équipe</li>
-                                <li>Pages contact</li>
                                 <li>présentation de la formation</li>
-                                <li>Design responsive</li>
                             </ul>
                             <a href="https://projet-wp.nathanmd.ovh/" class="access-btn" target="_blank">Accéder au Site</a><br><br>
                             <a href="#" class="access-btn">Liens GitHub</a>
@@ -141,11 +134,8 @@
                                 . Le but du jeu est de répondre à un quiz sur les quelques monuments célèbres du monde entier.                       
                             </p>
                             <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Choix aléatoire des questions</li>
                                 <li>Affichage dynamique des questions</li>
-                                <li>Apparition de l'image du monument si bonne réponse</li>
-                                <li>Affichage d'un message de félicitations si scores de victoire atteints</li>
-                            </ul>
+                            </ul><br>
                             <a href="https://monuments-quiz-champions.vercel.app/" class="access-btn" target="_blank">Accéder au jeu</a><br><br>
                             <a href="https://github.com/Wens10/Monuments_Quiz_Champions" class="access-btn" target="_blank">Liens GitHub</a>
                         </div>

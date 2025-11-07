@@ -47,9 +47,11 @@
             }
 
             .portfolio-card {
-                background: #0c4b8265;
+                background: #0c4b8228;
+                border: 1px solid #163c9685 ;
                 border-radius: 12px;
                 box-shadow: 0 4px 24px var(--color-secondary2);
+                overflow: hidden;
                 overflow: hidden;
                 display: flex;
                 flex-direction: column;
