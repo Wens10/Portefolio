@@ -7,13 +7,13 @@
             }
 :root {
   /* Couleurs principales */
-  --color-primary: #0C4B82;      /* Bleu principal */
+  --color-primary: #3C35FC;      /* Bleu principal */
   --color-secondary: #2e2d2b;    /* Gris foncé / noir chaud */
   --color-secondary2: #0b0b0b;    /* Gris foncé / noir chaud */
   --color-text: #ffffff;         /* Blanc */
 
   /* Variantes */
-  --color-primary-light: #156bb5; /* Variante plus claire du bleu */
+  --color-primary-light: #3c35fc; /* Variante plus claire du bleu */
   --color-secondary-light: #3c3b38; /* Variante plus claire du gris */
   --color-text-muted: #cccccc;    /* Texte secondaire */
 
@@ -34,7 +34,7 @@
             .portfolio-section h1 {
                 text-align: center;
                 margin-bottom: 36px;
-                color: var(--color-primary);
+                color: #3C35FC;
                 font-size: 2.5rem;
                 letter-spacing: 1px;
             }
@@ -47,8 +47,8 @@
             }
 
             .portfolio-card {
-                background: #0c4b8228;
-                border: 1px solid #163c9685 ;
+                background: #3c35fc1b;
+                border: 1px solid #3C35FC ;
                 border-radius: 12px;
                 box-shadow: 0 4px 24px var(--color-secondary2);
                 overflow: hidden;
@@ -73,7 +73,7 @@
 
             .portfolio-card h3 {
                 margin-top: 0;
-                color: var(--color-primary);
+                color: #3C35FC;
                 font-size: 1.3rem;
             }
 
@@ -94,7 +94,7 @@
 
             .access-btn {
                 display: inline-block;
-                background: linear-gradient(90deg, var(--color-primary) 60%, var(--color-primary-light) 100%);
+                background: linear-gradient(90deg, #3C35FC 60%, #156bb5 100%);
                 color: #ffffffcf;
                 padding: 10px 22px;
                 border-radius: 6px;
@@ -106,13 +106,13 @@
             }
 
             .access-btn:hover {
-                background: linear-gradient(90deg, var(--color-primary-light) 60%, var(--color-primary) 100%);
-                box-shadow: 0 4px 16px var(--color-primary-light);
+                background: linear-gradient(90deg, #1535b5 60%, #3C35FC 100%);
+                box-shadow: 0 4px 16px #3C35FC;
             }
 
             .skill {
-                color: var(--color-primary);
-                border-bottom: 1px dashed var(--color-primary);
+                color: #3C35FC;
+                border-bottom: 1px dashed #3C35FC;
                 cursor: pointer;
                 transition: color 0.2s;
                 position: relative;
@@ -126,8 +126,8 @@
                 display: none;
                 margin-top: 24px;
                 padding: 12px;
-                background: var(--color-primary-light);
-                border-left: 4px solid var(--color-primary);
+                background: #3C35FC;
+                border-left: 4px solid #3C35FC;
                 font-style: italic;
                 color: var(--color-text);
                 max-width: 600px;

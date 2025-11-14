@@ -39,11 +39,11 @@
 </section>
             <style>
 :root {
-  --color-primary: #0C4B82;
+  --color-primary: #3C35FC;
   --color-secondary: #2e2d2b;
   --color-secondary2: #0b0b0b;
   --color-text: #ffffff;
-  --color-primary-light: #156bb5;
+  --color-primary-light: #3C35FC;
   --color-secondary-light: #3c3b38;
   --color-text-muted: #cccccc;
   --background-dark: var(--color-secondary);
@@ -53,7 +53,7 @@
 }
 
 .contact-section {
-    background: #0c4b8242;
+    background: #3c35fc19;
     backdrop-filter: blur(13px);
     color: var(--color-primary);
     padding: clamp(1rem, 4vw, 2rem);
@@ -66,7 +66,7 @@
 
 .contact-section h2,
 .contact-section h3 {
-    color: #0C4B82;
+    color: #3C35FC;
     margin-bottom: clamp(0.5rem, 2vw, 1rem);
     font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
@@ -98,7 +98,7 @@
 .contact-form input,
 .contact-form textarea {
     padding: clamp(0.3rem, 1.5vw, 0.5rem);
-    border: 1px solid #0C4B82;
+    border: 1px solid #3C35FC;
     border-radius: 6px;
     background: #222;
     color: #fff;
@@ -107,7 +107,7 @@
 }
 
 .contact-form button {
-    background: #0C4B82;
+    background: #413bebff;
     color: #181818;
     border: none;
     padding: clamp(0.5rem, 2vw, 0.7rem) clamp(1rem, 3vw, 1.5rem);
@@ -119,7 +119,7 @@
 }
 
 .contact-form button:hover {
-    background: #156bb5;
+    background: #0d50a7ff;
 }
 
 .contact-info-map {
@@ -138,7 +138,7 @@
 }
 
 .contact-info a {
-    color: #0C4B82;
+    color: #3C35FC;
     text-decoration: underline;
 }
 

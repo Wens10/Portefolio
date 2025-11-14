@@ -13,7 +13,10 @@
 
 <body>
     <?php include('includes/header.php'); ?>
-    <main>
+    <main>  
+            <div>
+               <h1 style="color: var(--color-primary); justify-content: center; display: flex; margin-bottom: 50px; margin-top: 2%;" >C'EST QUOI LE BTS SIO</h1>
+            </div>
             <div class="about-content">
                 <p>
                     Le BTS SIO (Services Informatiques aux Organisations) est un diplôme français de niveau Bac
@@ -60,7 +63,7 @@
                         </p>
                     </div>
                 </div>
-                <br><br><br>
+                <br>
                 <div class="para_1">
                     <h2>Epreuves</h2>
                     <p>

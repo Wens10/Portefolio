@@ -14,12 +14,11 @@ html, body {
   /* Couleurs principales */
   --color-primary: #3C35FC;      /* Bleu principal */
   --color-secondary: #2e2d2b;    /* Gris foncé / noir chaud */
-  --color-secondary2: #0b0b0b
- ;    /* Gris foncé / noir chaud */
+  --color-secondary2: #0b0b0b;    /* Gris foncé / noir chaud */
   --color-text: #ffffff;         /* Blanc */
 
   /* Variantes */
-  --color-primary-light: #156bb5; /* Variante plus claire du bleu */
+  --color-primary-light: #3c35fc; /* Variante plus claire du bleu */
   --color-secondary-light: #3c3b38; /* Variante plus claire du gris */
   --color-text-muted: #cccccc;    /* Texte secondaire */
 
@@ -68,7 +67,7 @@ main {
 .navbar-brand.logo a {
   font-size: 32px;
   font-weight: bold;
-  color: var(--color-primary) !important;
+  color: #3C35FC !important;
   letter-spacing: 2px;
   
 }
@@ -124,7 +123,19 @@ height: 50px;
   transform: translateY(-3px);
   
 }
+    .logo {
+      font-size: 25px;
+      font-weight: 700;
 
+      cursor: none;
+      animation: float 3s infinite ease-in-out;
+    }
+        /* ANIMATION GLOBALE */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
 .nav-menu .nav-link:hover::after,
 .nav-menu .nav-link.active::after {
   width: 60%;
@@ -185,7 +196,7 @@ height: 50px;
 }
 
 .greeting {
-  color: var(--color-primary) !important;
+  color: #3C35FC !important;
   font-size: 18px;
   margin-bottom: 10px;
 }
@@ -199,7 +210,7 @@ height: 50px;
 }
 
 .highlight {
-  color: var(--color-primary-light) !important;
+  color: #3C35FC !important;
   font-size: 35px;
  
 }
@@ -232,14 +243,14 @@ height: 50px;
 }
 
 .hero-buttons .btn-primary {
-  background-color:var(--color-primary) !important;
-  border: 1px solid var(--color-primary-light) !important;
+  background-color:#3C35FC !important;
+  border: 1px solid #3C35FC !important;
   color: #fff !important;
 }
 
 .hero-buttons .btn-primary:hover {
-  background-color: var(--color-primary-light) !important;
-  border-color: var(--color-primary-light) !important;
+  background-color: #3C35FC78 !important;
+  border-color: #3C35FC !important;
   color: #fff !important;
 }
 
@@ -250,9 +261,9 @@ height: 50px;
 }
 
 .hero-buttons .btn-secondary:hover {
-  background-color: var(--color-primary) !important;
+  background-color: #3C35FC !important;
   color: #fff !important;
-  border-color: var(--color-primary-light) !important;
+  border-color: #3C35FC !important;
 }
 
 .hero-image {
@@ -290,11 +301,11 @@ height: 50px;
   margin: 0 auto;
   font-family: "Inter", "Poppins", sans-serif;
   color: var(--color-primary);
-  background: var(--color-secondary2);
+  background: transparent;
 }
 
 /* Ligne verticale centrale */
-#line {
+/* #line {
   position: absolute;
   left: 50%;
   top: 0;
@@ -303,7 +314,7 @@ height: 50px;
   background: var(--color-primary);
   transform: translateX(-50%);
   border-radius: 3px;
-}
+} */
 
 /* Containers principaux */
 .veryBigestContainer {
@@ -342,24 +353,25 @@ height: 50px;
 }
 .check:hover {
   transform: scale(1.2);      
-  background: var(--color-primary);
+  background: #3C35FC;
 }
 
 /* ----- Côté gauche et droit ----- */
 .companyContainer,
 .companyContainerLeft {
   flex: 1;
-  background: var(--color-secondary);
+  background: rgba(3, 34, 105, 0.298);
   padding: 1.5rem;
   border-radius: 1rem;  
-  box-shadow: 0 4px 12px var(--color-primary);
+  border: 1px solid #3C35FC;
+  box-shadow: 0 4px 12px #3C35FC;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .companyContainer:hover,
 .companyContainerLeft:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px var(--color-primary-light);
+  box-shadow: 0 8px 20px #3C35FC;
 }
 
 /* ----- Contenu entreprise ----- */
@@ -406,7 +418,7 @@ height: 50px;
 .resumeDate,
 .resumeDateLeft {
   font-size: 0.9rem;
-  color:#0C4B82 ;
+  color:#3C35FC; 
   font-weight: 500;
   white-space: nowrap;
 }
@@ -417,7 +429,7 @@ height: 50px;
             margin: 0 auto;
             padding: 2.5rem;
             background: linear-gradient(165deg, rgba(12, 75, 130, 0.15), rgba(11, 11, 11, 0.9));
-            border: 2px solid rgba(21, 107, 181, 0.3);
+            border: 2px solid #3C35FC;
             border-radius: 25px;
             backdrop-filter: blur(10px);
             box-shadow: 0 0 30px rgba(21, 107, 181, 0.2),
@@ -425,16 +437,15 @@ height: 50px;
           }
 
           .about-content h2 {
-            color: var(--color-primary);
+            color: #3C35FC;
             font-size: 2.8rem;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 4px;
             margin-bottom: 2rem;
-            background: linear-gradient(90deg, #0C4B82, #156bb5);
+            background: linear-gradient(90deg, #0C4B82, #3C35FC);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 15px rgba(21, 107, 181, 0.5);
+            text-shadow: 0 0 15px rgba(60, 53, 252, 0.5);
           }
 
           .about-content p {
@@ -445,14 +456,14 @@ height: 50px;
           }
 
           .about-span {
-            color: #156bb5;
+            color: #3C35FC;
             font-weight: 600;
             font-size: 1.2rem;
             padding: 0.3rem 1rem;
-            background: rgba(21, 107, 181, 0.1);
+            background: rgba(60, 53, 252, 0.1);
             border-radius: 20px;
-            border: 1px solid rgba(21, 107, 181, 0.3);
-            box-shadow: 0 0 10px rgba(21, 107, 181, 0.2);
+            border: 1px solid rgba(60, 53, 252, 0.3);
+            box-shadow: 0 0 10px rgba(60, 53, 252, 0.2);
           }
 
           .option {
@@ -466,7 +477,7 @@ height: 50px;
             padding: 2rem;
             background: rgba(12, 75, 130, 0.1);
             border-radius: 20px;
-            border: 1px solid rgba(21, 107, 181, 0.3);
+            border: 1px solid #3C35FC;
             position: relative;
             overflow: hidden;
             transition: all 0.4s ease;
@@ -479,14 +490,14 @@ height: 50px;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(21, 107, 181, 0.1));
+            background: linear-gradient(45deg, transparent, rgba(60, 53, 252, 0.1));
             pointer-events: none;
           }
 
           .para_1:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 10px 30px rgba(21, 107, 181, 0.2);
-            border-color: rgba(21, 107, 181, 0.6);
+            box-shadow: 0 10px 30px rgba(60, 53, 252, 0.2);
+            border-color: rgba(60, 53, 252, 0.6);
           }
 
           .para_1 ul {
@@ -503,13 +514,13 @@ height: 50px;
 
           .para_1 li::before {
             content: "›";
-            color: #156bb5;
+            color: #3C35FC;
             position: absolute;
             left: 0;
             top: 0;
             font-size: 1.2rem;
             font-weight: bold;
-            text-shadow: 0 0 8px rgba(21, 107, 181, 0.5);
+            text-shadow: 0 0 8px rgba(60, 53, 252, 0.5);
           }
 
           @media (max-width: 768px) {

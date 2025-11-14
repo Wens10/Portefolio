@@ -20,13 +20,13 @@ Ils conçoivent, programment et maintiennent des solutions logicielles pour les 
                                 </div>
                             </div>
                             <div class="check"></div>
-                            <div class="resumeDate" style="color: #0C4B82;">&nbsp;&nbsp;&nbsp;&nbsp;2024-2026</div>
+                            <div class="resumeDate" style="color: #3c35fc; font-weight: bold; font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;2024-2026</div>
                         </div>
                     </div>
                     <div class="veryBigContainer">
                         <div class="bigResumeContainer">
                             <div class="resumeContainer">
-                                <div class="resumeDateLeft" style="color: #0C4B82;">2022 - 2024&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                <div class="resumeDateLeft" style="color: #3c35fc; font-weight: bold; font-size: 1.2em;">2022 - 2024&nbsp;&nbsp;&nbsp;&nbsp;</div>
                                 <div class="check"></div>
                                 <div class="companyContainerLeft">
                                     <div class="company">
@@ -58,7 +58,7 @@ Ils conçoivent, programment et maintiennent des solutions logicielles pour les 
                                 </div>
                             </div>
                             <div class="check"></div>
-                            <div class="resumeDate" style="color: #0C4B82;">&nbsp;&nbsp;&nbsp;&nbsp;2021 - 2022</div>
+                            <div class="resumeDate" style="color: #3c35fc; font-weight: bold; font-size: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;2021 - 2022</div>
                         </div>
                     </div>
                 </div>

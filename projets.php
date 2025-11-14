@@ -16,13 +16,13 @@
 
 :root {
   /* Couleurs principales */
-  --color-primary: #0C4B82;      /* Bleu principal */
+  --color-primary: #3C35FC;      /* Bleu principal */
   --color-secondary: #2e2d2b;    /* Gris foncé / noir chaud */
   --color-secondary2: #0b0b0b;    /* Gris foncé / noir chaud */
   --color-text: #ffffff;           /* Blanc */
 
   /* Variantes */
-  --color-primary-light: #156bb5; /* Variante plus claire du bleu */
+  --color-primary-light: #3c35fc; /* Variante plus claire du bleu */
   --color-secondary-light: #3c3b38; /* Variante plus claire du gris */
   --color-text-muted: #cccccc;    /* Texte secondaire */
 
@@ -42,7 +42,7 @@
     <div class="hero">
         <main>
             <section class="portfolio-section" style="padding: 32px 0;">
-                <h1 style="text-align:center; margin-bottom: 36px; color: var(--color-primary);">Mes Projets</h1>
+                <h1 style="text-align:center; margin-bottom: 36px; color: #3C35FC;">Mes Projets</h1>
                 <div id="definitionBox">
                 </div> <br>
                 <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">

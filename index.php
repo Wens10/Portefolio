@@ -32,33 +32,64 @@ Dans ce portfolio, vous trouverez :
             </div>
             <br>
 
-                            <div class="social-icons">
-                 <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank" style ="text-decoration: none; cursor: none;">
-                   <img src="assets/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn" style="width: 40px; height: 40px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;">
-                 </a>
-                 <a href="https://www.instagram.com/mr_wenss/" target="_blank" style ="text-decoration: none; cursor: none;">
-                   <img src="assets/images/instagram-circle.svg" alt="Instagram" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;">
-                 </a>
-                 <a href="https://github.com/Wens10" target="_blank" style ="text-decoration: none; cursor: none; ">
-                   <img src="assets/images/github (1).svg" alt="Github" style="width: 40px; height: 40px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;">
-                 </a>
-                </div>
+                    <div class="social-icons">
+              <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank" style="text-decoration: none; cursor:none;">
+                <img src="assets/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn" style="width: 40px; height: 40px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
+              </a>
+              <a href="https://www.instagram.com/mr_wenss/" target="_blank" style="text-decoration: none; cursor:none;">
+                <img src="assets/images/instagram-circle.svg" alt="Instagram" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
+              </a>
+              <a href="https://github.com/Wens10" target="_blank" style="text-decoration: none; cursor:none;">
+                <img src="assets/images/github (1).svg" alt="Github" style="width: 40px; height: 40px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
+              </a>
 
-          </div>
+              <style>
+                .social-icon {
+                  transition: transform 0.3s ease !important;
+                }
+                
+                .social-icons a:hover .social-icon {
+                  transform: scale(1.2) translateY(-5px);
+                }
+                
+                .social-icons a:active .social-icon {
+                  transform: scale(0.95);
+                }
+              </style>
+              </div>
 
-          <div class=" col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
+            </div>
+
+            <div class=" col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
             <img src="assets/images/Image.jude.jpg" alt="Wenceslas" class="img-fluid hero-image">
+            </div>
+          </div>
+           
+          </div>
+        </section>
+        <section>
+          <h2 style="text-align: center; color: #3C35FC;">Tableau de synthese & Curriculum Vitae</h2>
+          <br>
+          <div class="d-flex flex-column flex-lg-row justify-content-center w-80">
+        <div class="col-12 col-lg-5 mb-4 mb-lg-0 me-lg-4">
+          <!-- Viewer pour grands écrans -->
+          <embed src="assets/images/TB%20DE%20SYNTHESE.pdf" type="application/pdf" width="100%" height="900px" class="d-none d-lg-block" style="border: none;" />
+          <!-- Boutons Voir / Télécharger (toujours visibles) -->
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-3">
+            <a href="assets/images/TB%20DE%20SYNTHESE.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary" aria-label="Voir Tableau de synthèse">Voir</a>
+            <a href="assets/images/TB%20DE%20SYNTHESE.pdf" download class="btn btn-primary" aria-label="Télécharger Tableau de synthèse">🢃 Tableaux de synthèse</a>
           </div>
         </div>
-       
-      </div>
-    </section>
-    <section>
-      <h2 style="text-align: center; color: var(--color-primary);">Tableau de synthese & Curriculum Vitae</h2>
-      <br>
-      <div class="d-flex flex-column flex-lg-row justify-content-center w-100">
-        <embed src="assets/images/TB DE SYNTHESE.pdf" type="application/pdf" width="100%" class="col-12 col-lg-5 mb-4 mb-lg-0 me-lg-4" height="900px" style="border: none;" />
-        <embed src="assets/images/Mon CV.pdf" type="application/pdf" width="100%" class="col-12 col-lg-5" height="900px" style="border: none;" />
+
+        <div class="col-12 col-lg-5">
+          <!-- Viewer pour grands écrans -->
+          <embed src="assets/images/Mon%20CV.pdf" type="application/pdf" width="100%" height="900px" class="d-none d-lg-block" style="border: none;" />
+          <!-- Boutons Voir / Télécharger (toujours visibles) -->
+          <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-3">
+            <a href="assets/images/Mon%20CV.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary" aria-label="Voir mon CV">Voir</a>
+            <a href="assets/images/Mon%20CV.pdf" download class="btn btn-primary" aria-label="Télécharger mon CV">🢃 Mon CV</a>
+          </div>
+        </div>
       </div>
     </section>
     <br><br>
@@ -68,9 +99,14 @@ Dans ce portfolio, vous trouverez :
         <?php include('includes/about.php'); ?>
       </div>
     </section>
+    <!-- <section>
+      <div >
+        <?php include('includes/certifications'); ?>
+      </div>
+    </section> -->
     <br><br><br>
     <section id="contact">
-      <h2 style="text-align: center; color: var(--color-primary);">Contact</h2>
+      <h2 style="text-align: center; color: #3C35FC;">Contact</h2>
       <div class="d-flex justify-content-center w-100">
       <?php include('includes/contact.php'); ?>
       </div>
