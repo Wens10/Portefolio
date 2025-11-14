@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Portefolio</title>
+    <title>BTS SIO - Portefolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/">
     <link rel="shortcut icon" href="assets/images/alien-svgrepo-com.svg" type="image/x-icon">
+    <meta name="description" content="Découvrez le BTS SIO : formations SLAM et SISR, épreuves, débouchés professionnels et carrières en informatique.">
+    <meta name="keywords" content="BTS SIO, SLAM, SISR, informatique, formation, développement, réseaux">
+    <meta name="author" content="Portfolio">
+    <meta property="og:title" content="BTS SIO - Portefolio">
+    <meta property="og:description" content="Tout sur le BTS SIO : options SLAM et SISR, épreuves et débouchés professionnels.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
 </head>
 <?php include('includes/script.php'); ?>
 

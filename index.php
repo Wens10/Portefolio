@@ -7,6 +7,73 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="shortcut icon" href="assets/images/alien-svgrepo-com.svg" type="image/x-icon">
+<?php
+// Génération dynamique de l'URL canonique / base (fonctionne en local et prod)
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$path = strtok($_SERVER['REQUEST_URI'], '?');
+$canonical = $protocol . $host . $path;
+$base = rtrim($protocol . $host, '/');
+$ogImage = $base . '/assets/images/Image.jude.jpg';
+$desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris. Portfolio présentant projets, compétences, CV et moyens de contact.";
+?>
+<meta name="description" content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
+<meta name="author" content="Wenceslas BOUITY">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="Wenceslas BOUITY, portfolio, BTS SIO, SLAM, EFREI Paris, développeur web, projets, CV">
+<link rel="canonical" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
+<link rel="alternate" hreflang="fr" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wenceslas - Portfolio">
+<meta property="og:description" content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
+<meta property="og:url" content="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
+<meta property="og:site_name" content="Wenceslas - Portfolio">
+<meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+<meta property="og:image:alt" content="Portrait de Wenceslas BOUITY">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wenceslas - Portfolio">
+<meta name="twitter:description" content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
+<meta name="twitter:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+
+<!-- Performance hints -->
+<link rel="preload" as="image" href="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<!-- Structured data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Wenceslas BOUITY",
+      "url": "<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>",
+      "image": "<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>",
+      "jobTitle": "Étudiant en BTS SIO (SLAM)",
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "EFREI Paris"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/",
+        "https://www.instagram.com/mr_wenss/",
+        "https://github.com/Wens10"
+      ],
+      "description": "<?php echo str_replace('"', '\"', $desc); ?>"
+    },
+    {
+      "@type": "WebPage",
+      "url": "<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>",
+      "name": "Wenceslas - Portfolio",
+      "description": "<?php echo str_replace('"', '\"', $desc); ?>"
+    }
+  ]
+}
+</script>
 </head>
 <?php include('includes/script.php'); ?>
 <body>

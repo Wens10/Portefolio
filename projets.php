@@ -8,6 +8,56 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/projets.css">
     <link rel="shortcut icon" href="assets/images/alien-svgrepo-com.svg" type="image/x-icon">
+    <?php
+    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+    $baseUrl = $scheme . '://' . $_SERVER['HTTP_HOST'];
+    $currentUrl = $baseUrl . $_SERVER['REQUEST_URI'];
+    $ogImage = $baseUrl . '/Portefolio/assets/images/alien-svgrepo-com.svg';
+    ?>
+    <link rel="canonical" href="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>">
+    <link rel="alternate" href="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>" hreflang="fr" />
+
+    <meta name="description" content="Découvrez mes projets : jeux, sites web et réalisations E‑Learning. Portfolio présentant technologies utilisées, captures d'écran et liens GitHub.">
+    <meta name="keywords" content="portfolio, projets, site web, jeux en ligne, JavaScript, HTML, CSS, WordPress, GitHub">
+    <meta name="author" content="Auteur du portfolio">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#3C35FC">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Projets — Portefolio">
+    <meta property="og:description" content="Portfolio présentant mes projets : jeux, sites web et réalisations E‑Learning avec captures et liens GitHub.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>">
+    <meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portefolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projets — Portefolio">
+    <meta name="twitter:description" content="Portfolio présentant mes projets : jeux, sites web et réalisations E‑Learning.">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Projets — Portefolio",
+        "description": "Présentation de projets web et jeux réalisés avec HTML, CSS, JavaScript, WordPress et Node.js. Liens GitHub et démonstrations en ligne.",
+        "url": "<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>",
+        "inLanguage": "fr-FR",
+        "author": {
+            "@type": "Person",
+            "name": "Auteur du portfolio"
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Projets",
+            "numberOfItems": 4
+        }
+    }
+    </script>
 </head>
 <?php include('includes/script.php'); ?>
 <body>

@@ -3,11 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Portefolio</title>
+    <title>Veille Technologique - Portefolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/">
     <link rel="shortcut icon" href="assets/images/alien-svgrepo-com.svg" type="image/x-icon">
+    <?php
+    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+    $base = $scheme . '://' . ($_SERVER['HTTP_HOST'] ?? 'example.com');
+    $canonical = htmlspecialchars($base . $_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
+    $image = htmlspecialchars($base . '/assets/images/alien-svgrepo-com.svg', ENT_QUOTES, 'UTF-8');
+    $metaDescription = "Veille technologique sur WebAssembly (WASI) et Edge Computing — articles, outils, runtimes et cas d'usage 2024–2025 pour des applications performantes et distribuées.";
+    ?>
+    <link rel="canonical" href="<?php echo $canonical; ?>">
+    <link rel="alternate" hreflang="fr" href="<?php echo $canonical; ?>">
+
+    <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="keywords" content="veille technologique, WebAssembly, WASI, Edge Computing, Wasmtime, Wasmer, Deno, Cloudflare Workers">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0015ff">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Veille Technologique — Portefolio">
+    <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta property="og:url" content="<?php echo $canonical; ?>">
+    <meta property="og:image" content="<?php echo $image; ?>">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Veille Technologique — Portefolio">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>">
+    <meta name="twitter:image" content="<?php echo $image; ?>">
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Veille Technologique — Portefolio",
+        "url": "<?php echo $canonical; ?>",
+        "description": "<?php echo htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8'); ?>",
+        "inLanguage": "fr-FR",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Portefolio",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "<?php echo $image; ?>"
+            }
+        }
+    }
+    </script>
 </head>
 <?php include('includes/script.php'); ?>
 
