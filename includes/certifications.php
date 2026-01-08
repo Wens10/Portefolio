@@ -7,25 +7,26 @@ body { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; margin:0; 
 .certifications-section .lead { color:#555; margin-bottom:1rem; }
 
 .cert-grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap:1rem; }
-.cert-card { background:#fff; border:1px solid #3c35fc; border-radius:8px; overflow:hidden; display:flex; flex-direction:column; height:100%; box-shadow:0 2px 6px rgba(0,0,0,0.04); }
-.cert-link { text-decoration:none; color:inherit; display:flex; gap:0.75rem; align-items:center; padding:0.75rem; flex:1; }
+.cert-card { background: linear-gradient(165deg, rgba(12, 75, 130, 0.15), rgba(11, 11, 11, 0.9)) ;backdrop-filter: blur(10px);border-radius:8px; overflow:hidden; display:flex; flex-direction:column; height:100%; box-shadow:0 2px 6px rgba(0,0,0,0.04); }
+.cert-link { text-decoration:none; color:inherit; display:flex; gap:0.75rem; align-items:center; padding:0.75rem; flex:1; cursor: none !important;}
 .cert-thumb { width:84px; height:84px; object-fit:cover; border-radius:6px; flex:0 0 84px; }
 .cert-no-thumb { width:84px; height:84px; display:flex; align-items:center; justify-content:center; background:#f5f5f5; color:#777; border-radius:6px; flex:0 0 84px; }
 .cert-meta { flex:1; min-width:0; }
 .cert-title { margin:0 0 .35rem 0; font-size:1rem; line-height:1.2; }
 .cert-issuer { margin:0; color:#666; font-size:.875rem; }
 
-.cert-actions { display:flex; gap:.5rem; padding:.5rem; border-top:1px solid #3c35fc; background:#fafafa; }
-.preview-btn, .open-btn { border:0; background:#3c35fc3e; padding:.45rem .6rem; border-radius:6px; cursor:none; font-size:.875rem; text-decoration:none; color:white; border:1px solid #321cfdff; }
+.cert-actions { display:flex; gap:.5rem; padding:.5rem; border-top:1px solid #3c35fc; }
+.preview-btn, .open-btn { border:0; background:#3c35fc; padding:.45rem .6rem; border-radius:6px; cursor:none !important; font-size:.875rem; text-decoration:none; color:white; border:1px solid #321cfdff; }
 .preview-btn:hover, .open-btn:hover { background:black;  }
 
 @media (prefers-color-scheme: dark) {
     body { background:#0b0b0b; color:#ddd; }
     .cert-card { background:#111;box-shadow:none; color:#ddd; }
-    .cert-actions, .cert-link { background:transparent; }
-    .cert-no-thumb { background:#1a1a1a; color:#999; }
+    .cert-actions, .cert-link { background:; }
+    .cert-no-thumb { background:; color:#999; }
 }
 
+              
 /* Modal preview */
 #cert-preview-modal { position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.6); z-index:9999; }
 #cert-preview-modal[aria-hidden="false"] { display:flex; }
@@ -43,21 +44,20 @@ body { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; margin:0; 
     <div class="cert-grid">
         <!-- Cert 1 (avec miniature) -->
         <article class="cert-card">
-            <a class="cert-link" href="https://example.com/certificates/php-modern.pdf" target="_blank" rel="noopener noreferrer" title="Ouvrir PHP: Développement web moderne">
-                <img src="/assets/certs/php-modern-thumb.jpg" alt="JS: Développement web moderne - miniature" class="cert-thumb" />
+            <a class="cert-link" href="/assets/images/JavaScriptEssentials1Update20251209-31-8xygpg.pdf"rel="noopener noreferrer" title="javascript-essentials-1">
+                <img src="/assets/images/javascript-essentials-1.png" alt="JS: Développement web moderne" class="cert-thumb" />
                 <div class="cert-meta">
                     <h3 class="cert-title">JS: JavaScript Essentials 1</h3>
-                    <p class="cert-issuer">Netacad • <time datetime="2024-11">2025-11</time></p>
+                    <p class="cert-issuer">Netacad • <time datetime="2025-11">2025-12</time></p>
                 </div>
             </a>
 
             <div class="cert-actions">
-                <button class="preview-btn" type="button" data-thumb="/assets/certs/php-modern-thumb.jpg" aria-label="Aperçu de JS: JavaScript Essentials 1">Aperçu</button>
-                <a class="open-btn" href="https://example.com/certificates/php-modern.pdf" target="_blank" rel="noopener noreferrer">Voir la certif</a>
+                <button class="preview-btn" type="button" data-thumb="/assets/images/Certif_JS_1.png" aria-label="Aperçu de JS: JavaScript Essentials 1">Aperçu</button>
             </div>
         </article>
 
-        <!-- Cert 2 (avec miniature) -->
+        <!-- Cert 2 (avec miniature)
         <article class="cert-card">
             <a class="cert-link" href="https://example.com/certificates/frontend.pdf" target="_blank" rel="noopener noreferrer" title="Ouvrir Frontend Web Developer">
                 <img src="/assets/certs/frontend-thumb.jpg" alt="Frontend Web Developer - miniature" class="cert-thumb" />
@@ -73,8 +73,8 @@ body { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; margin:0; 
             </div>
         </article>
 
-        <!-- Cert 3 (sans miniature) -->
-        <article class="cert-card">
+        Cert 3 (sans miniature) -->
+        <!-- <article class="cert-card">
             <a class="cert-link" href="https://example.com/certificates/sql.pdf" target="_blank" rel="noopener noreferrer" title="Ouvrir SQL & Bases de données">
                 <div class="cert-no-thumb" aria-hidden="true">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 7v10a2 2 0 0 0 2 2h14"/></svg>
@@ -86,10 +86,10 @@ body { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; margin:0; 
             </a>
 
             <div class="cert-actions">
-                <!-- Pas de bouton Aperçu car pas de miniature -->
-                <a class="open-btn" href="https://example.com/certificates/sql.pdf" target="_blank" rel="noopener noreferrer">Voir la certif</a>
+                Pas de bouton Aperçu car pas de miniature -->
+                <!-- <a class="open-btn" href="https://example.com/certificates/sql.pdf" target="_blank" rel="noopener noreferrer">Voir la certif</a>
             </div>
-        </article>
+        </article> -->
     </div>
 </section>
 

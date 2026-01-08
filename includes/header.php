@@ -38,4 +38,80 @@
       </div>
     </nav>
   </div>
+  <style>
+         .nav-link.active {
+       
+       font-weight: 600;
+       
+     }
+     
+  </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll("section[id]");
+  const currentPath = window.location.pathname.split("/").pop();
+  const currentHash = window.location.hash;
+
+  // =============================
+  // ACTIVE AU CHARGEMENT
+  // =============================
+  navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    // Pages simples
+    if (href === currentPath) {
+      link.classList.add("active");
+    }
+
+    // index.php + hash
+    if (
+      (currentPath === "" || currentPath === "index.php") &&
+      href === `index.php${currentHash}`
+    ) {
+      link.classList.add("active");
+    }
+  });
+
+  // =============================
+  // ACTIVE AU CLIC (IMMÉDIAT)
+  // =============================
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+
+  // =============================
+  // ACTIVE AU SCROLL
+  // =============================
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.offsetHeight;
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        currentSection = section.id;
+      }
+    });
+
+    if (currentSection) {
+      navLinks.forEach(link => {
+        const href = link.getAttribute("href");
+        link.classList.remove("active");
+
+        if (href === `index.php#${currentSection}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+});
+</script>
+
+
 </header>

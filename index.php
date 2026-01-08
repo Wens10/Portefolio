@@ -6,7 +6,12 @@
 <title>Wenceslas - Portfolio</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="shortcut icon" href="assets/images/alien-svgrepo-com.svg" type="image/x-icon">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Mr Wens" />
+<link rel="manifest" href="/site.webmanifest" />
 <?php
 // Génération dynamique de l'URL canonique / base (fonctionne en local et prod)
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
@@ -80,61 +85,209 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
   <?php include('includes/header.php'); ?>
   
   <main >
-    <section class="hero-section" id="home">
-      
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12 order-2 order-lg-1">
-            <h1 class="hero-title">Wenceslas BOUITY <br><span class="highlight">Etudiant en BTS SIO</span></h1>
-            <p class="hero-description">
-<p>Étudiant en <strong>BTS SIO</strong> option <strong>SLAM</strong> à <strong>EFREI Paris</strong>, je suis passionné par le développement web et les technologies de l’information. Mon objectif est de devenir un développeur polyvalent, capable de concevoir des applications performantes et adaptées aux besoins des entreprises.
-
-Dans ce portfolio, vous trouverez :
-
-<ul> <li>Mes projets réalisés en cours et en autonomie</li> <li>Mes compétences techniques et fonctionnelles</li> <li>Mon parcours académique et professionnel</li> </ul> </p>
-            <p></p>
-            <div class="hero-buttons d-grid gap-3 d-lg-flex justify-content-lg-start">
-              <a href="projets.php" class="btn btn-primary btn-sm" style="cursor: none;">Projets</a>
-              <a href="#contact" class="btn btn-secondary btn-sm" style="cursor: none;">Contact</a>
-            </div>
-            <br>
-
-                    <div class="social-icons">
-              <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank" style="text-decoration: none; cursor:none;">
-                <img src="assets/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn" style="width: 40px; height: 40px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
-              </a>
-              <a href="https://www.instagram.com/mr_wenss/" target="_blank" style="text-decoration: none; cursor:none;">
-                <img src="assets/images/instagram-circle.svg" alt="Instagram" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
-              </a>
-              <a href="https://github.com/Wens10" target="_blank" style="text-decoration: none; cursor:none;">
-                <img src="assets/images/github (1).svg" alt="Github" style="width: 40px; height: 40px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
-              </a>
-
-              <style>
-                .social-icon {
-                  transition: transform 0.3s ease !important;
-                }
-                
-                .social-icons a:hover .social-icon {
-                  transform: scale(1.2) translateY(-5px);
-                }
-                
-                .social-icons a:active .social-icon {
-                  transform: scale(0.95);
-                }
-              </style>
+        <section class="hero-section" id="home">
+          <div class="container">
+            <div class="row align-items-center">
+        
+              <!-- TEXTE -->
+              <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                <h1 class="hero-title">
+                  Wenceslas BOUITY <br>
+                  <span class="highlight">Étudiant en BTS SIO</span>
+                </h1>
+        
+                <p class="hero-description">
+                  Étudiant en <strong>BTS SIO</strong> option <strong>SLAM</strong> à
+                  <strong>EFREI Paris</strong>, je suis passionné par le développement web
+                  et les technologies de l’information. Mon objectif est de devenir un
+                  développeur polyvalent, capable de concevoir des applications
+                  performantes et adaptées aux besoins des entreprises.
+                </p>
+        
+                <ul class="hero-list">
+                  <li>Mes projets réalisés en cours et en autonomie</li>
+                  <li>Mes compétences techniques et fonctionnelles</li>
+                  <li>Mon parcours académique et professionnel</li>
+                </ul>
+        
+                <div class="hero-buttons d-grid gap-3 d-lg-flex justify-content-lg-start">
+                  <a href="projets.php" class="btn btn-primary btn-sm">Projets</a>
+                  <a href="#contact" class="btn btn-secondary btn-sm">Contact</a>
+                </div>
+                <br>
+                <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank">
+                    <img src="assets/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
+                  </a>
+                  <a href="https://www.instagram.com/mr_wenss/" target="_blank">
+                    <img src="assets/images/instagram-circle.svg" alt="Instagram" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon instagram">
+                  </a>
+                  <a href="https://github.com/Wens10" target="_blank">
+                    <img src="assets/images/github (1).svg" alt="Github" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
+                  </a>
+                </div>
               </div>
+              <style> .social-icon { transition: transform 0.3s ease !important; } .social-icons a:hover .social-icon { transform: scale(1.2) translateY(-5px); } .social-icons a:active .social-icon { transform: scale(0.95); } </style>
+              <!-- VIDÉO -->
+            <div class="col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
+              <div class="avatar-container">
+            
+                <!-- VIDÉO -->
+                <video
+                  id="avatarVideo"
+                  class="avatar video"
+                  src="assets/video/avatar.mp4"
+                  muted
+                  playsinline
+                ></video>
+            
+                <!-- AVATAR STATIQUE -->
+                <img
+                  id="avatarImage"
+                  class="avatar"
+                  src="assets/images/avatar.png"
+                  alt="Avatar"
+                />
+            
+                <!-- PHOTO RÉELLE -->
+                <img
+                  id="realPhoto"
+                  class="avatar"
+                  src="assets/images/photo.jpg"
+                  alt="Photo réelle"
+                />
+            
+              </div>
+              </div>
+  
+                <style>
+                .avatar-container {
+                 position: relative;
+                 height: 720px;
+                 margin: auto;
+                 overflow: hidden;
+               }
+               
+               /* BASE */
+               .avatar {
+                 position: absolute;
+                 top: 50%;
+                 left: 150px; /* desktop */
+               
+                 width: 350px;
+                 max-width: 100%;
+                 object-fit: contain;
+               
+                 background: transparent;
+                 mix-blend-mode: lighten;
+               
+                 border-radius: 24px;
+                 box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+               
+                 opacity: 0;
+                 transform: translateX(40px) translateY(-50%);
+               
+                 transition:
+                   transform 1.4s cubic-bezier(0.4, 0, 0.2, 1),
+                   opacity 1.4s ease;
+               
+                 will-change: transform, opacity;
+               }
+               
+               /* VISIBLE */
+               .avatar.visible {
+                 opacity: 1;
+                 transform: translateX(0) translateY(-50%);
+               }
+               
+               /* SORTIE */
+               .avatar.exit {
+                 opacity: 0;
+                 transform: translateX(160px) translateY(-50%);
+               }
+               
+               /* ---------------- MOBILE ---------------- */
+               @media (max-width: 768px) {
+                 .avatar {
+                   left: 50%;
+                   width: 280px;
+                   max-width: 90%;
+               
+                   transform: translateX(-50%) translateY(-50%);
+                 }
+               
+                 .avatar.visible {
+                   transform: translateX(-50%) translateY(-50%);
+                 }
+               
+                 .avatar.exit {
+                   transform: translateX(-50%) translateY(40px);
+                 }
+               }
+               
+                </style>
+                <script>
+                  const video = document.getElementById("avatarVideo");
+                  const avatarImg = document.getElementById("avatarImage");
+                  const photo = document.getElementById("realPhoto");
+                
+                  function show(el) {
+                    el.classList.remove("exit");
+                    el.classList.add("visible");
+                  }
+                
+                  function hide(el) {
+                    el.classList.add("exit");
+                    setTimeout(() => {
+                      el.classList.remove("visible");
+                    }, 1400);
+                  }
+                
+                  function startLoop() {
+                    // ---- VIDÉO (INTRO) ----
+                    video.pause();
+                    video.currentTime = 0;
+                    show(video);
+                    video.play();
+                
+                    video.onended = () => {
+                      hide(video);
+                
+                      // ---- AVATAR STATIQUE ----
+                      setTimeout(() => {
+                        show(avatarImg);
+                
+                        setTimeout(() => {
+                          hide(avatarImg);
+                
+                          // ---- PHOTO RÉELLE ----
+                          setTimeout(() => {
+                            show(photo);
+                
+                            setTimeout(() => {
+                              hide(photo);
+                
+                              // 🔁 RESTART
+                              setTimeout(startLoop, 1500);
+                            }, 10000);
+                
+                          }, 1500);
+                        }, 8000);
+                
+                      }, 1500);
+                    };
+                  }
+                
+                  startLoop();
+                </script>
+
+
 
             </div>
-
-            <div class=" col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
-            <img src="assets/images/Image.jude.jpg" alt="Wenceslas" class="img-fluid hero-image">
-            </div>
-          </div>
-           
           </div>
         </section>
-        <section>
+        
+        <section  class="int">
           <h2 style="text-align: center; color: #3C35FC;">Tableau de synthese & Curriculum Vitae</h2>
           <br>
           <div class="d-flex flex-column flex-lg-row justify-content-center w-80">
@@ -159,18 +312,22 @@ Dans ce portfolio, vous trouverez :
         </div>
       </div>
     </section>
-    <br><br>
     <section class="parcours" id="about">
 
       <div class="d-flex justify-content-center w-100">
         <?php include('includes/about.php'); ?>
       </div>
     </section>
-    <!-- <section>
-      <div >
-        <?php include('includes/certifications'); ?>
+    <section>
+      <div>
+        <?php include('includes/certifications.php'); ?>
       </div>
-    </section> -->
+    </section>
+    <section>
+      <div>
+        <?php include('includes/stage.php'); ?>
+      </div>
+    </section>
     <br><br><br>
     <section id="contact">
       <h2 style="text-align: center; color: #3C35FC;">Contact</h2>
