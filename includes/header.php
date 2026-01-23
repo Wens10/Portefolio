@@ -28,7 +28,7 @@
               <a class="nav-link" href="bts_sio.php">BTS SIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="veille.php">Veille Technologique</a>
+              <a class="nav-link" href="veille.php">Veille-Tech</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.php#contact">Contact</a>

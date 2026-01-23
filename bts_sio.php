@@ -52,6 +52,7 @@
                 <div class="option">
                     <div class="para_1">
                         <h2>SLAM</h2>
+                        <div class="image-container1"></div>
                         <p>
                             L'option SLAM se concentre sur le développement d'applications, la gestion de bases
                             de
@@ -65,6 +66,7 @@
                     </div>
                     <div class="para_1">
                         <h2>SISR</h2>
+                        <div class="image-container2"></div>
                         <p>
                             L'option SISR se concentre sur l'administration des systèmes et des réseaux, ainsi
                             que
