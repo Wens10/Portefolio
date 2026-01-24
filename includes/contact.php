@@ -1,42 +1,93 @@
- <section class="contact-section">
-                <h2>Contactez-moi</h2>
-                <div class="contact-flex">
-                    <form class="contact-form" action="https://formspree.io/f/xldpnaqa" method="POST">
-                        <label for="name">Nom :</label>
-                        <input type="text" id="name" name="name" required>
+<section class="contact-section">
+    <h2>Contactez-moi</h2>
+    <div class="contact-flex">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xldpnaqa" method="POST">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
 
-                        <label for="surname">Prénom :</label>
-                        <input type="text" id="surname" name="surname" required>
+            <label for="surname">Prénom :</label>
+            <input type="text" id="surname" name="surname" required>
 
-                        <label for="email">Votre Email :</label>
-                        <input type="email" id="email" name="email" required>
+            <label for="email">Votre Email :</label>
+            <input type="email" id="email" name="email" required>
 
-                        <label for="message">Message :</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-                        <button type="submit">Envoyer</button>
-                    </form>
-                    <div class="contact-info-map">
-                        <div class="contact-info">
-                            <h3>Mes coordonnées</h3>
-                            <p><strong>Email :</strong> <a
-                                    href="mailto:judebouity19@gmail.com" style="cursor: none; color: whitesmoke;">judebouity19@gmail.com</a></p>
-                            <p><strong>Téléphone :</strong> <a href="tel:+33601462715" style="cursor: none; color: whitesmoke;">+33 6 01 46 27 15</a></p>
-                            <h3>Localisation</h3>
-                            <p>Nemours, France</p>
-                        </div>
-                        <div class="map-container">
-                            <iframe
-                                src="https://www.openstreetmap.org/export/embed.html?bbox=2.679%2C48.257%2C2.717%2C48.285&amp;layer=mapnik&amp;marker=48.275%2C2.698"
-                                style="border:1px solid #222; width:100%; height:250px;" allowfullscreen=""
-                                loading="lazy"></iframe>
-                            <small><a
-                                    href="https://www.openstreetmap.org/?mlat=48.275&amp;mlon=2.698#map=14/48.2750/2.6980"
-                                    target="_blank" rel="noopener">Voir sur OpenStreetMap</a></small>
-                        </div>
-                    </div>
-                </div>
+            <button type="submit" id="submit-btn">Envoyer</button>
+            
+            <p id="confirmation-status" style="margin-top: 15px; font-weight: bold;"></p>
+        </form>
+
+        <div class="contact-info-map">
+            <div class="contact-info">
+                <h3>Mes coordonnées</h3>
+                <p><strong>Email :</strong> <a
+                        href="mailto:judebouity19@gmail.com" style="cursor: none; color: whitesmoke;">judebouity19@gmail.com</a></p>
+                <p><strong>Téléphone :</strong> <a href="tel:+33601462715" style="cursor: none; color: whitesmoke;">+33 6 01 46 27 15</a></p>
+                <h3>Localisation</h3>
+                <p>Nemours, France</p>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=2.679%2C48.257%2C2.717%2C48.285&amp;layer=mapnik&amp;marker=48.275%2C2.698"
+                    style="border:1px solid #222; width:100%; height:250px;" allowfullscreen=""
+                    loading="lazy"></iframe>
+                <small><a
+                        href="https://www.openstreetmap.org/?mlat=48.275&amp;mlon=2.698#map=14/48.2750/2.6980"
+                        target="_blank" rel="noopener">Voir sur OpenStreetMap</a></small>
+            </div>
+        </div>
+    </div>
 </section>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function() {
+    // 2. Initialisation avec TA clé publique
+    emailjs.init("PGOmChPZ7T3f2gdmE"); 
+  })();
+
+  // 3. Ton script adapté au formulaire
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const confirmation = document.getElementById("confirmation-status");
+    const btn = document.getElementById("submit-btn");
+
+    const params = {
+      name: document.getElementById("name").value,
+      surname: document.getElementById("surname").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+      time: new Date().toLocaleString("fr-FR")
+    };
+
+    btn.textContent = "Envoi en cours...";
+    btn.disabled = true;
+
+    // Envoi vers Wenceslas
+    emailjs.send("service_240de3n", "template_rus6xqa", params)
+    .then(() => {
+      // Envoi de l'accusé au client
+      return emailjs.send("service_240de3n", "template_zjaw9sa", params);
+    })
+    .then(() => {
+      confirmation.textContent = "Merci ! Votre message a bien été envoyé.";
+      confirmation.style.color = "#4f46e5"; 
+      document.getElementById('contact-form').reset(); 
+    })
+    .catch((error) => {
+      console.error("Erreur:", error);
+      confirmation.textContent = "Une erreur est survenue. Réessayez plus tard.";
+      confirmation.style.color = "#ff4444";
+    })
+    .finally(() => {
+      btn.textContent = "Envoyer";
+      btn.disabled = false;
+    });
+  });
+</script>
             <style>
 :root {
   --color-primary: #3C35FC;

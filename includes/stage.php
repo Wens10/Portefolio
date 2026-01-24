@@ -243,7 +243,7 @@
         <div class="screen place"><img src="/assets/images/Capture d'écran 2026-01-04 201749.png" alt=""></div>
       </div>
 
-      <a href="assets/images/Attestation1.pdf" target="_blank" rel="noopener" class="preview-btn">
+      <a href="assets/images/Attestation de stage (1) Learneo_ 2025 - Copie.pdf" target="_blank" class="preview-btn">
         Voir l’attestation de stage
       </a>
     </article>
@@ -286,9 +286,9 @@
         <div class="screen place"><img src="/assets/images/8.png" alt=""></div>
       </div>
 
-      <!-- <button class="preview-btn" href="/assets/images/Attestation de stage (2) learneo 2025 - Copie.pdf">
+      <button class="preview-btn" href="/assets/images/Attestation de stage (2) learneo 2025 - Copie.pdf" target="_blank">
         Voir l’attestation de stage
-      </button> -->
+      </button>
     </article>
 
   </div>

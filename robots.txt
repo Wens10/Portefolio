@@ -1,0 +1,13 @@
+# Bloquer l'accès aux dossiers sensibles
+User-agent: *
+Disallow: /includes/
+Disallow: /assets/css/
+Disallow: /assets/images/
+Disallow: /assets/video/
+Disallow: /veille_copy.php
+
+# Autoriser l'accès aux pages publiques
+Allow: /
+
+# Indiquer la localisation du sitemap
+Sitemap: https://wenceslas-bouity.ovh/sitemap.xml
