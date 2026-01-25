@@ -286,9 +286,9 @@
         <div class="screen place"><img src="/assets/images/8.png" alt=""></div>
       </div>
 
-      <button class="preview-btn" href="/assets/images/Attestation de stage (2) learneo 2025 - Copie.pdf" target="_blank">
+      <a href="/assets/images/Attestation de stage (2) learneo 2025 - Copie.pdf" target="_blank" class="preview-btn">
         Voir l’attestation de stage
-      </button>
+      </a>
     </article>
 
   </div>
