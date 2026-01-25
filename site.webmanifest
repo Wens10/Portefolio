@@ -1,5 +1,5 @@
 {
-  "name": "Mr Wens",
+  "name": "WensDev",
   "short_name": "Wens",
   "icons": [
     {
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#434242",
+  "theme_color": "#020932",
+  "background_color": "#012057",
   "display": "standalone"
 }
