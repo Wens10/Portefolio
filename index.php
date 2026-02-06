@@ -289,34 +289,29 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
         </section>
         
         <section  class="int">
-          <h2 style="text-align: center; color: #3C35FC;">Tableau de synthese & Curriculum Vitae</h2>
-          <br>
-          <div class="d-flex flex-column flex-lg-row justify-content-center w-80">
-        <div class="col-12 col-lg-5 mb-4 mb-lg-0 me-lg-4">
-          <!-- Viewer pour grands écrans -->
-          <embed src="assets/images/TB%20DE%20SYNTHESE.pdf" type="application/pdf" width="100%" height="900px" class="d-none d-lg-block" style="border: none;" />
-          <!-- Boutons Voir / Télécharger (toujours visibles) -->
-          <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-3">
-            <a href="assets/images/TB%20DE%20SYNTHESE.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary" aria-label="Voir Tableau de synthèse">Voir</a>
-            <a href="assets/images/TB%20DE%20SYNTHESE.pdf" download class="btn btn-primary" aria-label="Télécharger Tableau de synthèse">🢃 Tableaux de synthèse</a>
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-5">
-          <!-- Viewer pour grands écrans -->
-          <embed src="assets/images/Mon%20CV.pdf" type="application/pdf" width="100%" height="900px" class="d-none d-lg-block" style="border: none;" />
-          <!-- Boutons Voir / Télécharger (toujours visibles) -->
-          <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-3">
-            <a href="assets/images/Mon%20CV.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary" aria-label="Voir mon CV">Voir</a>
-            <a href="assets/images/Mon%20CV.pdf" download class="btn btn-primary" aria-label="Télécharger mon CV">🢃 Mon CV</a>
-          </div>
-        </div>
-      </div>
-    </section>
+            <h2 style="text-align: center; color: #3C35FC;">Curriculum Vitae</h2>
+            <br>
+            <div class="row align-items-center">
+            <div class="col-12 col-lg-5" style="margin: auto; text-align: center; justify-content: center; display: flex; flex-direction: column;">
+              <!-- Viewer pour grands écrans -->
+              <embed src="assets/images/Mon%20CV.pdf" type="application/pdf" width="100%" height="580px" class="d-none d-lg-block" style="border: none;" />
+              <!-- Boutons Voir / Télécharger (toujours visibles) -->
+              <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-3">
+                <a href="assets/images/Mon%20CV.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary" aria-label="Voir mon CV">Voir</a>
+                <a href="assets/images/Mon%20CV.pdf" download class="btn btn-primary" aria-label="Télécharger mon CV">🢃 Mon CV</a>
+              </div>
+            </div>
+          
+        </section>
     <section class="parcours" id="about">
 
       <div class="d-flex justify-content-center w-100">
         <?php include('includes/about.php'); ?>
+      </div>
+    </section>
+    <section>
+      <div>
+        <?php include('includes/compétences.php'); ?>
       </div>
     </section>
     <section>

@@ -1,0 +1,127 @@
+  /* Configuration Générale */
+    body {
+        background-color: #0f111a;
+        color: #e6e6e6;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+    }
+
+    /* Le lien de retour en haut */
+    a[href="../tableau.php"] {
+        color: #3C35FC;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        border: 1px solid #3C35FC;
+        border-radius: 4px;
+        transition: 0.3s;
+    }
+
+    a[href="../index.html"]:hover {
+        background: #3C35FC;
+        color: white;
+    }
+
+    /* Ta liste de boutons de Blocs (en haut) */
+    ul {
+        display:flex;
+        width: 100%;
+        column-gap: 20px;
+        row-gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Style de TOUS tes boutons */
+    button {
+        background: rgba(60, 53, 252, 0.05);
+        color: white;
+        border: 1px solid #3C35FC;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-align: left;
+    }
+
+    button:hover {
+        background: #3C35FC;
+        box-shadow: 0 0 12px rgba(60, 53, 252, 0.5);
+        transform: translateY(-2px);
+    }
+
+    /* La section principale */
+    section {
+        margin-top: 40px;
+        border-left: 3px solid #3C35FC;
+        padding-left: 25px;
+    }
+
+    /* Titres */
+    h1 {
+        font-size: 1.8rem;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        color: #3C35FC;
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+
+    h3 {
+        color: #adb5bd;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 5px;
+    }
+
+    /* Articles (Compétences) */
+    article {
+        background: rgba(255, 255, 255, 0.02);
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    /* Tes lignes de séparation */
+    hr {
+        border: 0;
+        height: 1px;
+        background: linear-gradient(to right, #3C35FC, transparent);
+        margin: 50px 0;
+    }
+
+    /* Conteneur des boutons de chaque compétence */
+    article div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: 500px;
+        
+        border-radius: 8px;
+        margin-top: 15px;
+        
+    }
+    
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        ul, article div {
+            flex-direction: column;
+        }
+        button {
+            width: 100%;
+        }
+    }

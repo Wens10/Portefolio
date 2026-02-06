@@ -22,6 +22,9 @@
               <a class="nav-link" href="index.php#about">Parcours</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="tableau.php">Tableau de synthese</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="projets.php">Projets</a>
             </li>
             <li class="nav-item">
