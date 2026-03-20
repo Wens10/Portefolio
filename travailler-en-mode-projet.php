@@ -19,12 +19,12 @@
 <body>
     <a href="../tableau.php">Retour au Tableau de synthèse</a>
     <ul>
-        <li><a href="gerer-patrimoine-informatique.html"><button> Bloc 1 - Gérer le patrimoine informatique</button></a></li>
-        <li><a href="repondre-incidents.html"><button> Bloc 2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</button></a></li>
-        <li><a href="developper-presence-en-ligne.html"><button> Bloc 3 - Développer la présence en ligne de l’organisation</button></a></li>
-        <li><a href="travailler-en-mode-projet.html"><button> Bloc 4 - Travailler en mode projet</button></a></li>
-        <li><a href="mettre-a-disposition-service-informatique.html"><button> Bloc 5 - Mettre à disposition des utilisateurs un service informatique</button></a></li>
-        <li><a href="organiser-developpement-professionnel.html"><button> Bloc 6 - Organiser son développement professionnel</button></a></li>
+        <li><a href="gerer-patrimoine-informatique.php"><button> Bloc 1 - Gérer le patrimoine informatique</button></a></li>
+        <li><a href="repondre-incidents.php"><button> Bloc 2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</button></a></li>
+        <li><a href="developper-presence-en-ligne.php"><button> Bloc 3 - Développer la présence en ligne de l’organisation</button></a></li>
+        <li><a href="travailler-en-mode-projet.php"><button> Bloc 4 - Travailler en mode projet</button></a></li>
+        <li><a href="mettre-a-disposition-service-informatique.php"><button> Bloc 5 - Mettre à disposition des utilisateurs un service informatique</button></a></li>
+        <li><a href="organiser-developpement-professionnel.php"><button> Bloc 6 - Organiser son développement professionnel</button></a></li>
     </ul>
     <section>
         <h1>Bloc 4 - Travailler en mode projet</h1>

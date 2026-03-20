@@ -20,7 +20,7 @@
                     </div>
                     <div class="skill"
                         data-definition="html est le langage de balisage standard pour créer des pages web.">
-                        <h4>HTML</h4><img src="/assets/images/html5-svgrepo-com.svg" alt="">
+                        <h4>HTML</h4><img src="/assets/images/html5.svg" alt="">
                     </div>
                     <div class="skill"
                         data-definition="css est un langage de style utilisé pour décrire la présentation des documents HTML.">
