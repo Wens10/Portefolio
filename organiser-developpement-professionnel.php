@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS SIO - Organiser son développement professionnel</title>
     <meta name="description" content="Portfolio des compétences - Bloc 6 : Organiser son développement professionnel">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/tab.css">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Mr Wens" />
+    <link rel="manifest" href="/site.webmanifest" />
 </head>
+ <?php include('includes/script.php'); ?>
 <body>
-    <a href="../index.html">Retour au Tableau de synthèse</a>
+    <a href="../tableau.php">Retour au Tableau de synthèse</a>
     <ul>
-        <li><a href="gerer-patrimoine-informatique.html"><button> Bloc 1 - Gérer le patrimoine informatique</button></a></li>
-        <li><a href="repondre-incidents.html"><button> Bloc 2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</button></a></li>
-        <li><a href="developper-presence-en-ligne.html"><button> Bloc 3 - Développer la présence en ligne de l’organisation</button></a></li>
-        <li><a href="travailler-en-mode-projet.html"><button> Bloc 4 - Travailler en mode projet</button></a></li>
-        <li><a href="mettre-a-disposition-service-informatique.html"><button> Bloc 5 - Mettre à disposition des utilisateurs un service informatique</button></a></li>
-        <li><a href="organiser-developpement-professionnel.html"><button> Bloc 6 - Organiser son développement professionnel</button></a></li>
+        <li><a href="gerer-patrimoine-informatique.php"><button> Bloc 1 - Gérer le patrimoine informatique</button></a></li>
+        <li><a href="repondre-incidents.php"><button> Bloc 2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</button></a></li>
+        <li><a href="developper-presence-en-ligne.php"><button> Bloc 3 - Développer la présence en ligne de l’organisation</button></a></li>
+        <li><a href="travailler-en-mode-projet.php"><button> Bloc 4 - Travailler en mode projet</button></a></li>
+        <li><a href="mettre-a-disposition-service-informatique.php"><button> Bloc 5 - Mettre à disposition des utilisateurs un service informatique</button></a></li>
+        <li><a href="organiser-developpement-professionnel.php"><button> Bloc 6 - Organiser son développement professionnel</button></a></li>
     </ul>
     <section>
         <h1>Bloc 6 - Organiser son développement professionnel</h1>
@@ -51,5 +61,6 @@
             <p>À compléter...</p>
         </article>
     </section>
+    <?php include('includes/footer.php'); ?>
 </body>
 </html>

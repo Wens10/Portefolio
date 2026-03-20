@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS SIO - Travailler en mode projet</title>
     <meta name="description" content="Portfolio des compétences - Bloc 4 : Travailler en mode projet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/tab.css">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Mr Wens" />
+    <link rel="manifest" href="/site.webmanifest" />
 </head>
+<?php include('includes/script.php'); ?>
 <body>
-    <a href="../index.html">Retour au Tableau de synthèse</a>
+    <a href="../tableau.php">Retour au Tableau de synthèse</a>
     <ul>
         <li><a href="gerer-patrimoine-informatique.html"><button> Bloc 1 - Gérer le patrimoine informatique</button></a></li>
         <li><a href="repondre-incidents.html"><button> Bloc 2 - Répondre aux incidents et aux demandes d’assistance et d’évolution</button></a></li>
@@ -85,5 +95,6 @@
             </div>
         </article>
     </section>
+    <?php include('includes/footer.php'); ?>
 </body>
 </html>

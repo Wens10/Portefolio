@@ -20,7 +20,7 @@
         transition: 0.3s;
     }
 
-    a[href="../index.html"]:hover {
+    a[href="../tableau.php"]:hover {
         background: #3C35FC;
         color: white;
     }
@@ -42,6 +42,7 @@
         border: 1px solid #3C35FC;
         padding: 10px 15px;
         border-radius: 5px;
+        min-width: auto;
         cursor: pointer;
         font-weight: 500;
         transition: all 0.3s ease;

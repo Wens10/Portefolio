@@ -530,7 +530,7 @@ main {
 }
 
 /* MOBILE (≤ 576px) */
-@media (max-width: 576px) {
+@media (max-width: 980px) {
 
   .image-container1,
   .image-container2 {
