@@ -3,45 +3,42 @@
         background-color: #0f111a;
         color: #e6e6e6;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 20px;
+
+        margin:40px;
         line-height: 1.6;
     }
+    
+    
 
     /* Le lien de retour en haut */
     a[href="../tableau.php"] {
         color: #3C35FC;
-        text-decoration: none;
         font-weight: bold;
         display: inline-block;
         margin-bottom: 20px;
-        padding: 5px 10px;
-        border: 1px solid #3C35FC;
-        border-radius: 4px;
         transition: 0.3s;
     }
 
     a[href="../tableau.php"]:hover {
-        background: #3C35FC;
-        color: white;
+        
+        color: rgb(255, 220, 46);
     }
 
     /* Ta liste de boutons de Blocs (en haut) */
     ul {
         display:flex;
+        flex-direction: column;
         width: 100%;
-        column-gap: 20px;
-        row-gap: 10px;
+        column-gap: 10px;
         padding: 0;
         list-style: none;
     }
 
     /* Style de TOUS tes boutons */
     button {
-        background: rgba(60, 53, 252, 0.05);
+        background-color: transparent;
+        border: none;
         color: white;
-        border: 1px solid #3C35FC;
-        padding: 10px 15px;
-        border-radius: 5px;
         min-width: auto;
         cursor: pointer;
         font-weight: 500;
@@ -50,8 +47,7 @@
     }
 
     button:hover {
-        background: #3C35FC;
-        box-shadow: 0 0 12px rgba(60, 53, 252, 0.5);
+        color: green;
         transform: translateY(-2px);
     }
 
@@ -124,5 +120,8 @@
         }
         button {
             width: 100%;
+        }
+        body{
+            padding: 0%;
         }
     }

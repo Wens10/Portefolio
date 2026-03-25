@@ -34,66 +34,97 @@
             <li><a href="#c3"><button>Compétence 3 - Évaluer les indicateurs de suivi d’un projet et analyser les écarts</button></a></li>
         </ul>
         <hr>
-        <article id="c1">
-            <h2>Compétence 1 - Analyser les objectifs et les modalités d’organisation d’un projet</h2>
-            <div>
-                <a href="#c1-formation">
-                    <button>Réalisation en cours de formations</button>
-                </a>
-                <a href="#c1-milieu">
-                    <button>Réalisation en milieu professionnel</button>
-                </a>
-            </div>
-            <div id="c1-formation">
-                <h3>Réalisation en cours de formations</h3>
-                <p>À compléter...</p>
-                <img src="https://placehold.co/600x400" alt="describe-your-image" />
-            </div>
-            <div id="c1-milieu">
-                <h3>Réalisation en milieu professionnel</h3>
-                <p>À compléter...</p>
-            </div>
-        </article>
-        <hr>
-        <article id="c2">
-            <h2>Compétence 2 - Planifier les activités</h2>
-            <div>
-                <a href="#c2-formation">
-                    <button>Réalisation en cours de formations</button>
-                </a>
-                <a href="#c2-milieu">
-                    <button>Réalisation en milieu professionnel</button>
-                </a>
-            </div>
-            <div id="c2-formation">
-                <h3>Réalisation en cours de formations</h3>
-                <p>À compléter...</p>
-            </div>
-            <div id="c2-milieu">
-                <h3>Réalisation en milieu professionnel</h3>
-                <p>À compléter...</p>
-            </div>
-        </article>
-        <hr>
-        <article id="c3">
-            <h2>Compétence 3 - Évaluer les indicateurs de suivi d’un projet et analyser les écarts</h2>
-            <div>
-                <a href="#c3-formation">
-                    <button>Réalisation en cours de formations</button>
-                </a>
-                <a href="#c3-milieu">
-                    <button>Réalisation en milieu professionnel</button>
-                </a>
-            </div>
-            <div id="c3-formation">
-                <h3>Réalisation en cours de formations</h3>
-                <p>À compléter...</p>
-            </div>
-            <div id="c3-milieu">
-                <h3>Réalisation en milieu professionnel</h3>
-                <p>À compléter...</p>
-            </div>
-        </article>
+       <article id="c1">
+    <h2>Compétence 1 - Analyser les objectifs et les modalités d’organisation d’un projet</h2>
+    <div>
+        <a href="#c1-formation"><button>Réalisation en cours de formations</button></a>
+        <a href="#c1-milieu"><button>Réalisation en milieu professionnel</button></a>
+    </div>
+
+    <div id="c1-formation">
+        <h3>Réalisation en cours de formations</h3>
+        <p>
+            Lors d’un projet Hackathon, j’ai participé à l’analyse des besoins afin de concevoir un site web permettant de présenter une équipe
+            et les services proposés.
+        </p>
+        <p>
+            Nous avons défini les objectifs du projet, identifié les fonctionnalités principales et organisé le travail en équipe.
+            Ce projet m’a permis d’appliquer concrètement les notions de gestion de projet vues en cours.
+        </p>
+        <img src="/assets/images/trello.png" alt="Projet Hackathon - site web" style="width: 900px;" />
+    </div>
+
+    <div id="c1-milieu">
+        <h3>Réalisation en milieu professionnel</h3>
+        <p>
+            Lors de mon stage chez Learneo, j’ai participé à l’analyse des besoins pour la mise en place d’une application métier.
+        </p>
+        <p>
+            J’ai contribué à la compréhension des attentes des utilisateurs, à la définition des fonctionnalités et à la rédaction
+            des bases du cahier des charges en collaboration avec l’équipe.
+        </p>
+    </div>
+</article>
+
+<hr>
+
+<article id="c2">
+    <h2>Compétence 2 - Planifier les activités</h2>
+    <div>
+        <a href="#c2-formation"><button>Réalisation en cours de formations</button></a>
+        <a href="#c2-milieu"><button>Réalisation en milieu professionnel</button></a>
+    </div>
+
+    <div id="c2-formation">
+        <h3>Réalisation en cours de formations</h3>
+        <p>
+            Lors du Hackathon, j’ai participé à la planification des tâches en équipe en répartissant les rôles (développement, design, contenu).
+        </p>
+        <p>
+            Nous avons organisé le travail sur une durée limitée en définissant des priorités et des objectifs à atteindre dans le temps imparti.
+        </p>
+    </div>
+
+    <div id="c2-milieu">
+        <h3>Réalisation en milieu professionnel</h3>
+        <p>
+            En entreprise, j’ai utilisé des outils de gestion de projet comme Trello et GitHub pour planifier et suivre l’avancement des tâches.
+        </p>
+        <p>
+            J’ai organisé mon travail en fonction des priorités du projet et respecté les délais fixés en collaboration avec l’équipe.
+        </p>
+    </div>
+</article>
+
+<hr>
+
+<article id="c3">
+    <h2>Compétence 3 - Évaluer les indicateurs de suivi d’un projet et analyser les écarts</h2>
+    <div>
+        <a href="#c3-formation"><button>Réalisation en cours de formations</button></a>
+        <a href="#c3-milieu"><button>Réalisation en milieu professionnel</button></a>
+    </div>
+
+    <div id="c3-formation">
+        <h3>Réalisation en cours de formations</h3>
+        <p>
+            Lors du projet Hackathon, j’ai suivi l’avancement du projet en comparant les objectifs prévus avec les résultats obtenus.
+        </p>
+        <p>
+            Nous avons identifié les écarts (retards, difficultés techniques) et ajusté notre organisation afin de livrer une version fonctionnelle du site dans les délais.
+        </p>
+    </div>
+
+    <div id="c3-milieu">
+        <h3>Réalisation en milieu professionnel</h3>
+        <p>
+            Lors de mon stage, j’ai suivi l’évolution du projet en participant aux réunions d’équipe et en utilisant les outils de suivi.
+        </p>
+        <p>
+            J’ai analysé les écarts entre les objectifs fixés et l’avancement réel, puis proposé des ajustements afin d’améliorer l’efficacité et respecter les délais.
+        </p>
+    </div>
+</article>
     </section>
     <?php include('includes/footer.php'); ?>
 </body>

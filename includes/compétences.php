@@ -62,10 +62,7 @@
                         data-definition="github est une plateforme de développement collaboratif qui utilise git pour le versionnage de code.">
                         <h4>GitHub</h4><img src="/assets/images/github-142-svgrepo-com (1).svg" alt="">
                     </div>
-                    <div class="skills"
-                        data-definition="docker est un outil permettant de créer, déployer et exécuter des applications dans des conteneurs.">
-                        <h4>Docker</h4><img src="/assets/images/docker-svgrepo-com.svg" alt="">
-                    </div>
+
                     <div class="skills"
                         data-definition="visual studio code est un éditeur de code source développé par microsoft, qui prend en charge le développement dans plusieurs langages de programmation.">
                         <h4>VS Code</h4><img src="/assets/images/Visual Studio Code (VS Code).svg" alt="">

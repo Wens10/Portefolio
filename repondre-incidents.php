@@ -35,65 +35,87 @@
         </ul>
         <hr>
         <article id="c1">
-            <h2>Compétence 1 - Collecter, suivre et orienter des demandes</h2>
-            <div>
-                <a href="#c1-formation">
-                    <button>Réalisation en cours de formations</button>
-                </a>
-                <a href="#c1-milieu">
-                    <button>Réalisation en milieu professionnel</button>
-                </a>
-            </div>
-            <div id="c1-formation">
-                <h3>Réalisation en cours de formations</h3>
-                <p>À compléter...</p>
-                <img src="https://placehold.co/600x400" alt="describe-your-image" />
-            </div>
-            <div id="c1-milieu">
-                <h3>Réalisation en milieu professionnel</h3>
-                <p>À compléter...</p>
-            </div>
-        </article>
-        <hr>
-        <article id="c2">
-            <h2>Compétence 2 - Traiter des demandes concernant les services réseau et système, applicatifs</h2>
-            <div>
-                <a href="#c2-formation">
-                    <button>Réalisation en cours de formations</button>
-                </a>
-                <a href="#c2-milieu">
-                    <button>Réalisation en milieu professionnel</button>
-                </a>
-            </div>
-            <div id="c2-formation">
-                <h3>Réalisation en cours de formations</h3>
-                <p>À compléter...</p>
-            </div>
-            <div id="c2-milieu">
-                <h3>Réalisation en milieu professionnel</h3>
-                <p>À compléter...</p>
-            </div>
-        </article>
-        <hr>
-        <article id="c3">
-            <h2>Compétence 3 - Traiter des demandes concernant les applications</h2>
-            <div>
-                <a href="#c3-formation">
-                    <button>Réalisation en cours de formations</button>
-                </a>
-                <a href="#c3-milieu">
-                    <button>Réalisation en milieu professionnel</button>
-                </a>
-            </div>
-            <div id="c3-formation">
-                <h3>Réalisation en cours de formations</h3>
-                <p>À compléter...</p>
-            </div>
-            <div id="c3-milieu">
-                <h3>Réalisation en milieu professionnel</h3>
-                <p>À compléter...</p>
-            </div>
-        </article>
+    <h2>Compétence 1 - Collecter, suivre et orienter des demandes</h2>
+    <div>
+        <a href="#c1-formation"><button>Réalisation en cours de formations</button></a>
+        <a href="#c1-milieu"><button>Réalisation en milieu professionnel</button></a>
+    </div>
+
+    <div id="c1-formation">
+        <h3>Réalisation en cours de formations</h3>
+        <p>
+            Lors de ma formation, j’ai appris à collecter et traiter les demandes utilisateurs à travers des outils de gestion de tickets.
+            J’ai simulé des situations de support en enregistrant les demandes, en les qualifiant et en les orientant vers les solutions adaptées.
+        </p>
+        <p>
+            J’ai également assuré le suivi des demandes jusqu’à leur résolution, tout en respectant les priorités et en maintenant une communication claire avec les utilisateurs.
+        </p>
+        <img src="https://placehold.co/600x400" alt="Interface de gestion de tickets" />
+    </div>
+
+    <div id="c1-milieu">
+        <h3>Réalisation en milieu professionnel</h3>
+        <p>
+            En entreprise, j’ai été amené à gérer des demandes utilisateurs via un outil de ticketing.
+            J’ai collecté les besoins, analysé les incidents et orienté les demandes vers les services concernés.
+        </p>
+        <p>
+            J’ai également assuré le suivi des tickets en respectant les délais et en informant les utilisateurs de l’avancement des traitements.
+        </p>
+    </div>
+</article>
+
+<hr>
+
+<article id="c2">
+    <h2>Compétence 2 - Traiter des demandes concernant les services réseau et système, applicatifs</h2>
+    <div>
+        <a href="#c2-formation"><button>Réalisation en cours de formations</button></a>
+        <a href="#c2-milieu"><button>Réalisation en milieu professionnel</button></a>
+    </div>
+
+    <div id="c2-formation">
+        <h3>Réalisation en cours de formations</h3>
+        <p>
+            J’ai traité des demandes liées aux systèmes et réseaux, telles que la configuration de postes, la gestion des adresses IP ou la résolution de problèmes de connexion.
+            J’ai également manipulé des environnements virtualisés et des outils d’administration système.
+        </p>
+    </div>
+
+    <div id="c2-milieu">
+        <h3>Réalisation en milieu professionnel</h3>
+        <p>
+            Lors de mon expérience en entreprise, j’ai pris en charge des incidents liés aux infrastructures réseau et système (configuration, accès, déploiement).
+            J’ai utilisé des outils d’automatisation et d’administration pour améliorer l’efficacité et réduire les erreurs.
+        </p>
+    </div>
+</article>
+
+<hr>
+
+<article id="c3">
+    <h2>Compétence 3 - Traiter des demandes concernant les applications</h2>
+    <div>
+        <a href="#c3-formation"><button>Réalisation en cours de formations</button></a>
+        <a href="#c3-milieu"><button>Réalisation en milieu professionnel</button></a>
+    </div>
+
+    <div id="c3-formation">
+        <h3>Réalisation en cours de formations</h3>
+        <p>
+            J’ai travaillé sur la résolution de problèmes applicatifs en développant et en testant des applications web.
+            J’ai corrigé des bugs, amélioré des fonctionnalités et assuré le bon fonctionnement des applications.
+        </p>
+    </div>
+
+    <div id="c3-milieu">
+        <h3>Réalisation en milieu professionnel</h3>
+        <p>
+            En entreprise, j’ai traité des incidents liés aux applications métier en analysant les dysfonctionnements et en proposant des solutions.
+            J’ai participé aux phases de test, de correction et d’amélioration des applications afin d’assurer leur qualité et leur performance.
+        </p>
+    </div>
+</article>
     </section>
     
     <?php include('includes/footer.php'); ?>

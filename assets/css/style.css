@@ -8,14 +8,14 @@ html,
 body {
   height: 100%;
   margin: 0;
-  cursor: none;
+ 
   /* background-color: #635A53 !important; */
   scroll-behavior: smooth;
 }
 
 :root {
   /* Couleurs principales */
-  --color-primary: #3C35FC;
+  --color-primary: #423cff;
   /* Bleu principal */
   --color-secondary: #2e2d2b;
   /* Gris foncé / noir chaud */
@@ -47,9 +47,9 @@ body {
 
   /* Animated gradient background */
   background: linear-gradient(270deg,
-      #000000,
-      #131621,
-      #01144c,
+      #1a1a1a,
+      #181818,
+      #101112,
       #0f1220) !important;
   background-size: 600% 600%;
   animation: gradientMove 14s ease infinite;
@@ -83,7 +83,6 @@ body {
 
 main {
   flex: 1;
-  /* background-color: #584E4D; */
   padding-top: 100px;
 }
 

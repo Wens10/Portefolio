@@ -17,7 +17,7 @@
 </head>
 <?php include('includes/script.php'); ?> 
 <body>
-    <main>
+    
     <a href="../tableau.php">Retour au Tableau de synthèse</a>
     <ul>
         <li><a href="/gerer-patrimoine-informatique.php"><button> Bloc 1 - Gérer le patrimoine informatique</button></a></li>
@@ -97,7 +97,7 @@
         </article>
     </section>
     
-    </main>
+    
     <?php include_once 'includes/footer.php'; ?>
 </body>
 </html>
