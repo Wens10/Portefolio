@@ -642,8 +642,7 @@
 </div>
 
 <!-- OUTILS DE VEILLE -->
-<div class="outils" id="outils">
-  <h2>Outils de Veille</h2>
+
 <div class="outils" id="outils">
   <h2>Outils de Veille</h2>
 
@@ -657,7 +656,7 @@
 
   <div class="item"><strong>MDN Web Docs</strong> — Suivi des évolutions des standards WebAssembly.</div>
 </div>
-</div>
+
 
 <!-- MODAL / CARTE -->
 <div id="overlay"></div>

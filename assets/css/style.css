@@ -46,11 +46,7 @@ body {
   min-height: 100vh;
 
   /* Animated gradient background */
-  background: linear-gradient(270deg,
-      #1a1a1a,
-      #181818,
-      #101112,
-      #0f1220) !important;
+  background: linear-gradient(270deg, #000000, #000000, #011d39, #131f58) !important; 
   background-size: 600% 600%;
   animation: gradientMove 14s ease infinite;
 
@@ -278,7 +274,7 @@ main {
 
 .hero-description {
   font-size: 16px;
-  color: #b3b3b3 !important;
+  color: #ffffff !important;
   line-height: 1.6;
   margin-bottom: 35px;
 }
@@ -451,7 +447,7 @@ main {
 
 /* Exemple de logos fictifs */
 .digitalInsure {
-  background-image: url("https://softwarerepublique.eu/wp-content/uploads/2023/07/logo-efrei.png");
+  background-image: url("https://prepeersstorage.blob.core.windows.net/academic/1_1001_logo_38e7d083-9e91-4a19-92e2-5908719259cc.png?sp=r&st=2026-02-02T08:59:45Z&se=2027-02-02T17:14:45Z&spr=https&sv=2024-11-04&sr=c&sig=SR2A%2B7Absu7MakZWhxZAwujB2BSWJiNrq1%2Fs%2FTez4n0%3D");
 }
 
 .chc {
