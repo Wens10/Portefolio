@@ -155,7 +155,7 @@
       display: inline-block;
       margin-top: 12px;
       padding: 6px 12px;
-      font-size: 12px;
+      font-size: 15px;
       border-radius: 999px;
       background: linear-gradient(135deg, var(--accent), var(--accent2));
       color: #fff;
@@ -390,7 +390,7 @@
     }
 
     .article-source {
-      font-size: 11px;
+      font-size: 15px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.6px;
@@ -404,7 +404,7 @@
     }
 
     .new-badge {
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 700;
       padding: 2px 8px;
       border-radius: 999px;
@@ -414,14 +414,14 @@
     }
 
     .article-title {
-      font-size: 15px;
+      font-size: 20px;
       font-weight: 700;
       color: #fff;
       line-height: 1.45;
     }
 
     .article-excerpt {
-      font-size: 13px;
+      font-size: 15px;
       opacity: 0.65;
       line-height: 1.55;
       display: -webkit-box;
@@ -432,7 +432,7 @@
 
     .article-link {
       margin-top: auto;
-      font-size: 12px;
+      font-size: 15px;
       font-weight: 700;
       color: var(--accent);
       text-decoration: none;
@@ -445,7 +445,7 @@
 
     .article-cat-tag {
       display: inline-block;
-      font-size: 11px;
+      font-size: 15px;
       padding: 3px 10px;
       border-radius: 999px;
       border: 1px solid var(--glass);
@@ -464,7 +464,7 @@
 
     .timeline-sep {
       grid-column: 1 / -1;
-      font-size: 11px;
+      font-size: 15px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -499,7 +499,7 @@
     }
 
     .explication {
-      max-width: 1620px;
+      max-width: 1600px;
       margin: 40px auto;
       padding: 25px 30px;
       background-color: #2a2a2b64;
@@ -563,6 +563,8 @@
     Choisissez le thème qui vous intéresse pour accéder aux contenus associés.
   </p>
 </section>
+
+
 <!-- THEMES -->
 <div class="grid" id="themes">
 

@@ -46,7 +46,7 @@ body {
   min-height: 100vh;
 
   /* Animated gradient background */
-  background: linear-gradient(270deg, #000000, #000000, #011d39, #131f58) !important; 
+  background: linear-gradient(270deg, #000000, #101010, #0f0a3f, #070e30) !important; 
   background-size: 600% 600%;
   animation: gradientMove 14s ease infinite;
 
