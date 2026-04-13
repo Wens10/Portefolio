@@ -13,6 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Mr Wens" />
     <link rel="manifest" href="/site.webmanifest" />
+    
     <?php
     $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
     $baseUrl = $scheme . '://' . $_SERVER['HTTP_HOST'];
@@ -95,9 +96,114 @@
 
 <body>
     <div class="hero">
-        <main>
+        <main class="container">
             <section class="portfolio-section" style="padding: 32px 0;">
                 <h1 style="text-align:center; margin-bottom: 36px; color: #3C35FC;">Mes Projets</h1>
+
+                <H2 style="margin-bottom: 36px; color: #3C35FC;">Client léger & Client lourd :</H2>
+
+
+                <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
+                    <!-- Projet Prestalia -->
+                    <div class="portfolio-card">
+                        <div style="height: 180px; overflow: hidden;">
+                            <img src="assets/images/prestalia.png" alt="Prestalia"
+                                style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                    
+                        <div style="padding: 20px; flex: 1;">
+                            <h3 style="margin-top:0;">Prestalia</h3>
+                    
+                            <p style="color:#ccc;">
+                                Développement d’une application web de mise en relation entre clients et prestataires de services, 
+                                réalisée en équipe dans le cadre du BTS SIO.
+                            </p>
+                    
+                            <ul style="color:#bbb; margin-bottom: 16px;">
+                                <li><strong>Contexte :</strong> Projet E6 (Janvier – Mars 2026) pour une entreprise fictive</li>
+                                <li><strong>Objectif :</strong> Créer une plateforme de gestion de comptes et de réservations</li>
+                                <li><strong>Modalité :</strong> Travail en équipe</li>
+                            </ul>
+                    
+                            <ul style="color:#bbb; margin-bottom: 16px;">
+                                <li>Création et gestion des comptes utilisateurs</li>
+                                <li>Gestion des profils clients et prestataires</li>
+                                <li>Système de réservation de services</li>
+                                <li>API REST pour la communication avec la base de données</li>
+                            </ul>
+                    
+                            <ul style="color:#bbb; margin-bottom: 16px;">
+                                <li><strong>Technologies :</strong> JavaScript, TypeScript, HTML, CSS</li>
+                                <li><strong>Back-end :</strong> Node.js (API)</li>
+                                <li><strong>Base de données :</strong> SQLite</li>
+                                <li><strong>Outils :</strong> Visual Studio Code, Git, GitHub, Figma, EJS</li>
+                            </ul>
+                    
+                            <a href="https://urls.fr/6gI7EH" 
+                               class="access-btn" target="_blank">
+                               Accéder au projet
+                            </a>
+                            <br><br>
+
+                            <a href="https://github.com/Nathan94600/Prestalia" 
+                               class="access-btn">
+                               Lien GitHub
+                            </a>
+                        </div>
+                    </div>
+                <!-- Projet Prestalia Desktop -->
+                <div class="portfolio-card">
+                    <div style="height: 180px; overflow: hidden;">
+                        <img src="assets/images/Capture d'écran 2026-04-13 144542.png" alt="Prestalia Desktop"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                
+                    <div style="padding: 20px; flex: 1;">
+                        <h3 style="margin-top:0;">Prestalia Desktop</h3>
+                
+                        <p style="color:#ccc;">
+                            Développement d’une application desktop Windows permettant l’administration 
+                            de la plateforme Prestalia, réalisée en C# dans le cadre du BTS SIO.
+                        </p>
+                
+                        <ul style="color:#bbb; margin-bottom: 16px;">
+                            <li><strong>Contexte :</strong> Projet E6 (Janvier – Mars 2026) pour compléter l’application web Prestalia</li>
+                            <li><strong>Objectif :</strong> Fournir un outil d’administration pour gérer les données de la plateforme</li>
+                            <li><strong>Modalité :</strong> Travail individuel</li>
+                        </ul>
+                
+                        <ul style="color:#bbb; margin-bottom: 16px;">
+                            <li>Gestion des utilisateurs et prestataires</li>
+                            <li>Gestion des catégories de prestations</li>
+                            <li>Gestion des certificats et réservations</li>
+                            <li>Opérations CRUD (ajout, modification, suppression)</li>
+                            <li>Interface d’administration ergonomique</li>
+                        </ul>
+                
+                        <ul style="color:#bbb; margin-bottom: 16px;">
+                            <li><strong>Technologies :</strong> C#, XAML</li>
+                            <li><strong>Framework :</strong> WinUI 3</li>
+                            <li><strong>Base de données :</strong> SQLite</li>
+                            <li><strong>API :</strong> Node.js</li>
+                            <li><strong>Outils :</strong> Visual Studio, Git, GitHub, Figma, Trello</li>
+                        </ul>
+                
+                        <a href="https://urls.fr/6gI7EH" 
+                           class="access-btn" target="_blank">
+                           Documentation / Accès projet
+                        </a>
+                        <br><br>
+                
+                        <a href="https://github.com/Nathan94600/Prestalia-Desktop" 
+                           class="access-btn">
+                           Lien GitHub
+                        </a>
+                    </div>
+                </div>
+
+                </div> <br> <br>
+                <H2 style="margin-bottom: 36px; color: #3C35FC;">Autres :</H2>
+
                 <div id="definitionBox">
                 </div> <br>
                 <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">

@@ -124,7 +124,7 @@ document.addEventListener('click', () => {
 
 .Competences {
     color: white;
-    padding: 80px 20px;
+    padding: 90px 20px;
     font-family: 'Segoe UI', Roboto, sans-serif;
     text-align: center;
 }
@@ -154,7 +154,7 @@ document.addEventListener('click', () => {
     gap: 25px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 10px;
 }
 
 /* Style de chaque carte de compétence */

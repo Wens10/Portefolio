@@ -13,6 +13,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Mr Wens" />
 <link rel="manifest" href="/site.webmanifest" />
+
 <?php
 // Génération dynamique de l'URL canonique / base (fonctionne en local et prod)
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
@@ -98,11 +99,13 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
                 </h1>
         
                 <p class="hero-description">
-                  Étudiant en <strong>BTS SIO</strong> option <strong>SLAM</strong> à
-                  <strong>EFREI Paris</strong>, je suis passionné par le développement web
-                  et les technologies de l’information. Mon objectif est de devenir un
-                  développeur polyvalent, capable de concevoir des applications
-                  performantes et adaptées aux besoins des entreprises.
+                  Passionné par le développement informatique, j’ai découvert cet univers dès mon enfance à travers les jeux vidéo. Cette curiosité m’a rapidement donné envie de comprendre leur fonctionnement, puis de créer mes propres expériences.
+                
+                  J’ai donc naturellement orienté mes études dans ce domaine afin d’acquérir des compétences solides en programmation et en conception d’applications.
+                
+                  J’ai choisi d’intégrer le <strong>BTS SIO</strong>, option <strong>SLAM</strong>, à <strong>EFREI Paris</strong>, afin de me spécialiser dans le développement logiciel.
+                
+                  Mon objectif est de devenir un développeur polyvalent, capable de concevoir des applications performantes, fiables et adaptées aux besoins des entreprises.
                 </p>
         
                 <ul class="hero-list">
@@ -117,13 +120,13 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
                 </div>
                 <br>
                 <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank">
+                  <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank" style="text-decoration: none;">
                     <img src="assets/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
                   </a>
-                  <a href="https://www.instagram.com/mr_wenss/" target="_blank">
-                    <img src="assets/images/instagram-circle.svg" alt="Instagram" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon instagram">
+                  <a href="https://www.instagram.com/mr_wenss/" target="_blank" style="text-decoration: none;">
+                    <img src="assets/images/instagram-circle.svg" alt="Instagram" style="width: 54px; height: 54px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon instagram">
                   </a>
-                  <a href="https://github.com/Wens10" target="_blank">
+                  <a href="https://github.com/Wens10" target="_blank" style="text-decoration: none;">
                     <img src="assets/images/github (1).svg" alt="Github" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
                   </a>
                 </div>
