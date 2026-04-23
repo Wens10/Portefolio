@@ -139,17 +139,7 @@
     </div>
 </section>
 
-<section>
-    <h1 style="text-align: center; font-size: 1.5rem;">Réalisations par Bloc de Compétences</h1>
-    <ul class="skills-grid">
-        <li><a href="gerer-patrimoine-informatique.php"><button><span>01</span> &nbsp; Gérer le patrimoine informatique</button></a></li>
-        <li><a href="repondre-incidents.php"><button><span>02</span> &nbsp; Répondre aux incidents & assistance</button></a></li>
-        <li><a href="/developper-presence-en-ligne.php"><button><span>03</span> &nbsp; Développer la présence en ligne</button></a></li>
-        <li><a href="travailler-en-mode-projet.php"><button><span>04</span> &nbsp; Travailler en mode projet</button></a></li>
-        <li><a href="mettre-a-disposition-service-informatique.php"><button><span>05</span> &nbsp; Mettre à disposition un service</button></a></li>
-        <li><a href="organiser-developpement-professionnel.php"><button><span>06</span> &nbsp; Développement professionnel</button></a></li>
-    </ul>
-</section>
+
 
     </main>
 

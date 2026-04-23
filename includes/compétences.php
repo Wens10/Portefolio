@@ -7,10 +7,6 @@
                 <div>
 
                     <div class="skill"
-                        data-definition="java est un langage de programmation orienté objet, utilisé pour développer des applications web, mobiles et d'entreprise.">
-                        <h4>Java</h4><img src="/assets/images/java-svgrepo-com.svg" alt="">
-                    </div>
-                    <div class="skill"
                         data-definition="python est un langage de programmation interprété, utilisé pour le développement web, l'analyse de données et l'intelligence artificielle.">
                         <h4>Python</h4><img src="/assets/images/python-svgrepo-com.svg" alt="">
                     </div>
@@ -33,10 +29,6 @@
                     <div class="skill"
                         data-definition="node.js est un environnement d'exécution JavaScript côté serveur.">
                         <h4>Node.js</h4><img src="/assets/images/nodejs-1-logo-svgrepo-com.svg" alt="">
-                    </div>
-                    <div class="skill"
-                        data-definition="tailwind css est un framework CSS utilitaire pour créer des designs modernes et réactifs.">
-                        <h4>Tailwind</h4><img src="/assets/images/tailwind-css-svgrepo-com.svg" alt="">
                     </div>
                     <div class="skill"
                         data-definition="bootstrap est un framework CSS populaire pour le développement d'interfaces web réactives.">
@@ -66,10 +58,6 @@
                     <div class="skills"
                         data-definition="visual studio code est un éditeur de code source développé par microsoft, qui prend en charge le développement dans plusieurs langages de programmation.">
                         <h4>VS Code</h4><img src="/assets/images/Visual Studio Code (VS Code).svg" alt="">
-                    </div>
-                    <div class="skills"
-                        data-definition="linux est un système d'exploitation open source basé sur le noyau linux.">
-                        <h4>Linux</h4><img src="/assets/images/linux-svgrepo-com.svg" alt="">
                     </div>
                     <div class="skills"
                         data-definition="mysql est un système de gestion de base de données relationnelle open source.">

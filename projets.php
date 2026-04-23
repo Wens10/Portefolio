@@ -107,7 +107,7 @@
                     <!-- Projet Prestalia -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/prestalia.png" alt="Prestalia"
+                            <img src="assets/images/Capture d'écran 2026-04-13 150315.png" alt="Prestalia"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                     
@@ -202,7 +202,7 @@
                 </div>
 
                 </div> <br> <br>
-                <H2 style="margin-bottom: 36px; color: #3C35FC;">Autres :</H2>
+                <H2 style="margin-bottom: 36px; color: #3C35FC;">Autres Projets:</H2>
 
                 <div id="definitionBox">
                 </div> <br>
@@ -231,28 +231,81 @@
                     <!-- Projet 2 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/webix.png" alt="CréaWebix"
+                            <img src="assets/images/C-Snake.png" alt="Jeu du Serpent en C"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">CréaWebix</h3>
+                            <h3 style="margin-top:0;">Snake en C</h3>
                             <p style="color:#ccc;">
-                                Site Web que nous avons développé avec Nathan MARQUES-DUVAL en <span class="skill"
-                                    data-definition="html est un langage de balisage utilisé pour structurer le contenu des pages web.">HTML</span>
+                                Jeu du serpent développé en langage 
                                 <span class="skill"
-                                    data-definition="css est un langage de style utilisé pour décrire la présentation des pages web.">CSS</span>
-                                <span class="skill"
-                                    data-definition="javascript est un langage de programmation interprété, principalement utilisé pour créer des pages web interactives.">JavaScript</span>
-                                et <span class="skill"
-                                    data-definition="Node.js est un environnement d'exécution pour JavaScript, permettant de créer des applications côté serveur.">Node.js</span>
-                                afin de présenter notre entreprise de création de site web.
+                                    data-definition="C est un langage de programmation bas niveau très utilisé pour les applications système et les jeux.">C</span>,
+                                avec gestion des entrées clavier, de la logique de déplacement et de la détection des collisions.
                             </p>
                             <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Présentation de l'entreprise</li>
-                                <li>Présentation des services</li>
+                                <li>Mouvement du serpent dans une interface console</li>
+                                <li>Collecte de la nourriture et augmentation de la taille</li>
+                                <li>Détection des collisions avec les murs et le corps</li>
+                            </ul>
+                            
+                            <a href="https://github.com/Wens10/C-Snake" class="access-btn" target="_blank">Lien GitHub</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div style="height: 180px; overflow: hidden;">
+                            <img src="assets/images/E-commerce.png" alt="Site E-commerce Parfums"
+                                style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div style="padding: 20px; flex: 1;">
+                            <h3 style="margin-top:0;">Site E-commerce Parfums</h3>
+                            <p style="color:#ccc;">
+                                Conception et développement d’un site de e-commerce pour la vente de parfums,
+                                réalisé avec <span class="skill"
+                                    data-definition="HTML est un langage de balisage utilisé pour structurer le contenu des pages web.">HTML</span>,
+                                <span class="skill"
+                                    data-definition="CSS est un langage de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML.">CSS</span>
+                                et <span class="skill"
+                                    data-definition="JavaScript est un langage de programmation interprété, principalement utilisé pour créer des pages web interactives.">JavaScript</span>.
+                                Le panier utilise <span class="skill"
+                                    data-definition="localStorage est une API du navigateur qui permet de stocker des données localement entre les sessions.">localStorage</span>
+                                pour conserver les articles sélectionnés.
+                            </p>
+                            <ul style="color:#bbb; margin-bottom: 16px;">
+                                <li>Catalogue de parfums avec fiches produits attractives</li>
+                                <li>Panier dynamique et gestion des quantités</li>
+                                <li>Mise en avant des offres et des avis clients</li>
+                            </ul>
+                            <ul style="color:#bbb; margin-bottom: 16px;">
+                                <li><strong>Technologies :</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Fonctionnalité :</strong> stockage du panier avec localStorage</li>
+                                <li><strong>UX :</strong> navigation fluide et responsive</li>
                             </ul>
                             <a href="#" class="access-btn" target="_blank">Accéder au projet</a><br><br>
-                            <a href="https://github.com/Wens10/CreaWebix" class="access-btn" target="_blank">Liens GitHub</a>
+                            <a href="#" class="access-btn">Lien GitHub</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <div style="height: 180px; overflow: hidden;">
+                            <img src="assets/images/hackathon.png" alt="Projet Hackathon"
+                                style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div style="padding: 20px; flex: 1;">
+                            <h3 style="margin-top:0;">Projet Hackathon</h3>
+                            <p style="color:#ccc;">
+                                Développement d'un site web pour présenter l'équipe <strong>Code Nova</strong>, 
+                                ainsi que la création d'un site proposant un service spécifique, réalisé dans le cadre d'un hackathon.
+                            </p>
+                            <ul style="color:#bbb; margin-bottom: 16px;">
+                                <li>Présentation interactive de l'équipe Code Nova</li>
+                                <li>Section dédiée à la proposition du service offert</li>
+                                <li>Design responsive et moderne</li>
+                            </ul>
+                            <ul style="color:#bbb; margin-bottom: 16px;">
+                                <li><strong>Technologies :</strong> HTML, CSS, JavaScript</li>
+                                <li><strong>Outils :</strong> Git, GitHub</li>
+                            </ul>
+                            <a href="#" class="access-btn" target="_blank">Accéder au projet</a><br><br>
+                            <a href="#" class="access-btn">Lien GitHub</a>
                         </div>
                     </div>
                     <!-- Projet 3 -->
@@ -282,23 +335,31 @@
                     <!-- Projet 4 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/quiz champions.png" alt="Monuments Quiz Champions"
+                            <img src="assets/images/glpi-server.png" alt="GLPI Server Installation"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">Monuments Quiz Champions</h3>
+                            <h3 style="margin-top:0;">Installation, Configuration d'un serveur GLPI avec un environnement virtualisé</h3>
                             <p style="color:#ccc;">
-                                Monuments Quiz est un mini jeu Web réalisé avec 
-                                <span class="skill"data-definition="html est un langage de balisage utilisé pour structurer le contenu des pages web.">HTML</span>
-                                <span class="skill"data-definition="css est un langage de style utilisé pour décrire la présentation des pages web.">CSS</span> et    
-                                <span class="skill"data-definition="javascript est un langage de programmation interprété, principalement utilisé pour créer des pages web interactives.">javascript</span>
-                                . Le but du jeu est de répondre à un quiz sur les quelques monuments célèbres du monde entier.                       
+                                Projet de mise en place d'un serveur GLPI (Gestion Libre de Parc Informatique) dans un environnement virtualisé,
+                                réalisé avec <span class="skill"
+                                    data-definition="VMware est un logiciel de virtualisation open-source permettant de créer et gérer des machines virtuelles.">VMware</span>
+                                et <span class="skill"
+                                    data-definition="GLPI est un logiciel open-source de gestion des actifs informatiques et de helpdesk.">GLPI</span>.
+                                Inclut l'installation, la configuration et les tests de fonctionnalités de base.
                             </p>
                             <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Affichage dynamique des questions</li>
-                            </ul><br>
-                            <a href="https://monuments-quiz-champions.vercel.app/" class="access-btn" target="_blank">Accéder au jeu</a><br><br>
-                            <a href="https://github.com/Wens10/Monuments_Quiz_Champions" class="access-btn" target="_blank">Liens GitHub</a>
+                                <li>Création d'une machine virtuelle pour le serveur</li>
+                                <li>Installation et configuration de GLPI</li>
+                                <li>Gestion des actifs et tickets de support</li>
+                                <li>Tests de fonctionnalités et sécurité</li>
+                            </ul>
+                            <ul style="color:#bbb; margin-bottom: 16px;">
+                                <li><strong>Technologies :</strong> VMware, GLPI, Apache, MySQL</li>
+                                <li><strong>Outils :</strong> Ubuntu Server, Git</li>
+                            </ul>
+                            <a href="#" class="access-btn" target="_blank">Documentation</a><br><br>
+                            
                         </div>
                     </div>
                 </div>

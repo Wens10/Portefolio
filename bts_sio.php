@@ -98,20 +98,6 @@
                         <li>Épreuve professionnelle E7 Cybersécurité des services informatiques (spécifique à l’option)</li>
                     </ul>
                 </div>
-                <br><br><br>
-                <div class="para_1">
-                    <h2>Débouchés professionnels</h2>
-                    <p>
-                        Les diplômés du BTS SIO peuvent prétendre à divers postes dans le secteur informatique, tels que
-                        :
-                    </p>
-                    <ul>
-                        <li>Développeur d'applications</li> <a href="https://fr.wikipedia.org/wiki/D%C3%A9veloppeur_web" target="_blank" style="color: inherit; text-decoration: none; border: 1px solid #3c35fc; padding: 2px 4px; border-radius: 4px;">Cliquez ici pour en savoir plus</a>
-                        <li>Administrateur systèmes et réseaux</li> <a href="https://fr.wikipedia.org/wiki/Administrateur_syst%C3%A8mes" target="_blank" style="color: inherit; text-decoration: none; border: 1px solid #3c35fc; padding: 2px 4px; border-radius: 4px;">Cliquez ici pour en savoir plus</a>
-                        <li>Chef de projet informatique</li> <a href="https://www.apec.fr/tous-nos-metiers/informatique/chef-de-projet-informatique.html?gclsrc=aw.ds&gad_source=1&gad_campaignid=22987122706&gbraid=0AAAAAD_P-vbaa4QNXX05syKKx3GarJ25t&gclid=CjwKCAiAzrbIBhA3EiwAUBaUdeKnJfuXUjhKom6D7rNN_2wjo2mmsN3F5RcyyglDaDqfTTwKWuwQFBoCqhEQAvD_BwE" target="_blank" style="color: inherit; text-decoration: none; border: 1px solid #3c35fc; padding: 2px 4px; border-radius: 4px;">Cliquez ici pour en savoir plus</a>
-                        <li>Consultant en technologies de l'information</li> <a href="https://www.leparisien.fr/etudiant/orientation/guide-metiers/metier-consultant-it/" target="_blank" style="color: inherit; text-decoration: none; border: 1px solid #3c35fc; padding: 2px 4px; border-radius: 4px;">Cliquez ici pour en savoir plus</a>
-                    </ul>
-                </div>
             </div>
     </main>
 

@@ -563,7 +563,12 @@
     Choisissez le thème qui vous intéresse pour accéder aux contenus associés.
   </p>
 </section>
-
+<!-- POURQUOI CES THÈMES -->
+<div style="width:88%; margin:40px auto; padding:20px; background:var(--card); border-radius:18px; border:1px solid var(--glass); backdrop-filter:blur(var(--blur));">
+ <h3>Pourquoi j'ai choisi ces deux thèmes ?</h3><br>
+<p>J'ai choisi WebAssembly/WASI et l'Edge Computing car ces deux technologies représentent l'évolution actuelle la plus marquante dans le développement moderne. WebAssembly apporte des performances proches du natif et ouvre la voie à des applications plus rapides et plus sûres. L'Edge Computing, lui, révolutionne la manière dont les services sont déployés en rapprochant l'exécution de l'utilisateur.</p>
+<p>Leur progression forte depuis 2024 en fait des sujets essentiels à suivre dans une veille technologique et totalement cohérents avec les attentes des développeurs.</p>
+</div>
 
 <!-- THEMES -->
 <div class="grid" id="themes">
@@ -636,12 +641,7 @@
 </section>
 <!-- ======================================================================== -->
 
-<!-- POURQUOI CES THÈMES -->
-<div style="width:88%; margin:40px auto; padding:20px; background:var(--card); border-radius:18px; border:1px solid var(--glass); backdrop-filter:blur(var(--blur));">
- <h3>Pourquoi j'ai choisi ces deux thèmes ?</h3><br>
-<p>J'ai choisi WebAssembly/WASI et l'Edge Computing car ces deux technologies représentent l'évolution actuelle la plus marquante dans le développement moderne. WebAssembly apporte des performances proches du natif et ouvre la voie à des applications plus rapides et plus sûres. L'Edge Computing, lui, révolutionne la manière dont les services sont déployés en rapprochant l'exécution de l'utilisateur.</p>
-<p>Leur progression forte depuis 2024 en fait des sujets essentiels à suivre dans une veille technologique et totalement cohérents avec les attentes des développeurs.</p>
-</div>
+
 
 <!-- OUTILS DE VEILLE -->
 

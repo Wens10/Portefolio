@@ -98,15 +98,13 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
                   <span class="highlight">Étudiant en BTS SIO</span>
                 </h1>
         
-                <p class="hero-description">
-                  Passionné par le développement informatique, j’ai découvert cet univers dès mon enfance à travers les jeux vidéo. Cette curiosité m’a rapidement donné envie de comprendre leur fonctionnement, puis de créer mes propres expériences.
-                
-                  J’ai donc naturellement orienté mes études dans ce domaine afin d’acquérir des compétences solides en programmation et en conception d’applications.
-                
-                  J’ai choisi d’intégrer le <strong>BTS SIO</strong>, option <strong>SLAM</strong>, à <strong>EFREI Paris</strong>, afin de me spécialiser dans le développement logiciel.
-                
-                  Mon objectif est de devenir un développeur polyvalent, capable de concevoir des applications performantes, fiables et adaptées aux besoins des entreprises.
-                </p>
+                 <p class="hero-description">
+                   Passionné par le développement informatique depuis mon enfance, j’ai découvert cet univers à travers les jeux vidéo, ce qui m’a donné envie de comprendre puis de créer mes propres applications.
+                 
+                   J’ai ainsi orienté mes études dans ce domaine et intégré le BTS SIO, option SLAM, à EFREI Paris, afin de me spécialiser dans le développement logiciel.
+                 
+                   Mon objectif est de devenir un développeur polyvalent, capable de concevoir des applications performantes et adaptées aux besoins des entreprises.
+                 </p>
         
                 <ul class="hero-list">
                   <li>Mes projets réalisés en cours et en autonomie</li>
@@ -136,23 +134,6 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
             <div class="col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
               <div class="avatar-container">
             
-                <!-- VIDÉO -->
-                <video
-                  id="avatarVideo"
-                  class="avatar video"
-                  src="assets/video/avatar.mp4"
-                  muted
-                  playsinline
-                ></video>
-            
-                <!-- AVATAR STATIQUE -->
-                <img
-                  id="avatarImage"
-                  class="avatar"
-                  src="assets/images/avatar.png"
-                  alt="Avatar"
-                />
-            
                 <!-- PHOTO RÉELLE -->
                 <img
                   id="realPhoto"
@@ -167,123 +148,20 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
                 <style>
                 .avatar-container {
                  position: relative;
-                 height: 720px;
+                 height: 700px;
                  margin: auto;
                  overflow: hidden;
                }
+               #realPhoto {
+                 width: auto;
+                 height: 100%;
+                 border-radius: 5%;
+                 object-fit: cover;
+                }
                
-               /* BASE */
-               .avatar {
-                 position: absolute;
-                 top: 50%;
-                 left: 150px; /* desktop */
-               
-                 width: 350px;
-                 max-width: 100%;
-                 object-fit: contain;
-               
-                 background: transparent;
-                 mix-blend-mode: lighten;
-               
-                 border-radius: 24px;
-                 box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
-               
-                 opacity: 0;
-                 transform: translateX(40px) translateY(-50%);
-               
-                 transition:
-                   transform 1.4s cubic-bezier(0.4, 0, 0.2, 1),
-                   opacity 1.4s ease;
-               
-                 will-change: transform, opacity;
-               }
-               
-               /* VISIBLE */
-               .avatar.visible {
-                 opacity: 1;
-                 transform: translateX(0) translateY(-50%);
-               }
-               
-               /* SORTIE */
-               .avatar.exit {
-                 opacity: 0;
-                 transform: translateX(160px) translateY(-50%);
-               }
-               
-               /* ---------------- MOBILE ---------------- */
-               @media (max-width: 768px) {
-                 .avatar {
-                   left: 50%;
-                   width: 280px;
-                   max-width: 90%;
-               
-                   transform: translateX(-50%) translateY(-50%);
-                 }
-               
-                 .avatar.visible {
-                   transform: translateX(-50%) translateY(-50%);
-                 }
-               
-                 .avatar.exit {
-                   transform: translateX(-50%) translateY(40px);
-                 }
-               }
-               
+            
                 </style>
-                <script>
-                  const video = document.getElementById("avatarVideo");
-                  const avatarImg = document.getElementById("avatarImage");
-                  const photo = document.getElementById("realPhoto");
-                
-                  function show(el) {
-                    el.classList.remove("exit");
-                    el.classList.add("visible");
-                  }
-                
-                  function hide(el) {
-                    el.classList.add("exit");
-                    setTimeout(() => {
-                      el.classList.remove("visible");
-                    }, 1400);
-                  }
-                
-                  function startLoop() {
-                    // ---- VIDÉO (INTRO) ----
-                    video.pause();
-                    video.currentTime = 0;
-                    show(video);
-                    video.play();
-                
-                    video.onended = () => {
-                      hide(video);
-                
-                      // ---- AVATAR STATIQUE ----
-                      setTimeout(() => {
-                        show(avatarImg);
-                
-                        setTimeout(() => {
-                          hide(avatarImg);
-                
-                          // ---- PHOTO RÉELLE ----
-                          setTimeout(() => {
-                            show(photo);
-                
-                            setTimeout(() => {
-                              hide(photo);
-                
-                              // 🔁 RESTART
-                              setTimeout(startLoop, 1500);
-                            }, 10000);
-                
-                          }, 1500);
-                        }, 8000);
-                
-                      }, 1500);
-                    };
-                  }
-                
-                  startLoop();
-                </script>
+
 
 
 
