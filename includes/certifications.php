@@ -44,16 +44,29 @@ body { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; margin:0; 
     <div class="cert-grid">
         <!-- Cert 1 (avec miniature) -->
         <article class="cert-card">
-            <a class="cert-link" href="/assets/images/JavaScriptEssentials1Update20251209-31-8xygpg.pdf"rel="noopener noreferrer" title="javascript-essentials-1">
+            <a class="cert-link" href="/assets/images/JavaScript_Essentials_1_certificate_wenceslasbouity92-gmail-com_f3f1a0df-3386-4ac1-b1c9-5e295ddb1040.pdf"rel="noopener noreferrer" title="javascript-essentials-1">
                 <img src="/assets/images/javascript-essentials-1.png" alt="JS: Développement web moderne" class="cert-thumb" />
                 <div class="cert-meta">
                     <h3 class="cert-title">JS: JavaScript Essentials 1</h3>
-                    <p class="cert-issuer">Netacad • <time datetime="2025-11">2025-12</time></p>
+                    <p class="cert-issuer">Netacad • <time datetime="2025-12">2025-12</time></p>
                 </div>
             </a>
 
             <div class="cert-actions">
-                <button class="preview-btn" type="button" data-thumb="/assets/images/Certif_JS_1.png" aria-label="Aperçu de JS: JavaScript Essentials 1">Aperçu</button>
+                <button class="preview-btn" type="button" data-thumb="/assets/images/Capture d'écran 2026-04-30 160656.png" aria-label="Aperçu de JS: JavaScript Essentials 1">Aperçu</button>
+            </div>
+        </article>
+        <article class="cert-card">
+            <a class="cert-link" href="/assets/images/HTML_Essentials_certificate_wenceslasbouity92-gmail-com_959676b4-7f09-4341-911d-f4d56d9f1d0a.pdf" title="html-essentials">
+                <img src="/assets/images/html-essentials.png" alt="HTML: Fondements du développement web" class="cert-thumb" />
+                <div class="cert-meta">
+                    <h3 class="cert-title">HTML: HTML Essentials 1</h3>
+                    <p class="cert-issuer">Netacad • <time datetime="2026-04">2026-04</time></p>
+                </div>
+            </a>
+
+            <div class="cert-actions">
+                <button class="preview-btn" type="button" data-thumb="/assets/images/Capture d'écran 2026-04-30 160433.png" aria-label="Aperçu de HTML: HTML Essentials 1">Aperçu</button>
             </div>
         </article>
 
