@@ -231,7 +231,7 @@
                     <!-- Projet 2 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/C-Snake.png" alt="Jeu du Serpent en C"
+                            <img src="assets/images/c-snake.png" alt="Jeu du Serpent en C"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
@@ -280,13 +280,13 @@
                                 <li><strong>Fonctionnalité :</strong> stockage du panier avec localStorage</li>
                                 <li><strong>UX :</strong> navigation fluide et responsive</li>
                             </ul>
-                            <a href="#" class="access-btn" target="_blank">Accéder au projet</a><br><br>
-                            <a href="#" class="access-btn">Lien GitHub</a>
+                            <a href="https://perfectsmell.vercel.app/" class="access-btn" target="_blank">Accéder au projet</a><br><br>
+                            <a href="https://github.com/Wens10/PerfectSMELL" class="access-btn">Lien GitHub</a>
                         </div>
                     </div>
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/hackathon.png" alt="Projet Hackathon"
+                            <img src="assets/images/CodeNova.png" alt="Projet Hackathon"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
@@ -304,8 +304,8 @@
                                 <li><strong>Technologies :</strong> HTML, CSS, JavaScript</li>
                                 <li><strong>Outils :</strong> Git, GitHub</li>
                             </ul>
-                            <a href="#" class="access-btn" target="_blank">Accéder au projet</a><br><br>
-                            <a href="#" class="access-btn">Lien GitHub</a>
+                            <a href="https://codenova-indol.vercel.app/" class="access-btn" target="_blank">Accéder au projet</a><br><br>
+                            <a href="https://github.com/Wens10/HACKATON1/tree/main/CodeNova" class="access-btn" target="_blank">Lien GitHub</a>
                         </div>
                     </div>
                     <!-- Projet 3 -->
@@ -335,7 +335,7 @@
                     <!-- Projet 4 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/glpi-server.png" alt="GLPI Server Installation"
+                            <img src="assets/images/glpi.png" alt="GLPI Server Installation"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                         <div style="padding: 20px; flex: 1;">
@@ -356,9 +356,9 @@
                             </ul>
                             <ul style="color:#bbb; margin-bottom: 16px;">
                                 <li><strong>Technologies :</strong> VMware, GLPI, Apache, MySQL</li>
-                                <li><strong>Outils :</strong> Ubuntu Server, Git</li>
+                                <li><strong>Outils :</strong> Debian, Git</li>
                             </ul>
-                            <a href="#" class="access-btn" target="_blank">Documentation</a><br><br>
+                            <a href="assets/images/GLPI_Documentation_Projet.pdf" class="access-btn" target="_blank">Documentation</a><br><br>
                             
                         </div>
                     </div>

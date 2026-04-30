@@ -148,7 +148,7 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
                 <style>
                 .avatar-container {
                  position: relative;
-                 height: 700px;
+                 height: 500px;
                  margin: auto;
                  overflow: hidden;
                }
