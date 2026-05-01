@@ -1,42 +1,74 @@
 <?php
 // fetch_articles.php
 // Appelle ce script via un cron ou manuellement pour mettre a jour les articles.
-// Exemple cron toutes les 6h : 0 [slash]6 [etoile] [etoile] [etoile] php /var/www/html/fetch_articles.php
+// Exemple cron toutes les 6h : 0 */6 * * * php /var/www/html/fetch_articles.php
 
 define('ARTICLES_FILE', __DIR__ . '/data/articles.json');
 define('MAX_ARTICLES',  120);   // articles max conservés en historique
 
 // ── Flux RSS à surveiller ─────────────────────────────────────────────────────
 $feeds = [
+    // ── Assistants de code & outils IA pour devs ──────────────────────────────
     [
-        'url'      => 'https://hacks.mozilla.org/category/webassembly/feed/',
-        'source'   => 'Mozilla Hacks',
-        'category' => 'WebAssembly & WASI',
+        'url'      => 'https://github.blog/feed/',
+        'source'   => 'GitHub Blog',
+        'category' => 'Assistants IA & outils',
     ],
     [
-        'url'      => 'https://blog.cloudflare.com/rss/',
-        'source'   => 'Cloudflare Blog',
-        'category' => 'Edge Computing',
+        'url'      => 'https://devblogs.microsoft.com/visualstudio/feed/',
+        'source'   => 'Visual Studio Blog',
+        'category' => 'Assistants IA & outils',
     ],
     [
-        'url'      => 'https://deno.com/feed',
-        'source'   => 'Deno Blog',
-        'category' => 'Edge Computing',
+        'url'      => 'https://www.cursor.com/blog/rss.xml',
+        'source'   => 'Cursor Blog',
+        'category' => 'Assistants IA & outils',
+    ],
+
+    // ── LLMs, modèles et recherche appliquée ──────────────────────────────────
+    [
+        'url'      => 'https://openai.com/news/rss.xml',
+        'source'   => 'OpenAI News',
+        'category' => 'Modèles & recherche IA',
     ],
     [
-        'url'      => 'https://www.infoq.com/webassembly/rss/',
-        'source'   => 'InfoQ – WebAssembly',
-        'category' => 'WebAssembly & WASI',
+        'url'      => 'https://www.anthropic.com/rss.xml',
+        'source'   => 'Anthropic Blog',
+        'category' => 'Modèles & recherche IA',
     ],
     [
-        'url'      => 'https://www.infoq.com/serverless/rss/',
-        'source'   => 'InfoQ – Serverless',
-        'category' => 'Edge Computing',
+        'url'      => 'https://ai.google/static/documents/rss-feed.xml',
+        'source'   => 'Google AI Blog',
+        'category' => 'Modèles & recherche IA',
+    ],
+
+    // ── Impact sur les développeurs, pratiques & métier ───────────────────────
+    [
+        'url'      => 'https://stackoverflow.blog/feed/',
+        'source'   => 'Stack Overflow Blog',
+        'category' => 'Impact & pratiques dev',
     ],
     [
-        'url'      => 'https://bytecodealliance.org/feed.xml',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
+        'url'      => 'https://www.smashingmagazine.com/feed/',
+        'source'   => 'Smashing Magazine',
+        'category' => 'Impact & pratiques dev',
+    ],
+    [
+        'url'      => 'https://css-tricks.com/feed/',
+        'source'   => 'CSS-Tricks',
+        'category' => 'Impact & pratiques dev',
+    ],
+
+    // ── Sécurité, limites et éthique de l'IA ─────────────────────────────────
+    [
+        'url'      => 'https://www.infoq.com/ai-ml-data-eng/rss/',
+        'source'   => 'InfoQ – AI/ML',
+        'category' => 'Sécurité & limites de l\'IA',
+    ],
+    [
+        'url'      => 'https://www.technologyreview.com/feed/',
+        'source'   => 'MIT Technology Review',
+        'category' => 'Sécurité & limites de l\'IA',
     ],
 ];
 
@@ -49,14 +81,19 @@ $existing = [];
 if (file_exists(ARTICLES_FILE)) {
     $decoded = json_decode(file_get_contents(ARTICLES_FILE), true);
     if (is_array($decoded)) {
-        $existing = $decoded;
+        // Le JSON a une clé 'articles' (format produit par seed/fetch)
+        $existing = isset($decoded['articles']) && is_array($decoded['articles'])
+            ? $decoded['articles']
+            : $decoded;
     }
 }
 
 // Indexer par ID pour dédupliquer facilement
 $existingById = [];
 foreach ($existing as $art) {
-    $existingById[$art['id']] = $art;
+    if (is_array($art) && isset($art['id'])) {
+        $existingById[$art['id']] = $art;
+    }
 }
 
 // ── Fetch des flux ────────────────────────────────────────────────────────────
@@ -88,7 +125,7 @@ foreach ($feeds as $feed) {
         if (isset($existingById[$id])) continue;
 
         // Date
-        $dateRaw = (string)($item->pubDate ?? $item->updated ?? $item->published ?? '');
+        $dateRaw   = (string)($item->pubDate ?? $item->updated ?? $item->published ?? '');
         $timestamp = $dateRaw ? strtotime($dateRaw) : time();
         if (!$timestamp) $timestamp = time();
 
@@ -107,13 +144,13 @@ foreach ($feeds as $feed) {
             'excerpt'   => $desc,
             'timestamp' => $timestamp,
             'date'      => date('Y-m-d', $timestamp),
-            'isNew'     => true,   // marqué "nouveau" jusqu'à la prochaine lecture
+            'isNew'     => true,
         ];
         $newCount++;
     }
 }
 
-// ── Tri par date décroissante + troncature ─────────────────────────────────────
+// ── Tri par date décroissante + troncature ────────────────────────────────────
 $articles = array_values($existingById);
 usort($articles, function($a, $b) { return $b['timestamp'] - $a['timestamp']; });
 $articles = array_slice($articles, 0, MAX_ARTICLES);

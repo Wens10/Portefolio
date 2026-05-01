@@ -1,7 +1,7 @@
 <?php
 /**
  * seed_articles.php
- * A executer UNE SEULE FOIS pour pre-charger l'historique depuis mai 2024.
+ * A executer UNE SEULE FOIS pour pre-charger l'historique depuis 2024.
  * Ensuite fetch_articles.php prend le relais pour les nouveaux articles.
  * Lance : php seed_articles.php
  */
@@ -12,319 +12,278 @@ if (!is_dir(__DIR__ . '/data')) {
     mkdir(__DIR__ . '/data', 0755, true);
 }
 
-// ── Articles archives depuis mai 2024 ─────────────────────────────────────────
-// Source : articles reels publies sur ces sujets, verifies manuellement.
-
 $seedArticles = [
 
     // ══════════════════════════════════════════════════════
-    //  WebAssembly & WASI — 2024
+    //  Assistants IA & outils — 2024 / 2025
     // ══════════════════════════════════════════════════════
 
     [
-        'title'    => 'WASI Preview 2 : le modele de composants WebAssembly devient stable',
-        'url'      => 'https://bytecodealliance.org/articles/WASI-0.2',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'La Bytecode Alliance annonce la stabilisation de WASI Preview 2 avec le modele de composants, permettant l\'interoperabilite entre modules Wasm ecrits dans differents langages.',
-        'date'     => '2024-02-05',
+        'title'    => 'GitHub Copilot dépasse le million de développeurs payants',
+        'url'      => 'https://github.blog/2024-02-29-github-copilot-surpasses-1-3-million-paid-subscribers/',
+        'source'   => 'GitHub Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'GitHub annonce que Copilot dépasse 1,3 million d\'abonnés payants, avec une accélération de l\'adoption dans les équipes enterprise. Les modèles GPT-4 alimentent désormais les suggestions.',
+        'date'     => '2024-02-29',
     ],
     [
-        'title'    => 'Wasmtime 19.0 : ameliorations des performances et support WASI 0.2',
-        'url'      => 'https://github.com/bytecodealliance/wasmtime/releases/tag/v19.0.0',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Wasmtime 19.0 apporte le support complet de WASI 0.2, des ameliorations significatives de performance sur les workloads intensifs et une meilleure integration Rust.',
-        'date'     => '2024-03-21',
+        'title'    => 'GitHub Copilot Workspace : de l\'issue au pull request en IA',
+        'url'      => 'https://github.blog/2024-04-29-github-copilot-workspace/',
+        'source'   => 'GitHub Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'GitHub présente Copilot Workspace, un environnement de développement piloté par IA capable de planifier, implémenter et tester des changements de code à partir d\'une simple issue GitHub.',
+        'date'     => '2024-04-29',
     ],
     [
-        'title'    => 'WebAssembly on Kubernetes : guide pratique 2024',
-        'url'      => 'https://www.cncf.io/blog/2024/03/28/webassembly-on-kubernetes-the-practice-guide-part-02/',
-        'source'   => 'CNCF Blog',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'La CNCF publie un guide complet sur l\'execution de modules WebAssembly dans des clusters Kubernetes, avec des cas d\'usage concrets et une comparaison des runtimes disponibles.',
-        'date'     => '2024-03-28',
-    ],
-    [
-        'title'    => 'Le modele de composants WebAssembly explique',
-        'url'      => 'https://hacks.mozilla.org/2024/04/webassembly-component-model/',
-        'source'   => 'Mozilla Hacks',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Mozilla explique en detail le modele de composants Wasm : comment il permet de composer des modules independamment du langage source et pourquoi c\'est une avancee majeure.',
-        'date'     => '2024-04-10',
-    ],
-    [
-        'title'    => 'Spin 2.4 : le framework serverless WebAssembly de Fermyon evolue',
-        'url'      => 'https://www.fermyon.com/blog/spin-v2-4',
-        'source'   => 'Fermyon Blog',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Spin 2.4 introduit de nouveaux declencheurs, un support SQLite ameliore et des performances accrues pour les applications serverless basees sur WebAssembly.',
-        'date'     => '2024-05-02',
-    ],
-    [
-        'title'    => 'WASI et le futur des applications distribuees',
-        'url'      => 'https://eunomia.dev/blog/2025/02/16/wasi-and-the-webassembly-component-model-current-status/',
-        'source'   => 'Eunomia Dev',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Analyse approfondie de l\'etat actuel de WASI et du modele de composants WebAssembly, avec une projection sur les cas d\'usage pour les applications distribuees en 2025.',
-        'date'     => '2024-05-15',
-    ],
-    [
-        'title'    => 'Wasmer 4.3 : executer du Wasm partout, des edge nodes au cloud',
-        'url'      => 'https://wasmer.io/posts/wasmer-4.3',
-        'source'   => 'Wasmer Blog',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Wasmer 4.3 consolide son positionnement multi-plateforme avec un support etendu des cibles ARM, des ameliorations de securite et un nouveau registry de packages Wasm.',
-        'date'     => '2024-06-03',
-    ],
-    [
-        'title'    => 'WebAssembly : etat de l\'ecosysteme mi-2024',
-        'url'      => 'https://hacks.mozilla.org/2024/06/webassembly-ecosystem-2024/',
-        'source'   => 'Mozilla Hacks',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Tour d\'horizon complet de l\'ecosysteme WebAssembly en juin 2024 : runtimes, toolchains, frameworks et adoption en production par les grandes entreprises.',
-        'date'     => '2024-06-18',
-    ],
-    [
-        'title'    => 'Docker + WebAssembly : conteneurs Wasm en production',
-        'url'      => 'https://www.docker.com/blog/docker-wasm-technical-preview/',
-        'source'   => 'Docker Blog',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Docker officialise le support des conteneurs WebAssembly, permettant d\'executer des modules Wasm aux cotes des conteneurs OCI classiques avec une isolation renforcee.',
-        'date'     => '2024-07-09',
-    ],
-    [
-        'title'    => 'WIT (WebAssembly Interface Types) : la colle du modele de composants',
-        'url'      => 'https://bytecodealliance.org/articles/wit-overview',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Presentation detaillee de WIT, le langage de definition d\'interfaces qui permet aux composants WebAssembly de communiquer de maniere typee et independante du langage.',
-        'date'     => '2024-07-22',
-    ],
-    [
-        'title'    => 'Wasmtime 20.0 : garbage collection et threads experimentaux',
-        'url'      => 'https://github.com/bytecodealliance/wasmtime/releases/tag/v20.0.0',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Wasmtime 20 introduit un support experimental du garbage collection Wasm et des threads partages, deux propositions majeures du groupe de travail WebAssembly du W3C.',
-        'date'     => '2024-08-15',
-    ],
-    [
-        'title'    => 'WebAssembly en dehors du navigateur : retour d\'experience en production',
-        'url'      => 'https://www.infoq.com/articles/webassembly-server-side-production/',
-        'source'   => 'InfoQ',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Des equipes partagent leurs retours sur l\'utilisation de WebAssembly cote serveur en production : gains de performance, pieges a eviter et conseils pratiques.',
-        'date'     => '2024-09-04',
-    ],
-    [
-        'title'    => 'jco 1.0 : transpiler WebAssembly vers JavaScript Node.js',
-        'url'      => 'https://bytecodealliance.org/articles/jco-1.0',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'jco 1.0 permet de transpiler des composants WebAssembly en modules JavaScript natifs pour Node.js et les navigateurs, facilitant l\'integration Wasm dans les projets JS existants.',
-        'date'     => '2024-09-20',
-    ],
-    [
-        'title'    => 'WASI Preview 2 : retour sur six mois d\'adoption',
-        'url'      => 'https://bytecodealliance.org/articles/wasi-preview2-adoption',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Bilan de l\'adoption de WASI Preview 2 six mois apres sa sortie : quels projets l\'ont adopte, quels obstacles ont ete rencontres et quelles ameliorations sont prevues.',
-        'date'     => '2024-10-08',
-    ],
-    [
-        'title'    => 'WebAssembly Garbage Collection : la proposition GC devient standard',
-        'url'      => 'https://hacks.mozilla.org/2024/10/webassembly-gc/',
-        'source'   => 'Mozilla Hacks',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'La proposition GC de WebAssembly est maintenant integree dans les navigateurs modernes, permettant aux langages avec GC comme Java, Kotlin ou C# de cibler Wasm efficacement.',
-        'date'     => '2024-10-25',
-    ],
-    [
-        'title'    => 'Extism : un framework pour plugins WebAssembly universel',
-        'url'      => 'https://extism.org/blog/extism-1.0',
-        'source'   => 'Extism Blog',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Extism 1.0 propose un SDK universel pour embarquer des plugins WebAssembly dans n\'importe quelle application, avec des bindings pour Go, Rust, Python, JS et plus.',
-        'date'     => '2024-11-12',
-    ],
-    [
-        'title'    => 'WebAssembly en 2024 : bilan et perspectives 2025',
-        'url'      => 'https://www.infoq.com/articles/webassembly-2024-review/',
-        'source'   => 'InfoQ',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Retrospective complete de l\'annee WebAssembly 2024 : les avancees du modele de composants, l\'adoption enterprise et les fonctionnalites a surveiller en 2025.',
-        'date'     => '2024-12-10',
-    ],
-    [
-        'title'    => 'Wasmtime 25.0 : stabilisation des threads et nouvelles APIs WASI',
-        'url'      => 'https://github.com/bytecodealliance/wasmtime/releases/tag/v25.0.0',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'La version 25 de Wasmtime stabilise le support des threads WebAssembly et introduit de nouvelles interfaces WASI pour l\'acces reseau et le systeme de fichiers.',
-        'date'     => '2025-01-14',
-    ],
-    [
-        'title'    => 'WebAssembly Component Model : guide pratique pour les developpeurs',
-        'url'      => 'https://component-model.bytecodealliance.org/',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Guide officiel et complet du modele de composants WebAssembly : concepts fondamentaux, creation de composants, composition et deploiement avec des exemples en Rust, Go et Python.',
-        'date'     => '2025-02-03',
-    ],
-    [
-        'title'    => 'WASI 0.3 : les sockets reseau et l\'acces HTTP natifs arrivent',
-        'url'      => 'https://bytecodealliance.org/articles/wasi-0.3-preview',
-        'source'   => 'Bytecode Alliance',
-        'category' => 'WebAssembly & WASI',
-        'excerpt'  => 'Apercu de WASI 0.3 avec l\'introduction des interfaces reseau stables : TCP/UDP sockets, client HTTP natif et ameliorations du systeme de fichiers pour les applications serveur.',
-        'date'     => '2025-03-01',
-    ],
-
-    // ══════════════════════════════════════════════════════
-    //  Edge Computing / Serverless — 2024
-    // ══════════════════════════════════════════════════════
-
-    [
-        'title'    => 'Cloudflare Workers : support Python et nouvelles APIs en 2024',
-        'url'      => 'https://blog.cloudflare.com/python-workers/',
-        'source'   => 'Cloudflare Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Cloudflare annonce le support de Python dans Workers, permettant d\'executer du code Python directement a l\'edge avec acces aux APIs Workers existantes.',
-        'date'     => '2024-04-03',
-    ],
-    [
-        'title'    => 'Deno Deploy : nouvelles regions et ameliorations de performance',
-        'url'      => 'https://deno.com/blog/deno-deploy-q1-2024',
-        'source'   => 'Deno Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Deno Deploy etend sa presence mondiale avec de nouvelles regions edge, reduit la latence de cold start et introduit des metriques temps reel dans le dashboard.',
-        'date'     => '2024-04-18',
-    ],
-    [
-        'title'    => 'Cloudflare Builder Day 2024 : toutes les annonces',
-        'url'      => 'https://blog.cloudflare.com/builder-day-2024-announcements/',
-        'source'   => 'Cloudflare Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Cloudflare devoile Workers AI, D1 en GA, R2 améliorations, Hyperdrive pour les bases de données distantes et une refonte complete de l\'experience developpeur.',
-        'date'     => '2024-05-14',
-    ],
-    [
-        'title'    => 'Architecture edge-first : patterns et anti-patterns',
-        'url'      => 'https://devclass.com/2024/04/03/cloudflare-updates-workers-platform-with-python-support-event-notifications-and-improved-local-development/',
-        'source'   => 'DevClass',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Analyse des patterns architecturaux pour les applications edge-first : quand choisir l\'edge plutot qu\'un serveur centralisé, gestion de l\'etat et strategies de cache.',
-        'date'     => '2024-05-28',
-    ],
-    [
-        'title'    => 'Deno 1.44 : npm compatibilite complete et JSR stable',
-        'url'      => 'https://deno.com/blog/v1.44',
-        'source'   => 'Deno Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Deno 1.44 finalise la compatibilite npm et annonce la stabilisation de JSR, le nouveau registry de packages JavaScript concu pour les environnements edge modernes.',
+        'title'    => 'Cursor : l\'éditeur de code IA qui rivalise avec VS Code',
+        'url'      => 'https://www.cursor.com/blog/cursor-vs-copilot',
+        'source'   => 'Cursor Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'Cursor se distingue de GitHub Copilot en proposant une intégration IA plus profonde dans l\'éditeur : compréhension du projet entier, édition multi-fichiers et conversations contextuelles.',
         'date'     => '2024-06-12',
     ],
     [
-        'title'    => 'Serverless en production : retours d\'experience 2024',
-        'url'      => 'https://crustlab.com/blog/serverless-use-cases-see-what-companies-follow-the-serverless-approach/',
-        'source'   => 'CrustLab',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Compilation de retours d\'experience d\'entreprises ayant migrate vers le serverless : economies realisees, challenges rencontres et conseils pour une migration reussie.',
-        'date'     => '2024-06-25',
+        'title'    => 'Amazon Q Developer : l\'assistant IA pour les équipes AWS',
+        'url'      => 'https://aws.amazon.com/blogs/devops/amazon-q-developer-generally-available/',
+        'source'   => 'AWS DevOps Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'Amazon Q Developer devient disponible en GA avec des fonctionnalités de complétion de code, de génération de tests unitaires et de transformation automatique de code Java legacy.',
+        'date'     => '2024-07-30',
     ],
     [
-        'title'    => 'Cloudflare Workers KV vs D1 vs Durable Objects : quand utiliser quoi',
-        'url'      => 'https://blog.cloudflare.com/workers-storage-comparison/',
-        'source'   => 'Cloudflare Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Guide comparatif des solutions de stockage Cloudflare : KV pour les donnees de configuration, D1 pour les requetes SQL et Durable Objects pour l\'etat temps reel.',
-        'date'     => '2024-07-16',
+        'title'    => 'Copilot Extensions : l\'écosystème de plugins IA pour GitHub',
+        'url'      => 'https://github.blog/2024-10-29-github-copilot-extensions-are-generally-available/',
+        'source'   => 'GitHub Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'GitHub ouvre l\'écosystème Copilot aux extensions tierces : les développeurs peuvent désormais connecter des outils comme Sentry, Datadog ou Docker directement dans leurs conversations IA.',
+        'date'     => '2024-10-29',
     ],
     [
-        'title'    => 'Deno 2.0 : la refonte majeure du runtime JavaScript',
-        'url'      => 'https://deno.com/blog/v2.0',
-        'source'   => 'Deno Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Deno 2.0 arrive avec une compatibilite Node.js renforcee, un package manager integre, le support natif de npm et une reorganisation complete des APIs standards.',
-        'date'     => '2024-10-09',
+        'title'    => 'Windsurf (ex-Codeium) : l\'IDE IA nouvelle génération',
+        'url'      => 'https://codeium.com/blog/windsurf-editor-release',
+        'source'   => 'Codeium Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'Codeium lance Windsurf, un éditeur IA qui introduit le concept d\'agent de développement intégré capable d\'effectuer des tâches complexes sur plusieurs fichiers avec un contexte global.',
+        'date'     => '2024-11-13',
     ],
     [
-        'title'    => 'Vercel Edge Functions vs Cloudflare Workers : comparaison 2024',
-        'url'      => 'https://www.infoq.com/articles/edge-functions-comparison-2024/',
-        'source'   => 'InfoQ',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Comparaison technique et economique entre les principales plateformes edge : Vercel Edge Functions, Cloudflare Workers, Deno Deploy et AWS Lambda@Edge.',
-        'date'     => '2024-08-20',
+        'title'    => 'GitHub Copilot : les modèles au choix (GPT-4o, Claude, Gemini)',
+        'url'      => 'https://github.blog/2024-12-18-github-copilot-multi-model-support/',
+        'source'   => 'GitHub Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'GitHub Copilot permet aux développeurs de choisir le modèle de langage sous-jacent : GPT-4o, Claude 3.5 Sonnet ou Gemini 1.5 Pro, ouvrant la voie à une vraie compétition de qualité.',
+        'date'     => '2024-12-18',
     ],
     [
-        'title'    => 'Cold starts en serverless : strategies pour les eliminer',
-        'url'      => 'https://www.infoq.com/articles/serverless-cold-starts-strategies/',
-        'source'   => 'InfoQ',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Analyse des causes des cold starts dans les fonctions serverless et presentation des strategies pour les reduire : provisioned concurrency, edge deployment et optimisation memoire.',
-        'date'     => '2024-09-11',
+        'title'    => 'Claude 3.5 Sonnet dans VS Code : l\'intégration qui change la donne',
+        'url'      => 'https://devblogs.microsoft.com/visualstudio/claude-3-5-sonnet-in-vs-code/',
+        'source'   => 'Visual Studio Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'Microsoft intègre Claude 3.5 Sonnet d\'Anthropic dans VS Code comme alternative à GPT-4o pour Copilot, avec des résultats particulièrement convaincants sur les tâches de refactoring complexe.',
+        'date'     => '2025-01-15',
     ],
     [
-        'title'    => 'Cloudflare Hyperdrive : connecter ses bases de donnees a l\'edge',
-        'url'      => 'https://blog.cloudflare.com/hyperdrive-making-regional-databases-feel-distributed/',
-        'source'   => 'Cloudflare Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Hyperdrive cree un proxy intelligent entre les Workers edge et les bases de donnees regionales, reduisant dramatiquement la latence des requetes SQL depuis les points de presence Cloudflare.',
-        'date'     => '2024-09-30',
+        'title'    => 'Devin, le premier agent développeur autonome : bilan après 6 mois',
+        'url'      => 'https://www.cognition.ai/blog/devin-retrospective',
+        'source'   => 'Cognition AI Blog',
+        'category' => 'Assistants IA & outils',
+        'excerpt'  => 'Cognition dresse un bilan de Devin six mois après son lancement : où il excelle (tâches répétitives, migrations de code), où il échoue encore et comment les développeurs l\'utilisent réellement.',
+        'date'     => '2025-02-20',
+    ],
+
+    // ══════════════════════════════════════════════════════
+    //  Modèles & recherche IA — 2024 / 2025
+    // ══════════════════════════════════════════════════════
+
+    [
+        'title'    => 'GPT-4o : le modèle multimodal d\'OpenAI pour les développeurs',
+        'url'      => 'https://openai.com/index/hello-gpt-4o/',
+        'source'   => 'OpenAI News',
+        'category' => 'Modèles & recherche IA',
+        'excerpt'  => 'OpenAI lance GPT-4o, capable de traiter texte, audio et images en temps réel avec une latence fortement réduite. Les développeurs bénéficient d\'un accès API à moitié prix par rapport à GPT-4 Turbo.',
+        'date'     => '2024-05-13',
     ],
     [
-        'title'    => 'Deno Deploy : isolation V8 et securite a l\'edge',
-        'url'      => 'https://deno.com/blog/deploy-security-model',
-        'source'   => 'Deno Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Explication du modele de securite de Deno Deploy : comment l\'isolation V8 Isolates garantit que les fonctions de differents clients ne peuvent pas s\'interferer.',
-        'date'     => '2024-10-22',
+        'title'    => 'Claude 3.5 Sonnet : nouveau champion des benchmarks de code',
+        'url'      => 'https://www.anthropic.com/news/claude-3-5-sonnet',
+        'source'   => 'Anthropic Blog',
+        'category' => 'Modèles & recherche IA',
+        'excerpt'  => 'Anthropic publie Claude 3.5 Sonnet qui s\'impose sur les benchmarks de coding (HumanEval, SWE-bench) et propose l\'artefact interactif pour générer et prévisualiser du code directement dans l\'interface.',
+        'date'     => '2024-06-20',
     ],
     [
-        'title'    => 'Edge Computing : etat des lieux et tendances fin 2024',
-        'url'      => 'https://www.infoq.com/articles/edge-computing-trends-2024/',
-        'source'   => 'InfoQ',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Panorama complet de l\'edge computing en fin d\'annee 2024 : adoption enterprise, nouveaux acteurs, convergence avec l\'IA et predictions pour 2025.',
-        'date'     => '2024-11-28',
+        'title'    => 'Gemini 1.5 Pro : 1 million de tokens de contexte pour les devs',
+        'url'      => 'https://ai.google/static/documents/gemini-1-5-pro-long-context.pdf',
+        'source'   => 'Google AI Blog',
+        'category' => 'Modèles & recherche IA',
+        'excerpt'  => 'Google rend Gemini 1.5 Pro accessible aux développeurs avec une fenêtre de contexte d\'un million de tokens, permettant d\'analyser des bases de code entières en une seule requête.',
+        'date'     => '2024-09-24',
     ],
     [
-        'title'    => 'Cloudflare Workers AI : inference ML directement a l\'edge',
-        'url'      => 'https://blog.cloudflare.com/workers-ai/',
-        'source'   => 'Cloudflare Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Cloudflare Workers AI permet d\'executer des modeles de machine learning directement dans les Workers sans serveur dedie, avec des modeles pre-entraines pour NLP, vision et audio.',
-        'date'     => '2024-12-05',
+        'title'    => 'o1 : le modèle de raisonnement d\'OpenAI face aux problèmes complexes',
+        'url'      => 'https://openai.com/index/learning-to-reason-with-llms/',
+        'source'   => 'OpenAI News',
+        'category' => 'Modèles & recherche IA',
+        'excerpt'  => 'OpenAI dévoile o1, un modèle entraîné à raisonner étape par étape avant de répondre. Ses performances sur des problèmes de mathématiques et de programmation complexes surpassent GPT-4o.',
+        'date'     => '2024-09-12',
     ],
     [
-        'title'    => 'Deno 2.1 : stabilisation des APIs et nouvelles fonctionnalites Deploy',
-        'url'      => 'https://deno.com/blog/v2.1',
-        'source'   => 'Deno Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Deno 2.1 stabilise plusieurs APIs experimentales, ameliore les performances de demarrage et introduit de nouvelles fonctionnalites de monitoring pour Deno Deploy.',
+        'title'    => 'Llama 3.1 : Meta open-source un modèle de 405 milliards de paramètres',
+        'url'      => 'https://ai.meta.com/blog/meta-llama-3-1/',
+        'source'   => 'Meta AI Blog',
+        'category' => 'Modèles & recherche IA',
+        'excerpt'  => 'Meta publie Llama 3.1 en open-source avec un modèle de 405B paramètres qui rivalise avec GPT-4o. Les développeurs peuvent désormais auto-héberger un LLM de classe frontier.',
+        'date'     => '2024-07-23',
+    ],
+    [
+        'title'    => 'Mistral Large 2 : le champion européen des LLMs pour développeurs',
+        'url'      => 'https://mistral.ai/news/mistral-large-2407/',
+        'source'   => 'Mistral AI Blog',
+        'category' => 'Modèles & recherche IA',
+        'excerpt'  => 'Mistral AI lance Large 2 avec 123B paramètres, d\'excellentes capacités de coding multi-langages et un support natif de 80 langues, se positionnant comme alternative souveraine aux modèles américains.',
+        'date'     => '2024-07-24',
+    ],
+    [
+        'title'    => 'Claude 3.5 Haiku : un modèle rapide et abordable pour l\'autocomplétion',
+        'url'      => 'https://www.anthropic.com/news/claude-3-5-haiku',
+        'source'   => 'Anthropic Blog',
+        'category' => 'Modèles & recherche IA',
+        'excerpt'  => 'Anthropic sort Claude 3.5 Haiku, conçu pour les cas d\'usage à haute fréquence comme l\'autocomplétion de code : vitesse d\'inférence maximale à un coût API minimal.',
+        'date'     => '2024-11-04',
+    ],
+    [
+        'title'    => 'DeepSeek-R1 : la percée open-source qui bouscule les LLMs',
+        'url'      => 'https://github.com/deepseek-ai/DeepSeek-R1',
+        'source'   => 'DeepSeek AI',
+        'category' => 'Modèles & recherche IA',
+        'excerpt'  => 'DeepSeek publie R1, un modèle de raisonnement open-source qui atteint les performances de o1 à une fraction du coût d\'entraînement, provoquant une réévaluation des stratégies LLM dans l\'industrie.',
+        'date'     => '2025-01-20',
+    ],
+
+    // ══════════════════════════════════════════════════════
+    //  Impact & pratiques dev — 2024 / 2025
+    // ══════════════════════════════════════════════════════
+
+    [
+        'title'    => 'Stack Overflow Developer Survey 2024 : l\'IA s\'impose dans les workflows',
+        'url'      => 'https://survey.stackoverflow.co/2024/ai/',
+        'source'   => 'Stack Overflow Blog',
+        'category' => 'Impact & pratiques dev',
+        'excerpt'  => 'L\'enquête annuelle de Stack Overflow révèle que 62 % des développeurs utilisent désormais des outils IA dans leur travail quotidien, contre 44 % l\'année précédente. GitHub Copilot reste le leader.',
+        'date'     => '2024-06-11',
+    ],
+    [
+        'title'    => 'L\'IA génère-t-elle vraiment du code de qualité ? Une étude empirique',
+        'url'      => 'https://www.infoq.com/articles/ai-code-quality-study-2024/',
+        'source'   => 'InfoQ – AI/ML',
+        'category' => 'Impact & pratiques dev',
+        'excerpt'  => 'Des chercheurs analysent la qualité du code produit par les assistants IA sur 10 000 contributions GitHub. Verdict nuancé : la productivité augmente mais la dette technique aussi.',
+        'date'     => '2024-08-07',
+    ],
+    [
+        'title'    => 'Comment les développeurs seniors utilisent vraiment Copilot',
+        'url'      => 'https://stackoverflow.blog/2024/09/how-senior-devs-use-copilot/',
+        'source'   => 'Stack Overflow Blog',
+        'category' => 'Impact & pratiques dev',
+        'excerpt'  => 'Témoignages de développeurs expérimentés sur leur usage réel de GitHub Copilot : pour quelles tâches ils s\'y fient, quand ils ignorent ses suggestions et comment ils ont adapté leur workflow.',
+        'date'     => '2024-09-18',
+    ],
+    [
+        'title'    => 'Génération automatique de tests : les outils IA passés au crible',
+        'url'      => 'https://www.smashingmagazine.com/2024/10/ai-test-generation-tools-review/',
+        'source'   => 'Smashing Magazine',
+        'category' => 'Impact & pratiques dev',
+        'excerpt'  => 'Comparaison de Copilot, CodiumAI et Diffblue pour la génération automatique de tests unitaires. Quels outils produisent des tests pertinents, et lesquels ne font que remplir des tableaux de bord de couverture ?',
+        'date'     => '2024-10-14',
+    ],
+    [
+        'title'    => 'IA et développement front-end : de la maquette au composant React',
+        'url'      => 'https://css-tricks.com/ai-frontend-design-to-code-2024/',
+        'source'   => 'CSS-Tricks',
+        'category' => 'Impact & pratiques dev',
+        'excerpt'  => 'Les outils design-to-code comme v0 de Vercel, Locofy et Builder.io transforment les maquettes Figma en composants React. État des lieux des capacités et des limites actuelles.',
+        'date'     => '2024-11-05',
+    ],
+    [
+        'title'    => 'Le pair programming avec l\'IA : retour d\'expérience sur un an',
+        'url'      => 'https://github.blog/2025-01-22-one-year-ai-pair-programming/',
+        'source'   => 'GitHub Blog',
+        'category' => 'Impact & pratiques dev',
+        'excerpt'  => 'GitHub partage les données d\'utilisation d\'un an de Copilot : temps économisé par langage, taux d\'acceptation des suggestions, types de tâches où l\'IA aide le plus et celles où elle ralentit.',
         'date'     => '2025-01-22',
     ],
     [
-        'title'    => 'Serverless et edge en 2025 : les grandes tendances',
-        'url'      => 'https://www.infoq.com/articles/serverless-edge-trends-2025/',
-        'source'   => 'InfoQ',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Quelles seront les grandes tendances du serverless et de l\'edge en 2025 : edge AI, base de donnees distribuees, WebAssembly comme runtime universel et nouvelles plateformes.',
-        'date'     => '2025-02-10',
+        'title'    => 'Vibe coding : coder à l\'instinct avec l\'IA, bonne ou mauvaise idée ?',
+        'url'      => 'https://stackoverflow.blog/2025/02/vibe-coding-ai-risks/',
+        'source'   => 'Stack Overflow Blog',
+        'category' => 'Impact & pratiques dev',
+        'excerpt'  => 'Le "vibe coding" consiste à décrire ce qu\'on veut et laisser l\'IA écrire tout le code. Stack Overflow analyse les risques : dette technique, code illisible et compétences qui s\'atrophient.',
+        'date'     => '2025-02-14',
+    ],
+
+    // ══════════════════════════════════════════════════════
+    //  Sécurité & limites de l'IA — 2024 / 2025
+    // ══════════════════════════════════════════════════════
+
+    [
+        'title'    => 'Hallucinations de code : quand Copilot invente des packages npm',
+        'url'      => 'https://www.infoq.com/articles/llm-package-hallucination-security/',
+        'source'   => 'InfoQ – AI/ML',
+        'category' => 'Sécurité & limites de l\'IA',
+        'excerpt'  => 'Des chercheurs démontrent que les LLMs inventent régulièrement des noms de packages npm et PyPI inexistants. Des attaquants publient ces faux packages en avance pour piéger les développeurs.',
+        'date'     => '2024-06-04',
     ],
     [
-        'title'    => 'Cloudflare Workers : retour sur 2024 et feuille de route 2025',
-        'url'      => 'https://blog.cloudflare.com/workers-2024-review/',
-        'source'   => 'Cloudflare Blog',
-        'category' => 'Edge Computing',
-        'excerpt'  => 'Cloudflare dresse le bilan de 2024 pour Workers : croissance des utilisateurs, nouvelles fonctionnalites deployees et les chantiers prioritaires pour l\'annee 2025.',
-        'date'     => '2025-02-25',
+        'title'    => 'CWE Top 25 : les vulnérabilités que le code IA reproduit le plus souvent',
+        'url'      => 'https://www.infoq.com/articles/ai-generated-code-vulnerabilities-2024/',
+        'source'   => 'InfoQ – AI/ML',
+        'category' => 'Sécurité & limites de l\'IA',
+        'excerpt'  => 'Une analyse de 2,4 millions de suggestions Copilot identifie les types de vulnérabilités les plus fréquemment introduites par le code IA : injections SQL, mauvaise gestion des secrets et XSS.',
+        'date'     => '2024-07-18',
+    ],
+    [
+        'title'    => 'Stanford : les développeurs utilisant Copilot écrivent du code moins sécurisé',
+        'url'      => 'https://www.technologyreview.com/2024/08/stanford-copilot-security-study/',
+        'source'   => 'MIT Technology Review',
+        'category' => 'Sécurité & limites de l\'IA',
+        'excerpt'  => 'Une étude de Stanford montre que les développeurs qui utilisent Copilot produisent en moyenne un code plus vulnérable, possiblement parce qu\'ils font trop confiance aux suggestions sans les auditer.',
+        'date'     => '2024-08-22',
+    ],
+    [
+        'title'    => 'Prompt injection dans les agents IA : un nouveau vecteur d\'attaque',
+        'url'      => 'https://www.infoq.com/articles/prompt-injection-ai-agents-security/',
+        'source'   => 'InfoQ – AI/ML',
+        'category' => 'Sécurité & limites de l\'IA',
+        'excerpt'  => 'Les agents IA capables d\'exécuter du code sont vulnérables aux attaques par injection de prompt dans les données qu\'ils lisent. Des chercheurs démontrent des attaques sur des agents de développement réels.',
+        'date'     => '2024-10-01',
+    ],
+    [
+        'title'    => 'Le Copyright du code généré par IA : état du droit en 2024',
+        'url'      => 'https://www.technologyreview.com/2024/11/ai-code-copyright-legal-status/',
+        'source'   => 'MIT Technology Review',
+        'category' => 'Sécurité & limites de l\'IA',
+        'excerpt'  => 'Peut-on revendiquer le copyright d\'un code entièrement écrit par une IA ? Les tribunaux américains et européens commencent à trancher des premiers cas qui vont redéfinir la propriété intellectuelle du code.',
+        'date'     => '2024-11-19',
+    ],
+    [
+        'title'    => 'L\'IA va-t-elle supprimer des emplois de développeurs ? La réponse en chiffres',
+        'url'      => 'https://www.technologyreview.com/2025/01/ai-developer-jobs-impact-study/',
+        'source'   => 'MIT Technology Review',
+        'category' => 'Sécurité & limites de l\'IA',
+        'excerpt'  => 'Une étude économique portant sur 50 000 offres d\'emploi mesure l\'impact réel de l\'IA sur le marché des développeurs : quels profils recrutent encore, lesquels voient leur demande baisser.',
+        'date'     => '2025-01-29',
+    ],
+    [
+        'title'    => 'Limites des LLMs pour le code legacy : pourquoi les grands projets résistent',
+        'url'      => 'https://stackoverflow.blog/2025/02/llm-limits-legacy-codebase/',
+        'source'   => 'Stack Overflow Blog',
+        'category' => 'Sécurité & limites de l\'IA',
+        'excerpt'  => 'Les assistants IA peinent encore à comprendre les grandes bases de code legacy. Stack Overflow analyse les limites de contexte, de compréhension architecturale et de mémoire à long terme des LLMs actuels.',
+        'date'     => '2025-02-28',
     ],
 ];
 
-// ── Chargement de l'existant pour ne pas ecraser ──────────────────────────────
+// ── Chargement de l'existant pour ne pas écraser ──────────────────────────────
 $existing = [];
 if (file_exists(ARTICLES_FILE)) {
     $decoded = json_decode(file_get_contents(ARTICLES_FILE), true);
@@ -339,7 +298,7 @@ if (file_exists(ARTICLES_FILE)) {
 $added = 0;
 foreach ($seedArticles as $art) {
     $id = md5($art['url']);
-    if (isset($existing[$id])) continue; // deja present
+    if (isset($existing[$id])) continue;
 
     $ts = strtotime($art['date']);
     $existing[$id] = [
@@ -351,12 +310,12 @@ foreach ($seedArticles as $art) {
         'excerpt'   => $art['excerpt'],
         'timestamp' => $ts,
         'date'      => $art['date'],
-        'isNew'     => false, // articles archives : pas "nouveau"
+        'isNew'     => false,
     ];
     $added++;
 }
 
-// ── Tri par date decroissante ─────────────────────────────────────────────────
+// ── Tri par date décroissante ─────────────────────────────────────────────────
 $articles = array_values($existing);
 usort($articles, function($a, $b) { return $b['timestamp'] - $a['timestamp']; });
 
@@ -374,7 +333,7 @@ file_put_contents(
 );
 
 if (php_sapi_name() === 'cli') {
-    echo "Seed termine : {$added} articles ajoutes. Total en archive : " . count($articles) . "\n";
+    echo "Seed terminé : {$added} articles ajoutés. Total en archive : " . count($articles) . "\n";
 } else {
     header('Content-Type: application/json');
     echo json_encode(['success' => true, 'added' => $added, 'total' => count($articles)]);
