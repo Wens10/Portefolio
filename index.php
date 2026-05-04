@@ -195,11 +195,11 @@ $desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris.
         <?php include('includes/compétences.php'); ?>
       </div>
     </section>
-    <section>
+    <!-- <section>
       <div>
-        <?php include('includes/certifications.php'); ?>
+        
       </div>
-    </section>
+    </section> -->
     <section>
       <div>
         <?php include('includes/stage.php'); ?>

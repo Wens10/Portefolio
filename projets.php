@@ -139,14 +139,14 @@
                                 <li><strong>Outils :</strong> Visual Studio Code, Git, GitHub, Figma, EJS</li>
                             </ul>
                     
-                            <a href="https://urls.fr/6gI7EH" 
+                            <a href="/assets/images/Prestalia_Web_Documentation.pdf"
                                class="access-btn" target="_blank">
-                               Accéder au projet
+                               Documentation
                             </a>
                             <br><br>
 
-                            <a href="https://github.com/Nathan94600/Prestalia" 
-                               class="access-btn">
+                            <a href="https://github.com/Wens10/HACKATON1/tree/main/Prestalia" 
+                               class="access-btn" target="_blank">
                                Lien GitHub
                             </a>
                         </div>
@@ -188,14 +188,14 @@
                             <li><strong>Outils :</strong> Visual Studio, Git, GitHub, Figma, Trello</li>
                         </ul>
                 
-                        <a href="https://urls.fr/6gI7EH" 
+                        <a href="/assets/images/Prestalia_Desktop_Documentation.pdf" 
                            class="access-btn" target="_blank">
-                           Documentation / Accès projet
+                           Documentation
                         </a>
                         <br><br>
                 
-                        <a href="https://github.com/Nathan94600/Prestalia-Desktop" 
-                           class="access-btn">
+                        <a href="https://github.com/Wens10/HACKATON1/tree/main/Prestalia_Desktop" 
+                           class="access-btn" target="_blank">
                            Lien GitHub
                         </a>
                     </div>
@@ -309,7 +309,7 @@
                         </div>
                     </div>
                     <!-- Projet 3 -->
-                    <div class="portfolio-card">
+                    <!-- <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
                             <img src="assets/images/Capture d'écran 2025-10-03 161119.png" alt="E-Learning" 
                                 style="width:100%; height:100%; object-fit:cover;">
@@ -331,7 +331,7 @@
                             <a href="https://projet-wp.nathanmd.ovh/" class="access-btn" target="_blank">Accéder au Site</a><br><br>
                             <a href="#" class="access-btn">Liens GitHub</a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Projet 4 -->
                     <div class="portfolio-card">
                         <div style="height: 180px; overflow: hidden;">
