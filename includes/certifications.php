@@ -1,151 +1,319 @@
+<section id="certifications" class="certif-section">
+  <div class="container">
 
-<style>
-/* Styles repris du fichier PHP convertis en CSS pur */
-body { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; margin:0; background:#fafafa; color:#111; }
-.certifications-section { max-width:1100px; margin:2rem auto; padding:0 1rem; }
-.certifications-section h2 { margin-bottom:.25rem;color: #2d3decd5; }
-.certifications-section .lead { color:#555; margin-bottom:1rem; }
+    <h2 class="certif-title">Certifications</h2>
+    <p class="certif-lead">Mes certifications récentes — cliquez sur une carte pour ouvrir le document.</p>
 
-.cert-grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap:1rem; }
-.cert-card { background: linear-gradient(165deg, rgba(12, 75, 130, 0.15), rgba(11, 11, 11, 0.9)) ;backdrop-filter: blur(10px);border-radius:8px; overflow:hidden; display:flex; flex-direction:column; height:100%; box-shadow:0 2px 6px rgba(0,0,0,0.04); }
-.cert-link { text-decoration:none; color:inherit; display:flex; gap:0.75rem; align-items:center; padding:0.75rem; flex:1; cursor: none !important;}
-.cert-thumb { width:84px; height:84px; object-fit:cover; border-radius:6px; flex:0 0 84px; }
-.cert-no-thumb { width:84px; height:84px; display:flex; align-items:center; justify-content:center; background:#f5f5f5; color:#777; border-radius:6px; flex:0 0 84px; }
-.cert-meta { flex:1; min-width:0; }
-.cert-title { margin:0 0 .35rem 0; font-size:1rem; line-height:1.2; }
-.cert-issuer { margin:0; color:#666; font-size:.875rem; }
+    <div class="certif-grid">
 
-.cert-actions { display:flex; gap:.5rem; padding:.5rem; border-top:1px solid #3c35fc; }
-.preview-btn, .open-btn { border:0; background:#3c35fc; padding:.45rem .6rem; border-radius:6px; cursor:none !important; font-size:.875rem; text-decoration:none; color:white; border:1px solid #321cfdff; }
-.preview-btn:hover, .open-btn:hover { background:black;  }
+      <!-- Cert 1 — JavaScript Essentials -->
+      <article class="certif-card">
+        <a class="certif-link" href="/assets/images/JavaScript_Essentials_1_certificate_wenceslasbouity92-gmail-com_f3f1a0df-3386-4ac1-b1c9-5e295ddb1040.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="certif-thumb-wrap">
+            <img src="/assets/images/javascript-essentials-1.png" alt="JavaScript Essentials 1" class="certif-thumb">
+            <span class="certif-badge">Netacad</span>
+          </div>
+          <div class="certif-meta">
+            <h3>JS: JavaScript Essentials 1</h3>
+            <p class="certif-issuer">Cisco Networking Academy</p>
+            <time class="certif-date" datetime="2025-12">Décembre 2025</time>
+          </div>
+        </a>
+        <div class="certif-actions">
+          <button class="certif-preview-btn" type="button"
+            data-thumb="/assets/images/Capture d'écran 2026-04-30 160656.png"
+            aria-label="Aperçu JS Essentials 1">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Aperçu
+          </button>
+          <a class="certif-open-btn" href="/assets/images/JavaScript_Essentials_1_certificate_wenceslasbouity92-gmail-com_f3f1a0df-3386-4ac1-b1c9-5e295ddb1040.pdf" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Ouvrir
+          </a>
+        </div>
+      </article>
 
-@media (prefers-color-scheme: dark) {
-    body { background:#0b0b0b; color:#ddd; }
-    .cert-card { background:#111;box-shadow:none; color:#ddd; }
-    .cert-actions, .cert-link { background:; }
-    .cert-no-thumb { background:; color:#999; }
-}
+      <!-- Cert 2 — HTML Essentials -->
+      <article class="certif-card">
+        <a class="certif-link" href="/assets/images/HTML_Essentials_certificate_wenceslasbouity92-gmail-com_959676b4-7f09-4341-911d-f4d56d9f1d0a.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="certif-thumb-wrap">
+            <img src="/assets/images/html-essentials.png" alt="HTML Essentials" class="certif-thumb">
+            <span class="certif-badge">Netacad</span>
+          </div>
+          <div class="certif-meta">
+            <h3>HTML: HTML Essentials</h3>
+            <p class="certif-issuer">Cisco Networking Academy</p>
+            <time class="certif-date" datetime="2026-04">Avril 2026</time>
+          </div>
+        </a>
+        <div class="certif-actions">
+          <button class="certif-preview-btn" type="button"
+            data-thumb="/assets/images/Capture d'écran 2026-04-30 160433.png"
+            aria-label="Aperçu HTML Essentials">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Aperçu
+          </button>
+          <a class="certif-open-btn" href="/assets/images/HTML_Essentials_certificate_wenceslasbouity92-gmail-com_959676b4-7f09-4341-911d-f4d56d9f1d0a.pdf" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Ouvrir
+          </a>
+        </div>
+      </article>
 
-              
-/* Modal preview */
-#cert-preview-modal { position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.6); z-index:9999; }
-#cert-preview-modal[aria-hidden="false"] { display:flex; }
-#cert-preview-modal .modal-content { max-width:90%; max-height:90%; background:#fff; border-radius:8px; overflow:auto; padding:8px; position:relative; }
-#cert-preview-modal img { width:100%; height:auto; display:block; border-radius:4px; }
-.modal-close { position:absolute; top:12px; right:12px; background:#fff; border:0; padding:.4rem .6rem; border-radius:6px; cursor:pointer; }
-</style>
-</head>
-<body>
-
-<section id="certifications" class="certifications-section">
-    <h2>Certifications</h2>
-    <p class="lead">Mes certifications récentes — cliquez pour ouvrir la certification.</p>
-
-    <div class="cert-grid">
-        <!-- Cert 1 (avec miniature) -->
-        <article class="cert-card">
-            <a class="cert-link" href="/assets/images/JavaScript_Essentials_1_certificate_wenceslasbouity92-gmail-com_f3f1a0df-3386-4ac1-b1c9-5e295ddb1040.pdf"rel="noopener noreferrer" title="javascript-essentials-1">
-                <img src="/assets/images/javascript-essentials-1.png" alt="JS: Développement web moderne" class="cert-thumb" />
-                <div class="cert-meta">
-                    <h3 class="cert-title">JS: JavaScript Essentials 1</h3>
-                    <p class="cert-issuer">Netacad • <time datetime="2025-12">2025-12</time></p>
-                </div>
-            </a>
-
-            <div class="cert-actions">
-                <button class="preview-btn" type="button" data-thumb="/assets/images/Capture d'écran 2026-04-30 160656.png" aria-label="Aperçu de JS: JavaScript Essentials 1">Aperçu</button>
-            </div>
-        </article>
-        <article class="cert-card">
-            <a class="cert-link" href="/assets/images/HTML_Essentials_certificate_wenceslasbouity92-gmail-com_959676b4-7f09-4341-911d-f4d56d9f1d0a.pdf" title="html-essentials">
-                <img src="/assets/images/html-essentials.png" alt="HTML: Fondements du développement web" class="cert-thumb" />
-                <div class="cert-meta">
-                    <h3 class="cert-title">HTML: HTML Essentials 1</h3>
-                    <p class="cert-issuer">Netacad • <time datetime="2026-04">2026-04</time></p>
-                </div>
-            </a>
-
-            <div class="cert-actions">
-                <button class="preview-btn" type="button" data-thumb="/assets/images/Capture d'écran 2026-04-30 160433.png" aria-label="Aperçu de HTML: HTML Essentials 1">Aperçu</button>
-            </div>
-        </article>
-
-        <!-- Cert 2 (avec miniature)
-        <article class="cert-card">
-            <a class="cert-link" href="https://example.com/certificates/frontend.pdf" target="_blank" rel="noopener noreferrer" title="Ouvrir Frontend Web Developer">
-                <img src="/assets/certs/frontend-thumb.jpg" alt="Frontend Web Developer - miniature" class="cert-thumb" />
-                <div class="cert-meta">
-                    <h3 class="cert-title">Frontend Web Developer</h3>
-                    <p class="cert-issuer">freeCodeCamp • <time datetime="2023-11">2023-11</time></p>
-                </div>
-            </a>
-
-            <div class="cert-actions">
-                <button class="preview-btn" type="button" data-thumb="/assets/certs/frontend-thumb.jpg" aria-label="Aperçu de Frontend Web Developer">Aperçu</button>
-                <a class="open-btn" href="https://example.com/certificates/frontend.pdf" target="_blank" rel="noopener noreferrer">Voir la certif</a>
-            </div>
-        </article>
-
-        Cert 3 (sans miniature) -->
-        <!-- <article class="cert-card">
-            <a class="cert-link" href="https://example.com/certificates/sql.pdf" target="_blank" rel="noopener noreferrer" title="Ouvrir SQL & Bases de données">
-                <div class="cert-no-thumb" aria-hidden="true">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 7v10a2 2 0 0 0 2 2h14"/></svg>
-                </div>
-                <div class="cert-meta">
-                    <h3 class="cert-title">SQL & Bases de données</h3>
-                    <p class="cert-issuer">Coursera • <time datetime="2022-08">2022-08</time></p>
-                </div>
-            </a>
-
-            <div class="cert-actions">
-                Pas de bouton Aperçu car pas de miniature -->
-                <!-- <a class="open-btn" href="https://example.com/certificates/sql.pdf" target="_blank" rel="noopener noreferrer">Voir la certif</a>
-            </div>
-        </article> -->
     </div>
+  </div>
 </section>
 
-<div id="cert-preview-modal" role="dialog" aria-hidden="true" aria-label="Aperçu de la certification">
-    <div class="modal-content" role="document">
-        <button class="modal-close" aria-label="Fermer">Fermer</button>
-        <div class="modal-body"></div>
-    </div>
+<!-- Modal aperçu -->
+<div id="certif-modal" role="dialog" aria-hidden="true" aria-label="Aperçu de la certification">
+  <div class="certif-modal-inner">
+    <button class="certif-modal-close" aria-label="Fermer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="certif-modal-body"></div>
+  </div>
 </div>
+
+<style>
+/* ─── Certifications ─── */
+.certif-section {
+  padding: 80px 0;
+  background: var(--bg);
+}
+
+.certif-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem) !important;
+  font-weight: 800 !important;
+  color: var(--txt) !important;
+  text-align: center !important;
+  margin-bottom: 8px !important;
+  letter-spacing: -0.5px;
+}
+
+.certif-lead {
+  text-align: center;
+  color: var(--txt-muted);
+  font-size: 15px;
+  margin-bottom: 48px;
+}
+
+.certif-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.certif-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--tr);
+}
+
+.certif-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-a);
+}
+
+.certif-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+}
+
+.certif-thumb-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.certif-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
+  display: block;
+}
+
+.certif-badge {
+  position: absolute;
+  bottom: -6px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-family: var(--mono);
+}
+
+.certif-meta { flex: 1; min-width: 0; }
+
+.certif-meta h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--txt);
+  margin: 0 0 4px;
+  line-height: 1.3;
+}
+
+.certif-issuer {
+  font-size: 0.82rem;
+  color: var(--txt-muted);
+  margin: 0 0 6px;
+}
+
+.certif-date {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  color: var(--accent);
+  background: var(--accent-lit);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.certif-actions {
+  display: flex;
+  gap: 8px;
+  padding: 12px 20px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.certif-preview-btn,
+.certif-open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all var(--tr);
+  text-decoration: none;
+}
+
+.certif-preview-btn {
+  background: var(--bg-soft);
+  border: 1.5px solid var(--border);
+  color: var(--txt-muted);
+}
+
+.certif-preview-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-lit);
+}
+
+.certif-open-btn {
+  background: var(--accent);
+  border: 1.5px solid var(--accent);
+  color: #fff;
+}
+
+.certif-open-btn:hover {
+  background: var(--accent-h);
+  border-color: var(--accent-h);
+  transform: translateY(-1px);
+}
+
+/* Modal */
+#certif-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  padding: 20px;
+}
+
+#certif-modal[aria-hidden="false"] { display: flex; }
+
+.certif-modal-inner {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  border: 1.5px solid var(--border);
+}
+
+.certif-modal-close {
+  position: absolute;
+  top: 12px; right: 12px;
+  background: var(--bg-soft);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+  color: var(--txt-muted);
+  display: flex; align-items: center;
+  transition: all var(--tr);
+}
+
+.certif-modal-close:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.certif-modal-body img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+</style>
 
 <script>
 (function(){
-    const modal = document.getElementById('cert-preview-modal');
-    const body = modal.querySelector('.modal-body');
-    const closeBtn = modal.querySelector('.modal-close');
+  const modal   = document.getElementById('certif-modal');
+  const body    = modal.querySelector('.certif-modal-body');
+  const closeBtn= modal.querySelector('.certif-modal-close');
 
-    document.querySelectorAll('.preview-btn').forEach(btn => {
-        btn.addEventListener('click', function(){
-            const src = this.dataset.thumb;
-            body.innerHTML = '';
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = 'Aperçu';
-            body.appendChild(img);
-            modal.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden';
-            img.focus?.();
-        });
+  document.querySelectorAll('.certif-preview-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      const src = this.dataset.thumb;
+      body.innerHTML = '';
+      const img = document.createElement('img');
+      img.src = src; img.alt = 'Aperçu certification';
+      body.appendChild(img);
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
     });
+  });
 
-    function closeModal(){
-        modal.setAttribute('aria-hidden', 'true');
-        body.innerHTML = '';
-        document.body.style.overflow = '';
-    }
+  function closeModal(){
+    modal.setAttribute('aria-hidden', 'true');
+    body.innerHTML = '';
+    document.body.style.overflow = '';
+  }
 
-    closeBtn.addEventListener('click', closeModal);
-    modal.addEventListener('click', function(e){
-        if (e.target === modal) closeModal();
-    });
-    document.addEventListener('keydown', function(e){
-        if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeModal();
-    });
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeModal();
+  });
 })();
 </script>
-

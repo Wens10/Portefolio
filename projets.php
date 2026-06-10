@@ -1,424 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Portefolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/projets.css">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Mr Wens" />
-    <link rel="manifest" href="/site.webmanifest" />
-    
-    <?php
-    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-    $baseUrl = $scheme . '://' . $_SERVER['HTTP_HOST'];
-    $currentUrl = $baseUrl . $_SERVER['REQUEST_URI'];
-    $ogImage = $baseUrl . '/Portefolio/assets/images/alien-svgrepo-com.svg';
-    ?>
-    <link rel="canonical" href="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>">
-    <link rel="alternate" href="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>" hreflang="fr" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Wenceslas BOUITY · Portfolio</title>
 
-    <meta name="description" content="Découvrez mes projets : jeux, sites web et réalisations E‑Learning. Portfolio présentant technologies utilisées, captures d'écran et liens GitHub.">
-    <meta name="keywords" content="portfolio, projets, site web, jeux en ligne, JavaScript, HTML, CSS, WordPress, GitHub">
-    <meta name="author" content="Auteur du portfolio">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#3C35FC">
+  <?php
+  $scheme     = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+  $base       = $scheme . '://' . $_SERVER['HTTP_HOST'];
+  $currentUrl = $base . $_SERVER['REQUEST_URI'];
+  $ogImage    = $base . '/assets/images/Image.jude.jpg';
+  ?>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Projets — Portefolio">
-    <meta property="og:description" content="Portfolio présentant mes projets : jeux, sites web et réalisations E‑Learning avec captures et liens GitHub.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>">
-    <meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="Portefolio">
+  <link rel="canonical" href="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>">
+  <link rel="alternate" href="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>" hreflang="fr">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Projets — Portefolio">
-    <meta name="twitter:description" content="Portfolio présentant mes projets : jeux, sites web et réalisations E‑Learning.">
-    <meta name="twitter:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+  <meta name="description"   content="Projets de Wenceslas BOUITY : applications web full-stack, jeux JavaScript, sites e-commerce, outils desktop C# et infrastructure GLPI. Liens GitHub et démonstrations en ligne.">
+  <meta name="keywords"      content="projets développeur web, JavaScript, PHP, Python, Node.js, C#, WinUI3, SQLite, portfolio, GitHub, Wenceslas BOUITY">
+  <meta name="author"        content="Wenceslas BOUITY">
+  <meta name="robots"        content="index, follow">
+  <meta name="theme-color"   content="#C41E3A">
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Projets — Portefolio",
-        "description": "Présentation de projets web et jeux réalisés avec HTML, CSS, JavaScript, WordPress et Node.js. Liens GitHub et démonstrations en ligne.",
-        "url": "<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>",
-        "inLanguage": "fr-FR",
-        "author": {
-            "@type": "Person",
-            "name": "Auteur du portfolio"
-        },
-        "mainEntity": {
-            "@type": "ItemList",
-            "name": "Projets",
-            "numberOfItems": 4
-        }
-    }
-    </script>
+  <meta property="og:title"       content="Projets — Wenceslas BOUITY · Portfolio">
+  <meta property="og:description" content="Projets full-stack, jeux, e-commerce et applications desktop réalisés par Wenceslas BOUITY.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>">
+  <meta property="og:image"       content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+  <meta property="og:locale"      content="fr_FR">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Projets — Wenceslas BOUITY">
+  <meta name="twitter:description" content="Projets web et logiciels de Wenceslas BOUITY avec GitHub et démos.">
+  <meta name="twitter:image"       content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+
+  <link rel="icon"             type="image/png"     href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon"             type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon"    href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180"      href="/apple-touch-icon.png">
+  <link rel="manifest"         href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Projets — Wenceslas BOUITY",
+    "description": "Projets full-stack, jeux JavaScript, applications desktop et infrastructure réalisés par Wenceslas BOUITY.",
+    "url": "<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>",
+    "inLanguage": "fr-FR",
+    "author": { "@type": "Person", "name": "Wenceslas BOUITY" }
+  }
+  </script>
 </head>
+
 <?php include('includes/script.php'); ?>
 <body>
-    <?php include('includes/header.php'); ?>
-<style>
+  <?php include('includes/header.php'); ?>
 
-:root {
-  /* Couleurs principales */
-  --color-primary: #3C35FC;      /* Bleu principal */
-  --color-secondary: #2e2d2b;    /* Gris foncé / noir chaud */
-  --color-secondary2: #0b0b0b;    /* Gris foncé / noir chaud */
-  --color-text: #ffffff;           /* Blanc */
+  <main>
+    <div class="portfolio-section">
 
-  /* Variantes */
-  --color-primary-light: #3c35fc; /* Variante plus claire du bleu */
-  --color-secondary-light: #3c3b38; /* Variante plus claire du gris */
-  --color-text-muted: #cccccc;    /* Texte secondaire */
+      <h1 style="text-align:center; color: var(--txt);">Mes Projets</h1>
+      <p style="text-align:center; color: var(--txt-muted); margin-bottom: 48px; font-size: 16px;">
+        Une sélection de réalisations techniques — web, logiciel et infrastructure.
+      </p>
 
-  /* Arrière-plans */
-  --background-dark: var(--color-secondary);
-  --background-light: #f5f5f5;
+      <!-- ─── Client léger & lourd ─── -->
+      <h2 style="color: var(--txt); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); display: inline-block;">
+        Client léger &amp; Client lourd
+      </h2>
 
-  /* Bordures et effets */
-  --border-color: rgba(255, 255, 255, 0.1);
-  --shadow-color: rgba(0, 0, 0, 0.2);
-}
+      <div class="portfolio-grid" style="margin-bottom: 48px;">
 
-    </style>
-</head>
+        <!-- Prestalia Web -->
+        <div class="portfolio-card">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="assets/images/Capture d'écran 2026-04-13 150315.png" alt="Prestalia — application web" loading="lazy">
+          </div>
+          <h3>Prestalia</h3>
+          <p>Application web de mise en relation entre clients et prestataires de services, développée en équipe dans le cadre du BTS SIO.</p>
+          <ul>
+            <li><strong>Contexte :</strong> Projet E6 (Janvier – Mars 2026)</li>
+            <li><strong>Objectif :</strong> Plateforme de gestion de comptes et réservations</li>
+            <li>Création et gestion des comptes utilisateurs</li>
+            <li>API REST · SQLite · Node.js · EJS · TypeScript</li>
+          </ul>
+          <a href="/assets/images/Prestalia_Web_Documentation.pdf" class="access-btn" target="_blank">📄 Documentation</a>
+          <a href="https://github.com/Wens10/HACKATON1/tree/main/Prestalia" class="access-btn" target="_blank">GitHub →</a>
+        </div>
 
-<body>
-    <div class="hero">
-        <main class="container">
-            <section class="portfolio-section" style="padding: 32px 0;">
-                <h1 style="text-align:center; margin-bottom: 36px; color: #3C35FC;">Mes Projets</h1>
+        <!-- Prestalia Desktop -->
+        <div class="portfolio-card">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="assets/images/Capture d'écran 2026-04-13 144542.png" alt="Prestalia Desktop — application Windows" loading="lazy">
+          </div>
+          <h3>Prestalia Desktop</h3>
+          <p>Application Windows d'administration de la plateforme Prestalia, développée en C# / WinUI 3.</p>
+          <ul>
+            <li><strong>Contexte :</strong> Projet E6 — complément desktop de Prestalia Web</li>
+            <li>CRUD complet : utilisateurs, prestataires, réservations</li>
+            <li>Technologies : C#, XAML, WinUI 3, SQLite, Node.js API</li>
+            <li>Outils : Visual Studio, Git, GitHub, Figma, Trello</li>
+          </ul>
+          <a href="/assets/images/Prestalia_Desktop_Documentation.pdf" class="access-btn" target="_blank">📄 Documentation</a>
+          <a href="https://github.com/Wens10/HACKATON1/tree/main/Prestalia_Desktop" class="access-btn" target="_blank">GitHub →</a>
+        </div>
 
-                <H2 style="margin-bottom: 36px; color: #3C35FC;">Client léger & Client lourd :</H2>
+      </div>
 
+      <!-- ─── Autres projets ─── -->
+      <h2 style="color: var(--txt); font-size: 1.2rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); display: inline-block;">
+        Autres Projets
+      </h2>
 
-                <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
-                    <!-- Projet Prestalia -->
-                    <div class="portfolio-card">
-                        <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/Capture d'écran 2026-04-13 150315.png" alt="Prestalia"
-                                style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                    
-                        <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">Prestalia</h3>
-                    
-                            <p style="color:#ccc;">
-                                Développement d’une application web de mise en relation entre clients et prestataires de services, 
-                                réalisée en équipe dans le cadre du BTS SIO.
-                            </p>
-                    
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li><strong>Contexte :</strong> Projet E6 (Janvier – Mars 2026) pour une entreprise fictive</li>
-                                <li><strong>Objectif :</strong> Créer une plateforme de gestion de comptes et de réservations</li>
-                                <li><strong>Modalité :</strong> Travail en équipe</li>
-                            </ul>
-                    
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Création et gestion des comptes utilisateurs</li>
-                                <li>Gestion des profils clients et prestataires</li>
-                                <li>Système de réservation de services</li>
-                                <li>API REST pour la communication avec la base de données</li>
-                            </ul>
-                    
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li><strong>Technologies :</strong> JavaScript, TypeScript, HTML, CSS</li>
-                                <li><strong>Back-end :</strong> Node.js (API)</li>
-                                <li><strong>Base de données :</strong> SQLite</li>
-                                <li><strong>Outils :</strong> Visual Studio Code, Git, GitHub, Figma, EJS</li>
-                            </ul>
-                    
-                            <a href="/assets/images/Prestalia_Web_Documentation.pdf"
-                               class="access-btn" target="_blank">
-                               Documentation
-                            </a>
-                            <br><br>
+      <div id="definitionBox"></div>
 
-                            <a href="https://github.com/Wens10/HACKATON1/tree/main/Prestalia" 
-                               class="access-btn" target="_blank">
-                               Lien GitHub
-                            </a>
-                        </div>
-                    </div>
-                <!-- Projet Prestalia Desktop -->
-                <div class="portfolio-card">
-                    <div style="height: 180px; overflow: hidden;">
-                        <img src="assets/images/Capture d'écran 2026-04-13 144542.png" alt="Prestalia Desktop"
-                            style="width:100%; height:100%; object-fit:cover;">
-                    </div>
-                
-                    <div style="padding: 20px; flex: 1;">
-                        <h3 style="margin-top:0;">Prestalia Desktop</h3>
-                
-                        <p style="color:#ccc;">
-                            Développement d’une application desktop Windows permettant l’administration 
-                            de la plateforme Prestalia, réalisée en C# dans le cadre du BTS SIO.
-                        </p>
-                
-                        <ul style="color:#bbb; margin-bottom: 16px;">
-                            <li><strong>Contexte :</strong> Projet E6 (Janvier – Mars 2026) pour compléter l’application web Prestalia</li>
-                            <li><strong>Objectif :</strong> Fournir un outil d’administration pour gérer les données de la plateforme</li>
-                            <li><strong>Modalité :</strong> Travail individuel</li>
-                        </ul>
-                
-                        <ul style="color:#bbb; margin-bottom: 16px;">
-                            <li>Gestion des utilisateurs et prestataires</li>
-                            <li>Gestion des catégories de prestations</li>
-                            <li>Gestion des certificats et réservations</li>
-                            <li>Opérations CRUD (ajout, modification, suppression)</li>
-                            <li>Interface d’administration ergonomique</li>
-                        </ul>
-                
-                        <ul style="color:#bbb; margin-bottom: 16px;">
-                            <li><strong>Technologies :</strong> C#, XAML</li>
-                            <li><strong>Framework :</strong> WinUI 3</li>
-                            <li><strong>Base de données :</strong> SQLite</li>
-                            <li><strong>API :</strong> Node.js</li>
-                            <li><strong>Outils :</strong> Visual Studio, Git, GitHub, Figma, Trello</li>
-                        </ul>
-                
-                        <a href="/assets/images/Prestalia_Desktop_Documentation.pdf" 
-                           class="access-btn" target="_blank">
-                           Documentation
-                        </a>
-                        <br><br>
-                
-                        <a href="https://github.com/Wens10/HACKATON1/tree/main/Prestalia_Desktop" 
-                           class="access-btn" target="_blank">
-                           Lien GitHub
-                        </a>
-                    </div>
-                </div>
+      <div class="portfolio-grid">
 
-                </div> <br> <br>
-                <H2 style="margin-bottom: 36px; color: #3C35FC;">Autres Projets:</H2>
+        <!-- Snake JS -->
+        <div class="portfolio-card">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="assets/images/SNAKE.png" alt="Jeu du Serpent en JavaScript" loading="lazy">
+          </div>
+          <h3>Jeu du Serpent</h3>
+          <p>Application web développée avec <span class="skill" data-definition="JavaScript est un langage de programmation interprété, utilisé pour créer des pages web interactives.">JavaScript</span>.</p>
+          <ul>
+            <li>Mouvement fluide du serpent</li>
+            <li>Collisions avec les murs et la nourriture</li>
+            <li>Gestion des scores</li>
+          </ul>
+          <a href="https://snake-game-sigma-three.vercel.app/" class="access-btn" target="_blank">Voir le projet →</a>
+          <a href="https://github.com/Wens10/Snake_Game" class="access-btn" target="_blank">GitHub →</a>
+        </div>
 
-                <div id="definitionBox">
-                </div> <br>
-                <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 32px; justify-content: center;">
-                    <!-- Projet 1 -->
-                    <div class="portfolio-card">
-                        <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/SNAKE.png" alt="Jeu du Serpent"
-                                style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                        <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">Jeu du Serpent</h3>
-                            <p style="color:#ccc;">
-                                Application Web développée avec <span class="skill"
-                                    data-definition="javascript est un langage de programmation interprété, principalement utilisé pour créer des pages web interactives.">JavaScript</span>
-                            </p>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Mouvement fluide du serpent</li>
-                                <li>Collisions avec les murs et la nourriture</li>
-                                <li>Gestion des scores</li>
-                            </ul><br>
-                            <a href="https://snake-game-sigma-three.vercel.app/" class="access-btn" target="_blank">Accéder au projet</a><br><br>
-                            <a href="https://github.com/Wens10/Snake_Game" class="access-btn">Liens GitHub</a>
-                        </div>
-                    </div>
-                    <!-- Projet 2 -->
-                    <div class="portfolio-card">
-                        <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/c-snake.png" alt="Jeu du Serpent en C"
-                                style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                        <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">Snake en C</h3>
-                            <p style="color:#ccc;">
-                                Jeu du serpent développé en langage 
-                                <span class="skill"
-                                    data-definition="C est un langage de programmation bas niveau très utilisé pour les applications système et les jeux.">C</span>,
-                                avec gestion des entrées clavier, de la logique de déplacement et de la détection des collisions.
-                            </p>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Mouvement du serpent dans une interface console</li>
-                                <li>Collecte de la nourriture et augmentation de la taille</li>
-                                <li>Détection des collisions avec les murs et le corps</li>
-                            </ul>
-                            
-                            <a href="https://github.com/Wens10/C-Snake" class="access-btn" target="_blank">Lien GitHub</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/E-commerce.png" alt="Site E-commerce Parfums"
-                                style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                        <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">Site E-commerce Parfums</h3>
-                            <p style="color:#ccc;">
-                                Conception et développement d’un site de e-commerce pour la vente de parfums,
-                                réalisé avec <span class="skill"
-                                    data-definition="HTML est un langage de balisage utilisé pour structurer le contenu des pages web.">HTML</span>,
-                                <span class="skill"
-                                    data-definition="CSS est un langage de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML.">CSS</span>
-                                et <span class="skill"
-                                    data-definition="JavaScript est un langage de programmation interprété, principalement utilisé pour créer des pages web interactives.">JavaScript</span>.
-                                Le panier utilise <span class="skill"
-                                    data-definition="localStorage est une API du navigateur qui permet de stocker des données localement entre les sessions.">localStorage</span>
-                                pour conserver les articles sélectionnés.
-                            </p>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Catalogue de parfums avec fiches produits attractives</li>
-                                <li>Panier dynamique et gestion des quantités</li>
-                                <li>Mise en avant des offres et des avis clients</li>
-                            </ul>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li><strong>Technologies :</strong> HTML, CSS, JavaScript</li>
-                                <li><strong>Fonctionnalité :</strong> stockage du panier avec localStorage</li>
-                                <li><strong>UX :</strong> navigation fluide et responsive</li>
-                            </ul>
-                            <a href="https://perfectsmell.vercel.app/" class="access-btn" target="_blank">Accéder au projet</a><br><br>
-                            <a href="https://github.com/Wens10/PerfectSMELL" class="access-btn">Lien GitHub</a>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/CodeNova.png" alt="Projet Hackathon"
-                                style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                        <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">Projet Hackathon</h3>
-                            <p style="color:#ccc;">
-                                Développement d'un site web pour présenter l'équipe <strong>Code Nova</strong>, 
-                                ainsi que la création d'un site proposant un service spécifique, réalisé dans le cadre d'un hackathon.
-                            </p>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Présentation interactive de l'équipe Code Nova</li>
-                                <li>Section dédiée à la proposition du service offert</li>
-                                <li>Design responsive et moderne</li>
-                            </ul>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li><strong>Technologies :</strong> HTML, CSS, JavaScript</li>
-                                <li><strong>Outils :</strong> Git, GitHub</li>
-                            </ul>
-                            <a href="https://codenova-indol.vercel.app/" class="access-btn" target="_blank">Accéder au projet</a><br><br>
-                            <a href="https://github.com/Wens10/HACKATON1/tree/main/CodeNova" class="access-btn" target="_blank">Lien GitHub</a>
-                        </div>
-                    </div>
-                    <!-- Projet 3 -->
-                    <!-- <div class="portfolio-card">
-                        <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/Capture d'écran 2025-10-03 161119.png" alt="E-Learning" 
-                                style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                        <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">Site E-Learning</h3>
-                            <p style="color:#ccc;">
-                                Site Web réalisé avec <span class="skill"
-                                    data-definition="wordpress est un système de gestion de contenu open source, utilisé pour créer des sites web et des blogs.">WordPress</span>
-                                et personnalisé en <span class="skill"
-                                    data-definition="CSS est un langage de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML.">CSS</span>
-                                sur certaines pages.<br>
-                                NB : Le site à été réalisé en équipes lors d'un projet de cours.
-                            </p>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>présentation de l'équipe</li>
-                                <li>présentation de la formation</li>
-                            </ul>
-                            <a href="https://projet-wp.nathanmd.ovh/" class="access-btn" target="_blank">Accéder au Site</a><br><br>
-                            <a href="#" class="access-btn">Liens GitHub</a>
-                        </div>
-                    </div> -->
-                    <!-- Projet 4 -->
-                    <div class="portfolio-card">
-                        <div style="height: 180px; overflow: hidden;">
-                            <img src="assets/images/glpi.png" alt="GLPI Server Installation"
-                                style="width:100%; height:100%; object-fit:cover;">
-                        </div>
-                        <div style="padding: 20px; flex: 1;">
-                            <h3 style="margin-top:0;">Installation, Configuration d'un serveur GLPI avec un environnement virtualisé</h3>
-                            <p style="color:#ccc;">
-                                Projet de mise en place d'un serveur GLPI (Gestion Libre de Parc Informatique) dans un environnement virtualisé,
-                                réalisé avec <span class="skill"
-                                    data-definition="VMware est un logiciel de virtualisation open-source permettant de créer et gérer des machines virtuelles.">VMware</span>
-                                et <span class="skill"
-                                    data-definition="GLPI est un logiciel open-source de gestion des actifs informatiques et de helpdesk.">GLPI</span>.
-                                Inclut l'installation, la configuration et les tests de fonctionnalités de base.
-                            </p>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li>Création d'une machine virtuelle pour le serveur</li>
-                                <li>Installation et configuration de GLPI</li>
-                                <li>Gestion des actifs et tickets de support</li>
-                                <li>Tests de fonctionnalités et sécurité</li>
-                            </ul>
-                            <ul style="color:#bbb; margin-bottom: 16px;">
-                                <li><strong>Technologies :</strong> VMware, GLPI, Apache, MySQL</li>
-                                <li><strong>Outils :</strong> Debian, Git</li>
-                            </ul>
-                            <a href="assets/images/GLPI_Documentation_Projet.pdf" class="access-btn" target="_blank">Documentation</a><br><br>
-                            
-                        </div>
-                    </div>
-                </div>
+        <!-- Snake C -->
+        <div class="portfolio-card">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="assets/images/c-snake.png" alt="Jeu du Serpent en C" loading="lazy">
+          </div>
+          <h3>Snake en C</h3>
+          <p>Jeu du serpent développé en langage <span class="skill" data-definition="C est un langage de programmation bas niveau très utilisé pour les applications système.">C</span>, avec gestion clavier, déplacement et détection des collisions.</p>
+          <ul>
+            <li>Interface console avec mouvement fluide</li>
+            <li>Collecte de nourriture, augmentation de la taille</li>
+            <li>Détection des collisions murs et corps</li>
+          </ul>
+          <a href="https://github.com/Wens10/C-Snake" class="access-btn" target="_blank">GitHub →</a>
+        </div>
 
-            </section>
-        </main>
-        <script>
-            document.querySelectorAll('.skill').forEach(skill => {
-                skill.addEventListener('click', () => {
-                    const definition = skill.getAttribute('data-definition');
-                    const definitionBox = document.getElementById('definitionBox');
-                    definitionBox.textContent = definition;
-                    definitionBox.style.display = 'block';
-                });
-            });
-            document.querySelectorAll('.skills').forEach(skills => {
-                skills.addEventListener('click', () => {
-                    const definition = skills.getAttribute('data-definition');
-                    const definitionBo = document.getElementById('definitionBo');
-                    definitionBo.textContent = definition;
-                    definitionBo.style.display = 'block';
-                });
-            });
-        </script>
-        <style>
-            .skill,
-            .skills {
-                cursor: pointer;
-                padding: 10px;
-                transition: background-color 0.2s;
-            }
+        <!-- E-commerce -->
+        <div class="portfolio-card">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="assets/images/E-commerce.png" alt="Site E-commerce Parfums" loading="lazy">
+          </div>
+          <h3>Site E-commerce Parfums</h3>
+          <p>Site e-commerce pour la vente de parfums, réalisé avec <span class="skill" data-definition="HTML est le langage de balisage pour structurer le contenu web.">HTML</span>, <span class="skill" data-definition="CSS décrit la présentation visuelle d'un document HTML.">CSS</span> et <span class="skill" data-definition="JavaScript est un langage de programmation pour créer des pages web interactives.">JavaScript</span>. Le panier utilise <span class="skill" data-definition="localStorage permet de stocker des données localement dans le navigateur.">localStorage</span>.</p>
+          <ul>
+            <li>Catalogue produits avec fiches attractives</li>
+            <li>Panier dynamique et gestion des quantités</li>
+            <li>Design responsive et navigation fluide</li>
+          </ul>
+          <a href="https://perfectsmell.vercel.app/" class="access-btn" target="_blank">Voir le projet →</a>
+          <a href="https://github.com/Wens10/PerfectSMELL" class="access-btn" target="_blank">GitHub →</a>
+        </div>
 
-            .skill:hover,
-            .skills:hover {
-                background-color: #0c4b825c;
-            }
+        <!-- Hackathon -->
+        <div class="portfolio-card">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="assets/images/CodeNova.png" alt="Projet Hackathon CodeNova" loading="lazy">
+          </div>
+          <h3>Projet Hackathon — Code Nova</h3>
+          <p>Site web présentant l'équipe <strong>Code Nova</strong> et son service, réalisé en hackathon.</p>
+          <ul>
+            <li>Présentation interactive de l'équipe</li>
+            <li>Section dédiée au service offert</li>
+            <li>Technologies : HTML, CSS, JavaScript, Git</li>
+          </ul>
+          <a href="https://codenova-indol.vercel.app/" class="access-btn" target="_blank">Voir le projet →</a>
+          <a href="https://github.com/Wens10/HACKATON1/tree/main/CodeNova" class="access-btn" target="_blank">GitHub →</a>
+        </div>
 
-            #definitionBox {
-                background-color: #0c4b825e;
-                backdrop-filter: blur(5px);
-                border-left: 4px solid var(--color-primary);
-                font-style: italic;
-            }
+        <!-- GLPI -->
+        <div class="portfolio-card">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="assets/images/glpi.png" alt="Serveur GLPI virtualisé" loading="lazy">
+          </div>
+          <h3>Serveur GLPI — Environnement virtualisé</h3>
+          <p>Mise en place d'un serveur <span class="skill" data-definition="GLPI est un logiciel open-source de gestion des actifs informatiques et de helpdesk.">GLPI</span> dans un environnement <span class="skill" data-definition="VMware est un logiciel de virtualisation permettant de créer et gérer des machines virtuelles.">VMware</span> virtualisé.</p>
+          <ul>
+            <li>Création de la machine virtuelle</li>
+            <li>Installation et configuration GLPI</li>
+            <li>Gestion des actifs et tickets de support</li>
+            <li>Technologies : VMware, GLPI, Apache, MySQL, Debian</li>
+          </ul>
+          <a href="assets/images/GLPI_Documentation_Projet.pdf" class="access-btn" target="_blank">📄 Documentation</a>
+        </div>
 
-            #definitionBo {
-                background-color: var(--color-primary-light);
-                backdrop-filter: blur(5px);
-                border-left: 4px solid var(--color-primary);
-                font-style: italic;
-            }
-            #definitionBox {
-                display: none;
-                margin-top: 24px;
-                padding: 12px;
-                background: #0c4b825c;
-                border-left: 4px solid var(--color-primary-light);
-                font-style: italic;
-            }
-        </style>
-    <?php include('includes/footer.php'); ?>
+      </div>
+    </div>
+  </main>
+
+  <?php include('includes/footer.php'); ?>
+
+  <script>
+  document.querySelectorAll('.skill').forEach(skill => {
+    skill.addEventListener('click', () => {
+      const box = document.getElementById('definitionBox');
+      box.textContent = skill.getAttribute('data-definition');
+      box.style.display = 'block';
+    });
+  });
+  </script>
 </body>
 </html>

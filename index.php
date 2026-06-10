@@ -4,360 +4,260 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="4rI-M6EY-53N63JuNY3T18z2Izd-1GiD2YxCxZqBW-A" />
-<title>Wenceslas - Portfolio</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Mr Wens" />
-<link rel="manifest" href="/site.webmanifest" />
 
 <?php
-// Génération dynamique de l'URL canonique / base (fonctionne en local et prod)
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
-$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
-$path = strtok($_SERVER['REQUEST_URI'], '?');
+$protocol  = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
+$host      = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$path      = strtok($_SERVER['REQUEST_URI'], '?');
 $canonical = $protocol . $host . $path;
-$base = rtrim($protocol . $host, '/');
-$ogImage = $base . '/assets/images/Image.jude.jpg';
-$desc = "Wenceslas BOUITY — étudiant en BTS SIO (option SLAM) à EFREI Paris. Portfolio présentant projets, compétences, CV et moyens de contact.";
+$base      = rtrim($protocol . $host, '/');
+$ogImage   = $base . '/assets/images/Image.jude.jpg';
+$name      = "Wenceslas BOUITY";
+$jobTitle  = "Développeur Web & Logiciel";
+$desc      = "Wenceslas BOUITY — Développeur Web & Logiciel passionné, basé à Paris. Portfolio présentant projets full-stack, compétences JavaScript/PHP/Python, veille technologique IA et coordonnées. Disponible pour alternance.";
+$keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, JavaScript, PHP, Python, SQL, Node.js, full-stack, alternance 2026, EFREI Paris, veille technologique IA, projets web";
 ?>
-<meta name="description" content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
-<meta name="author" content="Wenceslas BOUITY">
-<meta name="robots" content="index,follow">
-<meta name="keywords" content="Wenceslas BOUITY, portfolio, BTS SIO, SLAM, EFREI Paris, développeur web, projets, CV">
+
+<title><?php echo htmlspecialchars($name); ?> — Développeur Web &amp; Logiciel · Portfolio</title>
+<meta name="description"   content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
+<meta name="keywords"      content="<?php echo htmlspecialchars($keywords, ENT_QUOTES); ?>">
+<meta name="author"        content="<?php echo htmlspecialchars($name, ENT_QUOTES); ?>">
+<meta name="robots"        content="index, follow, max-image-preview:large">
+<meta name="language"      content="fr">
+<meta name="geo.region"    content="FR-IDF">
+<meta name="geo.placename" content="Paris, France">
+<meta name="theme-color"   content="#C41E3A">
+
 <link rel="canonical" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
-<link rel="alternate" hreflang="fr" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
+<link rel="alternate" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>" hreflang="fr">
 
-<!-- Open Graph / Social -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wenceslas - Portfolio">
-<meta property="og:description" content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
-<meta property="og:url" content="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
-<meta property="og:site_name" content="Wenceslas - Portfolio">
-<meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
-<meta property="og:image:alt" content="Portrait de Wenceslas BOUITY">
+<!-- Open Graph -->
+<meta property="og:type"         content="website">
+<meta property="og:title"        content="<?php echo htmlspecialchars($name . ' — Développeur Web & Logiciel · Portfolio', ENT_QUOTES); ?>">
+<meta property="og:description"  content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
+<meta property="og:url"          content="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
+<meta property="og:site_name"    content="<?php echo htmlspecialchars($name, ENT_QUOTES); ?> · Portfolio">
+<meta property="og:image"        content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+<meta property="og:image:alt"    content="Portrait de <?php echo htmlspecialchars($name, ENT_QUOTES); ?>">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale"       content="fr_FR">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Wenceslas - Portfolio">
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="<?php echo htmlspecialchars($name . ' — Développeur Web & Logiciel', ENT_QUOTES); ?>">
 <meta name="twitter:description" content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
-<meta name="twitter:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+<meta name="twitter:image"       content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+
+<!-- Favicons -->
+<link rel="icon"             type="image/png"     href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon"             type="image/svg+xml" href="/favicon.svg">
+<link rel="shortcut icon"    href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180"      href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="WB Portfolio">
+<link rel="manifest" href="/site.webmanifest">
 
 <!-- Performance hints -->
-<link rel="preload" as="image" href="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
 
-<!-- Structured data (JSON-LD) -->
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Person",
-      "name": "Wenceslas BOUITY",
+      "name": "<?php echo $name; ?>",
       "url": "<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>",
       "image": "<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>",
-      "jobTitle": "Étudiant en BTS SIO (SLAM)",
-      "worksFor": {
+      "jobTitle": "Développeur Web & Logiciel",
+      "description": "<?php echo addslashes($desc); ?>",
+      "knowsAbout": ["JavaScript","PHP","Python","Node.js","SQL","HTML","CSS","Git","Bootstrap","React","Intelligence Artificielle"],
+      "alumniOf": {
         "@type": "CollegeOrUniversity",
-        "name": "EFREI Paris"
+        "name": "EFREI Paris",
+        "address": {"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"}
       },
+      "address": {"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"},
       "sameAs": [
         "https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/",
-        "https://www.instagram.com/mr_wenss/",
-        "https://github.com/Wens10"
+        "https://github.com/Wens10",
+        "https://www.instagram.com/mr_wenss/"
       ],
-      "description": "<?php echo str_replace('"', '\"', $desc); ?>"
+      "email": "wenceslasbouity92@gmail.com"
     },
     {
-      "@type": "WebPage",
+      "@type": "WebSite",
       "url": "<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>",
-      "name": "Wenceslas - Portfolio",
-      "description": "<?php echo str_replace('"', '\"', $desc); ?>"
+      "name": "<?php echo $name; ?> — Portfolio",
+      "description": "<?php echo addslashes($desc); ?>",
+      "inLanguage": "fr-FR",
+      "author": {"@type":"Person","name":"<?php echo $name; ?>"}
     }
   ]
 }
 </script>
 </head>
+
 <?php include('includes/script.php'); ?>
 <body>
   <?php include('includes/header.php'); ?>
-  
-  <main >
-        <section class="hero-section" id="home">
-          <div class="container">
-            <div class="row align-items-center">
-        
-              <!-- TEXTE -->
-              <div class="col-lg-6 col-md-12 order-2 order-lg-1">
-                <h1 class="hero-title">
-                  Wenceslas BOUITY <br>
-                  <span class="highlight">Étudiant en BTS SIO</span>
-                </h1>
-        
-                 <p class="hero-description">
-                   Passionné par le développement informatique depuis mon enfance, j’ai découvert cet univers à travers les jeux vidéo, ce qui m’a donné envie de comprendre puis de créer mes propres applications.
-                 
-                   J’ai ainsi orienté mes études dans ce domaine et intégré le BTS SIO, option SLAM, à EFREI Paris, afin de me spécialiser dans le développement logiciel.
-                 
-                   Mon objectif est de devenir un développeur polyvalent, capable de concevoir des applications performantes et adaptées aux besoins des entreprises.
-                 </p>
-        
-                <ul class="hero-list">
-                  <li>Mes projets réalisés en cours et en autonomie</li>
-                  <li>Mes compétences techniques et fonctionnelles</li>
-                  <li>Mon parcours académique et professionnel</li>
-                </ul>
-        
-                <div class="hero-buttons d-grid gap-3 d-lg-flex justify-content-lg-start">
-                  <a href="projets.php" class="btn btn-primary btn-sm">Projets</a>
-                  <a href="#contact" class="btn btn-secondary btn-sm">Contact</a>
-                </div>
-                <br>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank" style="text-decoration: none;">
-                    <img src="assets/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
-                  </a>
-                  <a href="https://www.instagram.com/mr_wenss/" target="_blank" style="text-decoration: none;">
-                    <img src="assets/images/instagram-circle.svg" alt="Instagram" style="width: 54px; height: 54px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon instagram">
-                  </a>
-                  <a href="https://github.com/Wens10" target="_blank" style="text-decoration: none;">
-                    <img src="assets/images/github (1).svg" alt="Github" style="width: 48px; height: 48px; transition: transform 0.3s ease; align-items: center; justify-content: center; display: inline-block; margin-right: 10px;" class="social-icon">
-                  </a>
-                </div>
-              </div>
-              <style> .social-icon { transition: transform 0.3s ease !important; } .social-icons a:hover .social-icon { transform: scale(1.2) translateY(-5px); } .social-icons a:active .social-icon { transform: scale(0.95); } </style>
-              <!-- VIDÉO -->
-            <div class="col-lg-6 col-md-12 text-center text-lg-end mt-5 mt-lg-0 order-1 order-lg-2">
-              <div class="avatar-container">
-            
-                <!-- PHOTO RÉELLE -->
-                <img
-                  id="realPhoto"
-                  class="avatar"
-                  src="assets/images/photo.jpg"
-                  alt="Photo réelle"
-                />
-            
-              </div>
-              </div>
-  
-                <style>
-                .avatar-container {
-                 position: relative;
-                 height: 500px;
-                 margin: auto;
-                 overflow: hidden;
-               }
-               #realPhoto {
-                 width: auto;
-                 height: 100%;
-                 border-radius: 5%;
-                 object-fit: cover;
-                }
-               
-            
-                </style>
 
+  <main>
 
+    <!-- ─── HERO ─── -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="row align-items-center g-5">
 
+          <!-- Texte -->
+          <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+            <span class="hero-eyebrow">Bonjour, je suis</span>
+            <h1 class="hero-title">
+              Wenceslas BOUITY
+              <span class="highlight">Développeur Web &amp; Logiciel</span>
+            </h1>
 
+            <p class="hero-description">
+              Passionné par le développement depuis l'enfance, je conçois des applications web et logicielles performantes. Actuellement à EFREI Paris, je cherche à rejoindre des équipes ambitieuses pour créer des produits qui ont un impact réel.
+            </p>
+
+            <ul class="hero-list">
+              <li>Projets full-stack réalisés en cours et en autonomie</li>
+              <li>Compétences en JavaScript, PHP, Python &amp; SQL</li>
+              <li>Veille active sur l'IA &amp; les nouvelles technologies</li>
+            </ul>
+
+            <div class="hero-buttons">
+              <a href="projets.php"  class="btn btn-primary btn-sm">Voir mes projets</a>
+              <a href="#contact"     class="btn btn-secondary btn-sm">Me contacter</a>
+            </div>
+
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="assets/images/linkedin-svgrepo-com (1).svg" alt="LinkedIn" class="social-icon">
+              </a>
+              <a href="https://github.com/Wens10" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="assets/images/github (1).svg" alt="GitHub" class="social-icon">
+              </a>
+              <a href="https://www.instagram.com/mr_wenss/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="assets/images/instagram-circle.svg" alt="Instagram" class="social-icon instagram">
+              </a>
             </div>
           </div>
-        </section>
-        
-        <section  class="int">
-            <h2 style="text-align: center; color: #3C35FC;">Curriculum Vitae</h2>
-            <br>
-            <div class="row align-items-center">
-            <div class="col-12 col-lg-5" style="margin: auto; text-align: center; justify-content: center; display: flex; flex-direction: column;">
-              <!-- Viewer pour grands écrans -->
-              <embed src="assets/images/Mon%20CV.pdf" type="application/pdf" width="100%" height="580px" class="d-none d-lg-block" style="border: none;" />
-              <!-- Boutons Voir / Télécharger (toujours visibles) -->
-              <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-3">
-                <a href="assets/images/Mon%20CV.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary" aria-label="Voir mon CV">Voir</a>
-                <a href="assets/images/Mon%20CV.pdf" download class="btn btn-primary" aria-label="Télécharger mon CV">🢃 Mon CV</a>
-              </div>
-            </div>
-          
-        </section>
-    <section class="parcours" id="about">
 
+          <!-- Photo -->
+          <div class="col-lg-6 col-md-12 text-center order-1 order-lg-2">
+            <div class="avatar-container">
+              <img id="realPhoto"
+                   src="assets/images/photo.jpg"
+                   alt="Portrait de Wenceslas BOUITY, développeur web"
+                   loading="eager">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CV ─── -->
+    <section class="int" aria-label="Curriculum Vitae">
+      <div class="container">
+        <h2 style="text-align: center; color: var(--accent);">Curriculum Vitae</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-7 text-center">
+            <embed src="assets/images/Mon%20CV.pdf" type="application/pdf" width="100%" height="600px"
+                   class="d-none d-lg-block"
+                   style="border: none; border-radius: 12px; box-shadow: 0 8px 40px rgba(0,0,0,0.1);"
+                   title="CV de Wenceslas BOUITY">
+            <div class="d-flex gap-3 justify-content-center mt-4">
+              <a href="assets/images/Mon%20CV.pdf" target="_blank" rel="noopener" class="btn btn-outline-primary px-4">Voir le CV</a>
+              <a href="assets/images/Mon%20CV.pdf" download class="btn btn-primary px-4">&#8595; Télécharger</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PARCOURS ─── -->
+    <section class="parcours" id="about" aria-label="Parcours académique et professionnel">
+      <div class="container">
+        <h2 style="text-align: center; color: var(--accent);">Mon Parcours</h2>
+      </div>
       <div class="d-flex justify-content-center w-100">
         <?php include('includes/about.php'); ?>
       </div>
     </section>
-    <section>
-      <div>
-        <?php include('includes/compétences.php'); ?>
-      </div>
+
+    <!-- ─── COMPÉTENCES ─── -->
+    <section style="background: var(--bg-soft);" aria-label="Compétences techniques">
+      <?php include('includes/compétences.php'); ?>
     </section>
-    <!-- <section>
-      <div>
-        
-      </div>
-    </section> -->
-    <section>
-      <div>
-        <?php include('includes/stage.php'); ?>
-      </div>
+
+    <!-- ─── CERTIFICATIONS ─── -->
+    <section aria-label="Certifications">
+      <?php include('includes/certifications.php'); ?>
     </section>
-    <br><br><br>
-    <section id="contact">
-      <h2 style="text-align: center; color: #3C35FC;">Contact</h2>
+
+    <!-- ─── STAGE ─── -->
+    <section style="background: var(--bg-soft);" aria-label="Expériences professionnelles">
+      <?php include('includes/stage.php'); ?>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" aria-label="Contact" style="padding: 80px 0 40px;">
+      <div class="container">
+        <h2 style="text-align: center; color: var(--accent);">Contactez-moi</h2>
+      </div>
       <div class="d-flex justify-content-center w-100">
-      <?php include('includes/contact.php'); ?>
+        <?php include('includes/contact.php'); ?>
       </div>
     </section>
+
   </main>
-  
+
   <?php include('includes/footer.php'); ?>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-/*
-  Script robuste pour activer le lien de nav de la section la plus visible.
-  - Prend en compte header fixe (détecte sa hauteur)
-  - Fonctionne au chargement, scroll, resize et clic sur les liens
-  - Utilise requestAnimationFrame pour ne pas spammer le scroll
-*/
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = Array.from(document.querySelectorAll('section[id]'));
+    const navLinks  = Array.from(document.querySelectorAll('nav a[href^="#"], nav a[href^="index.php#"]'));
+    const header    = document.querySelector('.main-header');
+    const headerH   = () => header ? header.offsetHeight : 0;
 
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = Array.from(document.querySelectorAll('section[id]'));
-  const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
-  const header = document.querySelector('header') || document.querySelector('.navbar') || null;
+    function visibleH(sec) {
+      const r = sec.getBoundingClientRect();
+      return Math.max(0, Math.min(r.bottom, window.innerHeight) - Math.max(r.top, headerH()));
+    }
 
-  function getHeaderHeight() {
-    return header ? header.offsetHeight : 0;
-  }
+    function setActive(id) {
+      if (!id) return;
+      navLinks.forEach(a => a.classList.remove('active'));
+      const link = navLinks.find(a => a.getAttribute('href').endsWith('#' + id));
+      if (link) link.classList.add('active');
+    }
 
-  function clearActive() {
-    navLinks.forEach(a => a.classList.remove('active'));
-  }
-
-  function setActiveById(id) {
-    if (!id) return;
-    clearActive();
-    const link = document.querySelector(`nav a[href="#${id}"]`);
-    if (link) link.classList.add('active');
-  }
-
-  // calcule la hauteur visible d'une section en tenant compte du header fixe
-  function visibleHeightOf(section) {
-    const rect = section.getBoundingClientRect();
-    const topLimit = getHeaderHeight(); // le header masque le haut
-    const visibleTop = Math.max(rect.top, topLimit);
-    const visibleBottom = Math.min(rect.bottom, window.innerHeight);
-    const visible = Math.max(0, visibleBottom - visibleTop);
-    return visible;
-  }
-
-  let ticking = false;
-  function onScrollOrResize() {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        updateActiveSection();
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        if (window.scrollY <= headerH() + 5) { setActive(sections[0]?.id); ticking = false; return; }
+        let best = null, bestV = 0;
+        sections.forEach(s => { const v = visibleH(s); if (v > bestV) { bestV = v; best = s; } });
+        if (best) setActive(best.id);
         ticking = false;
       });
-      ticking = true;
-    }
-  }
-
-  function updateActiveSection() {
-    // Si on est tout en haut, forcer "home" (ou la première section)
-    if (window.scrollY <= getHeaderHeight() + 5) {
-      const first = sections[0];
-      if (first) setActiveById(first.id);
-      return;
-    }
-
-    // Cherche la section ayant la plus grande surface visible
-    let bestSection = null;
-    let bestVisible = 0;
-
-    for (const sec of sections) {
-      const vis = visibleHeightOf(sec);
-      if (vis > bestVisible) {
-        bestVisible = vis;
-        bestSection = sec;
-      }
-    }
-
-    // Si aucune section n'est visible (rare), on garde la précédente
-    if (bestSection && bestVisible > 0) {
-      setActiveById(bestSection.id);
-    }
-  }
-
-  // Gérer clicks sur nav pour scroll smooth et activation immédiate
-  navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      // Optionnel : empêcher le saut brutal
-      e.preventDefault();
-      const targetId = link.getAttribute('href').slice(1);
-      const target = document.getElementById(targetId);
-      if (!target) return;
-
-      // calcule la position en tenant compte du header
-      const headerH = getHeaderHeight();
-      const top = target.getBoundingClientRect().top + window.scrollY - headerH - 10; // -10 pour marge
-      window.scrollTo({
-        top,
-        behavior: 'smooth'
-      });
-
-      // activation immédiate (visuel) — l'update sera confirmée par le scroll handler
-      setActiveById(targetId);
-    });
+    }, { passive: true });
   });
-
-  // Events
-  window.addEventListener('scroll', onScrollOrResize, { passive: true });
-  window.addEventListener('resize', onScrollOrResize);
-
-  // Initialisation au chargement
-  updateActiveSection();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const toggler = document.querySelector('.navbar-toggler');
-  const menu = document.querySelector('#navbarNav'); // ton menu à ouvrir/fermer
-  const links = document.querySelectorAll('.navbar-nav .nav-link');
-
-  // Toggle menu au clic sur le bouton
-  toggler.addEventListener('click', () => {
-    menu.classList.toggle('show'); // ouvre/ferme le menu
-  });
-
-  // Fermer le menu quand on clique sur un lien
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      if (menu.classList.contains('show')) {
-        menu.classList.remove('show');
-      }
-    });
-  });
-
-  // Fermer le menu quand la souris quitte la zone du menu
-  menu.addEventListener('mouseleave', () => {
-    if (menu.classList.contains('show')) {
-      menu.classList.remove('show');
-    }
-  });
-
-  // Optionnel : fermer si on clique en dehors du menu
-  document.addEventListener('click', (e) => {
-    if (!menu.contains(e.target) && !toggler.contains(e.target)) {
-      menu.classList.remove('show');
-    }
-  });
-});
-
-
-</script>
-
+  </script>
 </body>
 </html>
