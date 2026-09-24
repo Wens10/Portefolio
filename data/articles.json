@@ -1,7 +1,7 @@
 {
     "lastUpdate": "2026-07-10T17:21:26+02:00",
     "count": 120,
-    "newCount": 1063,
+    "newCount": 0,
     "articles": [
         {
             "id": "ae974af5a46b13ac2301a72247e4481d",
@@ -13,7 +13,7 @@
             "image": "http://files.smashing.media/articles/how-turn-brand-strategy-into-visual-direction/how-turn-brand-strategy-into-visual-direction.jpg",
             "timestamp": 1783688400,
             "date": "2026-07-10",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "8e9121e5dcc9f9366776111163504fc3",
@@ -25,7 +25,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/llm-crystal-globe_1.jpg?resize=1200,600",
             "timestamp": 1783685400,
             "date": "2026-07-10",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "c41b81cc6994c4cbc2f7e699ce0667f2",
@@ -37,7 +37,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/C0152102-Sperm_bank.jpg?resize=1200,600",
             "timestamp": 1783674000,
             "date": "2026-07-10",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "535c69bfdf587f0500925fedfcdbfe8e",
@@ -49,7 +49,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1783669200,
             "date": "2026-07-10",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "31630fbac8b6535b3598a41ef91ece73",
@@ -61,7 +61,7 @@
             "image": "",
             "timestamp": 1783666800,
             "date": "2026-07-10",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a90a0d3e9300d25fe5bbd645cda5bfda",
@@ -73,7 +73,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/llm-crystal-globe_1.jpg?resize=1200,600",
             "timestamp": 1783628548,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "62aef4816483ba5733e288fa26da114e",
@@ -85,7 +85,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-github-invertocat-mona-logo.png",
             "timestamp": 1783614577,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "dbcb86519765396ee310954fdcbf5fb1",
@@ -97,7 +97,7 @@
             "image": "http://files.smashing.media/articles/designing-distressed-users-mental-health-apps-ui/designing-distressed-users-mental-health-apps-ui.jpg",
             "timestamp": 1783609200,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a9ac60dc9fcf283f9530f372114d4f5a",
@@ -109,7 +109,7 @@
             "image": "",
             "timestamp": 1783602000,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "c3749aa35f8d2981eacf60929e8ba6ba",
@@ -121,7 +121,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/Aalo_s-completed-Critical-Test-Reactor-facility-1920.jpg?resize=1200,600",
             "timestamp": 1783599000,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "6e3eba7a17b37312b1ae044c33bb10b3",
@@ -133,7 +133,7 @@
             "image": "",
             "timestamp": 1783591200,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "10a73f0831bfbed747446ed95db69002",
@@ -145,7 +145,7 @@
             "image": "",
             "timestamp": 1783591200,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "0453af9ffcc0d0404e5707ff569841cb",
@@ -157,7 +157,7 @@
             "image": "",
             "timestamp": 1783591200,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "178dc9863659bda3f8a9ef8a8037546c",
@@ -169,7 +169,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/Aalo_s-completed-Critical-Test-Reactor-facility-1920.jpg?resize=1200,600",
             "timestamp": 1783584000,
             "date": "2026-07-09",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "77406f465962fca7b4e9e2fb6a368cc3",
@@ -181,7 +181,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-mona-copilot-logo.png",
             "timestamp": 1783545116,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "971f00116c44bf71175a606d0f0532b7",
@@ -193,7 +193,7 @@
             "image": "https://github.blog/wp-content/uploads/2025/08/github-generic-wallpaper-pink.png",
             "timestamp": 1783539351,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "df693c770abf37ee99304e9effe61688",
@@ -205,7 +205,7 @@
             "image": "",
             "timestamp": 1783527970,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "9e848cb5f45f50a965658a5d6fb11e4e",
@@ -217,7 +217,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-mona-github.png",
             "timestamp": 1783526400,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "34adf3bd6731008d95975fe4fe1aa967",
@@ -229,7 +229,7 @@
             "image": "",
             "timestamp": 1783517400,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "18ab2ec4f8de9bf226755bd618606462",
@@ -241,7 +241,7 @@
             "image": "",
             "timestamp": 1783515600,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "de792f4a79c2cee2de6d2a6dbb31bfcf",
@@ -253,7 +253,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/20260319-vermi-006-social.jpg?resize=1200,600",
             "timestamp": 1783512600,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "df3e09db44f75a1a0de7ac61a73b3c1d",
@@ -265,7 +265,7 @@
             "image": "",
             "timestamp": 1783504800,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "1fa3e9fb3c99ad5329aa31024578b6c0",
@@ -277,7 +277,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1783485600,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "733b8abf917b4fdc64b69adc589c78ea",
@@ -289,7 +289,7 @@
             "image": "",
             "timestamp": 1783468800,
             "date": "2026-07-08",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a7c1695bd14bd16e4b79d188470e4429",
@@ -301,7 +301,7 @@
             "image": "",
             "timestamp": 1783440000,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "098f4f420ac43a7617cc97b7a448b918",
@@ -313,7 +313,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/css-border-shape-examples.jpg",
             "timestamp": 1783437240,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "0e5ebf4a584e35fb159d4fd28936320f",
@@ -325,7 +325,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/openai-money.jpg?resize=1200,600",
             "timestamp": 1783426200,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "34dc6f6de3b4a015c927e7f40a9f1cb0",
@@ -337,7 +337,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/iStock-2216481617_7fbe0d.jpg?resize=1200,600",
             "timestamp": 1783422652,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "ac0de9cb9a33175ec713b30caa6417e9",
@@ -349,7 +349,7 @@
             "image": "http://files.smashing.media/articles/kirki-freeform-visual-website-builder-wordpress/kirki-wordpress-visual-builder-infinite-canvas.jpg",
             "timestamp": 1783418400,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "b11b6e4d107e518530462485a34ead0c",
@@ -361,7 +361,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/07/20260319-vermi-006-social.jpg?resize=1200,600",
             "timestamp": 1783418400,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "dc6cc181e4ffa502be3d61a5ef3b6d99",
@@ -373,7 +373,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1783410000,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "702fb607570efa04665f3da30610de43",
@@ -385,7 +385,7 @@
             "image": "",
             "timestamp": 1783382400,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "241bab22568e00a06a8c3bb6dd917c35",
@@ -397,7 +397,7 @@
             "image": "",
             "timestamp": 1783382400,
             "date": "2026-07-07",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "f2964323bef5cab34bd6147459cebe00",
@@ -409,7 +409,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/1842af09277124c00aa4c015f2852dba5b225e1a-3000x1575.jpg?w=1200&h=630&auto=format",
             "timestamp": 1783351414,
             "date": "2026-07-06",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "d33063ac33a5b2f41b177225d04a03a4",
@@ -421,7 +421,7 @@
             "image": "http://files.smashing.media/articles/ux-impact-seamless-integrations/users-dont-need-more-tools-need-seamless-integrations.jpg",
             "timestamp": 1783083600,
             "date": "2026-07-03",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "af4b65ac35482d3fc4ceff4aecdcc506",
@@ -433,7 +433,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1783064400,
             "date": "2026-07-03",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a53319620c8eca3748adccb668c5b0ae",
@@ -445,7 +445,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-github-invertocat-mona-logo.png",
             "timestamp": 1783008000,
             "date": "2026-07-02",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "cd4359f2e6784e017eb5e8f16590bd20",
@@ -457,7 +457,7 @@
             "image": "http://files.smashing.media/articles/matching-ai-modality-user-intent-designing-right-interface/matching-ai-modality-user-intent-designing-right-interface.jpg",
             "timestamp": 1782986400,
             "date": "2026-07-02",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "c904f05f3d916fbb7335f59a0e82bbc9",
@@ -469,7 +469,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/89a7c761862499db37bf759db9607b85625d3d19-3840x2160.png?rect=0,72,3840,2016&w=1200&h=630&auto=format",
             "timestamp": 1782978000,
             "date": "2026-07-02",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "c5a5ebb9355d5774b02253dc0ca473d0",
@@ -481,7 +481,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-github-security-logo.png",
             "timestamp": 1782921569,
             "date": "2026-07-01",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "c0828ac27e745cdfad16de365ebdb760",
@@ -493,7 +493,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-github-invertocat-mona-logo.png",
             "timestamp": 1782840496,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "287f59a4c92d399693f74c4e1cb82a65",
@@ -505,7 +505,7 @@
             "image": "https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/06/vs18.7_hero-image.webp",
             "timestamp": 1782835245,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "9e45f6317c27d038c4a4e6eca843abbf",
@@ -517,7 +517,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/wi14.jpg",
             "timestamp": 1782827654,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "5a456e9fbfd515c79d5bbf68617a375f",
@@ -529,7 +529,7 @@
             "image": "http://files.smashing.media/articles/why-accessibility-operational-capability-not-feature/why-accessibility-operational-capability-not-feature.jpg",
             "timestamp": 1782820800,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "1c819fe8c825b4b8a5c267971ac2c4a0",
@@ -541,7 +541,7 @@
             "image": "http://files.smashing.media/articles/desktop-wallpaper-calendars-july-2026/july-25-stamped-in-summer-preview-opt.png",
             "timestamp": 1782817200,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a0bd493debdd9e56beb7a5701d1fa160",
@@ -553,7 +553,7 @@
             "image": "",
             "timestamp": 1782810000,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "4d8c07b2758d562619601c7f236dd235",
@@ -565,7 +565,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1782805200,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "3abd2cd235af4f961030fbe2aa94ec36",
@@ -577,7 +577,7 @@
             "image": "",
             "timestamp": 1782777600,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "fce36a9d8e02ad4c53fba9d7285e95eb",
@@ -589,7 +589,7 @@
             "image": "",
             "timestamp": 1782777600,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "e255632342049e1ede6d0ad652b4ee0a",
@@ -601,7 +601,7 @@
             "image": "",
             "timestamp": 1782777600,
             "date": "2026-06-30",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "f9e2f74cd2a8c973796e9b746b382178",
@@ -613,7 +613,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/06/git255.png",
             "timestamp": 1782753925,
             "date": "2026-06-29",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "5031f81328f5e0d77085102c79467e0c",
@@ -625,7 +625,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-github-security-invertocat.png",
             "timestamp": 1782749420,
             "date": "2026-06-29",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "cc9beee3c02a1072ba233411a9c839bd",
@@ -637,7 +637,7 @@
             "image": "https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/06/github-action-publish.webp",
             "timestamp": 1782741625,
             "date": "2026-06-29",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "ed5fcba87227ed0227743cc175b14333",
@@ -649,7 +649,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/07/state-management.jpg",
             "timestamp": 1782738212,
             "date": "2026-06-29",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "df49518d3b942fd48739c79cd7ec0535",
@@ -661,7 +661,7 @@
             "image": "",
             "timestamp": 1782716400,
             "date": "2026-06-29",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "178c1d5ae37766db79f22755f321841b",
@@ -673,7 +673,7 @@
             "image": "",
             "timestamp": 1782666000,
             "date": "2026-06-28",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "828da793bbb49b36c1eb26c5ea4bba80",
@@ -685,7 +685,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/5db364b135f49cf4d811889432c3e987476671b2-12000x6300.jpg?w=1200&h=630&auto=format",
             "timestamp": 1782482427,
             "date": "2026-06-26",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "7843b9ea14bc3390fc3259d53826f018",
@@ -697,7 +697,7 @@
             "image": "",
             "timestamp": 1782468000,
             "date": "2026-06-26",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "b288a3dbfc001968115242cae69f36da",
@@ -709,7 +709,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/12/css-tricks-logo-gradient-outline.png",
             "timestamp": 1782393536,
             "date": "2026-06-25",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "5ff966398dec714249b3986984522a21",
@@ -721,7 +721,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/12/css-tricks-logo-gradient-outline.png",
             "timestamp": 1782393476,
             "date": "2026-06-25",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a7edabb20849d0634ce7afd4dfbbcd2a",
@@ -733,7 +733,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/12/css-tricks-logo-gradient-outline.png",
             "timestamp": 1782393361,
             "date": "2026-06-25",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "587ad2d173d78f5f2938d7fe833d16b3",
@@ -745,7 +745,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/12/css-tricks-logo-gradient-outline.png",
             "timestamp": 1782393305,
             "date": "2026-06-25",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "c842909c36f41045415da2b0a7fa494f",
@@ -757,7 +757,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1782373200,
             "date": "2026-06-25",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "24d4c9543d4c1f51e6a717b1eeb6aea5",
@@ -769,7 +769,7 @@
             "image": "",
             "timestamp": 1782352800,
             "date": "2026-06-25",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "24a3a922502af963b5dfc673ab1eb2fb",
@@ -781,7 +781,7 @@
             "image": "",
             "timestamp": 1782280800,
             "date": "2026-06-24",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "1948945ee98020538ce1f17e728faaaf",
@@ -793,7 +793,7 @@
             "image": "",
             "timestamp": 1782234000,
             "date": "2026-06-23",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "ab6f3ad184cdf7d95da90e374e5a7ada",
@@ -805,7 +805,7 @@
             "image": "",
             "timestamp": 1782223738,
             "date": "2026-06-23",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "4cf2337bf93f895f27eba4f3b74dffb3",
@@ -817,7 +817,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/954fb459cfd27fc59dbf6043944ed483dac78d8d-1200x630.png?w=1200&h=630&auto=format",
             "timestamp": 1782223200,
             "date": "2026-06-23",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "1b1b1aa40d915994e5eac2df7be3dcfe",
@@ -829,7 +829,7 @@
             "image": "",
             "timestamp": 1782219600,
             "date": "2026-06-23",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a77f81ed510852278e36c602030c071a",
@@ -841,7 +841,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1782200400,
             "date": "2026-06-23",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "350becd7dc0b8f51a8ef19abfa908e2f",
@@ -853,7 +853,7 @@
             "image": "",
             "timestamp": 1782172800,
             "date": "2026-06-23",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "95dcd27909aba9a6519dfe4372bb13c3",
@@ -865,7 +865,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/05/opposing-scroll-columns.webp",
             "timestamp": 1782131953,
             "date": "2026-06-22",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "5d9de7a5a94aebe9bda1858045ac0417",
@@ -877,7 +877,7 @@
             "image": "",
             "timestamp": 1782122400,
             "date": "2026-06-22",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "f601b26b225be7faf8ae68e8f0feb802",
@@ -889,7 +889,7 @@
             "image": "",
             "timestamp": 1782122400,
             "date": "2026-06-22",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "5edb7201b0cbbb1affac067061477782",
@@ -901,7 +901,7 @@
             "image": "",
             "timestamp": 1782086400,
             "date": "2026-06-22",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "663d872622a308be9f717860445c4b77",
@@ -913,7 +913,7 @@
             "image": "",
             "timestamp": 1782082800,
             "date": "2026-06-22",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "e12214741da97cd41253ecd235a491c8",
@@ -925,7 +925,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/f67d094b96bec257c2011a99f351211c369ba0b2-12000x6300.jpg?w=1200&h=630&auto=format",
             "timestamp": 1781877600,
             "date": "2026-06-19",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "af42ea736831ba93d892e78a2984f39f",
@@ -937,7 +937,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/04/sceroll-triggered-squares.webp",
             "timestamp": 1781874197,
             "date": "2026-06-19",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "523c5e4c040b985a1377742605960cdd",
@@ -949,7 +949,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1781854800,
             "date": "2026-06-19",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a55ebd412e31bfa5252d0f4d45d0e2b7",
@@ -961,7 +961,7 @@
             "image": "",
             "timestamp": 1781802000,
             "date": "2026-06-18",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "ad2ec02b5ba76608b7ec29f9cbc00208",
@@ -973,7 +973,7 @@
             "image": "",
             "timestamp": 1781780400,
             "date": "2026-06-18",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "796b3536965e9c3aa4a444c3b34f1811",
@@ -985,7 +985,7 @@
             "image": "",
             "timestamp": 1781769600,
             "date": "2026-06-18",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "262102b3265d3c5213492d623e8aa323",
@@ -997,7 +997,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/89a7c761862499db37bf759db9607b85625d3d19-3840x2160.png?rect=0,72,3840,2016&w=1200&h=630&auto=format",
             "timestamp": 1781768400,
             "date": "2026-06-18",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "b6c14a20be000bb53355863fd2ea908a",
@@ -1009,7 +1009,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/arianotify.jpg",
             "timestamp": 1781710350,
             "date": "2026-06-17",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "34750d730c3780a9a5409e63a0b4a061",
@@ -1021,7 +1021,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/cdf357e1d2df3af2d771981b5597c1a222b5606b-2400x1260.jpg?w=1200&h=630&auto=format",
             "timestamp": 1781704800,
             "date": "2026-06-17",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "80c1a32658b005089c52f6f82d186c55",
@@ -1033,7 +1033,7 @@
             "image": "",
             "timestamp": 1781690400,
             "date": "2026-06-17",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "916e534ab8d5a4ebed5cef93ed4945eb",
@@ -1045,7 +1045,7 @@
             "image": "",
             "timestamp": 1781654400,
             "date": "2026-06-17",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "51ed7c9b72786c4450d31808dfdf4f76",
@@ -1057,7 +1057,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-mona-github.png",
             "timestamp": 1781643534,
             "date": "2026-06-16",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "89266766ba222357798ec709b6d2feb5",
@@ -1069,7 +1069,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/military-ai.png?resize=1200,600",
             "timestamp": 1781642102,
             "date": "2026-06-16",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "d7f0c6a6fa17400f21119e6452418524",
@@ -1081,7 +1081,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/prop-for-that-masthead.png",
             "timestamp": 1781634985,
             "date": "2026-06-16",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a8c8a6a1bd4cb51c879fc2bd02cfd49b",
@@ -1093,7 +1093,7 @@
             "image": "http://files.smashing.media/articles/designing-uncertainty-how-ai-supercharges-probabilistic-thinking/designing-uncertainty-how-ai-supercharges-probabilistic-thinking.jpg",
             "timestamp": 1781622000,
             "date": "2026-06-16",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "82251555c7f752cf05e0e434b0265940",
@@ -1105,7 +1105,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/h_16269933.jpg?resize=1200,600",
             "timestamp": 1781611800,
             "date": "2026-06-16",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "a0c826c444f1f330f6990f154a876be5",
@@ -1117,7 +1117,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/26-05-25-MIT-TECH-01-Interior-2-thumb.jpg?resize=1200,600",
             "timestamp": 1781600400,
             "date": "2026-06-16",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "949ca18717394a46eae9002fc849dd75",
@@ -1129,7 +1129,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1781595600,
             "date": "2026-06-16",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "031fe56c38cfff55f41ae9be96654ef2",
@@ -1141,7 +1141,7 @@
             "image": "",
             "timestamp": 1781568000,
             "date": "2026-06-16",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "01f51600141bf0e73119d41450a0cac7",
@@ -1153,7 +1153,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/06/Episode-3.png",
             "timestamp": 1781554531,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "bc33cfbc9d92d3bdfac47d6ddfd2bde7",
@@ -1165,7 +1165,7 @@
             "image": "",
             "timestamp": 1781551050,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "2e6677ef75d7b46a16b8f742baa82a96",
@@ -1177,7 +1177,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/AP26126222060508.jpg?resize=1200,600",
             "timestamp": 1781549168,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "2243198bc3ded1b7e88d81c7cf40e4ff",
@@ -1189,7 +1189,7 @@
             "image": "",
             "timestamp": 1781536974,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "5e6df51377acc525153e4faf3f176b94",
@@ -1201,7 +1201,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Casey-Harrell-and-family-at-home.jpg?resize=1200,600",
             "timestamp": 1781536348,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "ccae1923ba5e45061ff879eb444a36fe",
@@ -1213,7 +1213,7 @@
             "image": "",
             "timestamp": 1781535534,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "869805fb7f9e2dffe059f8a385a090e7",
@@ -1225,7 +1225,7 @@
             "image": "https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2026/06/theme-color-settings.webp",
             "timestamp": 1781532040,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "e65846ba119dbc20dd16f87b38e5d215",
@@ -1237,7 +1237,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/wi13.jpg",
             "timestamp": 1781529333,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "c432632d1b747e0c7b4f070ee749e6dc",
@@ -1249,7 +1249,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Modular-System_Full.jpg?resize=1200,600",
             "timestamp": 1781525400,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "2860d43c2ff7a014d16a1b980313f0d0",
@@ -1261,7 +1261,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/Modular-System_Full.jpg?resize=1200,600",
             "timestamp": 1781514000,
             "date": "2026-06-15",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "9b41ef631f1ccd6e6f98adf14c01b0ba",
@@ -1273,7 +1273,7 @@
             "image": "",
             "timestamp": 1781456400,
             "date": "2026-06-14",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "3732101e9caa80ff77147a94df107b0b",
@@ -1285,7 +1285,7 @@
             "image": "https://github.blog/wp-content/uploads/2026/01/generic-mona-invertocat-logo-1-e1767926414935.png",
             "timestamp": 1781303183,
             "date": "2026-06-13",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "4bba96c3a1cefb6ea0666aeba095a1d5",
@@ -1297,7 +1297,7 @@
             "image": "",
             "timestamp": 1781281030,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "ae989b9b0ae669ff2ca6b7834a12710e",
@@ -1309,7 +1309,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/cover.webp",
             "timestamp": 1781276940,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "e8de824fe5ff5ba649bcababa75b6023",
@@ -1321,7 +1321,7 @@
             "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2026/06/stairwaynav.png",
             "timestamp": 1781276918,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "0d45756bfe7cfa90a348bbf8039fecf3",
@@ -1333,7 +1333,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/5db364b135f49cf4d811889432c3e987476671b2-12000x6300.jpg?w=1200&h=630&auto=format",
             "timestamp": 1781272800,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "2ad84e39a25305df4541e1d7b38a7d14",
@@ -1345,7 +1345,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/a-pill-life.jpg?resize=1200,600",
             "timestamp": 1781266200,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "64620bfbdc43277f7441b45012424bbe",
@@ -1357,7 +1357,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/GettyImages-1152119953.jpg?resize=1200,600",
             "timestamp": 1781258400,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "31e268b2c07ac4d613cdfd5b226ea30b",
@@ -1369,7 +1369,7 @@
             "image": "",
             "timestamp": 1781258400,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "3553f6a4a210a05f4f4ce95b398db7a4",
@@ -1381,7 +1381,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/06/a-pill-life.jpg?resize=1200,600",
             "timestamp": 1781254800,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "1930a634f4d7996f3dba2363c328ad80",
@@ -1393,7 +1393,7 @@
             "image": "https://wp.technologyreview.com/wp-content/uploads/2026/05/interoception.jpg?resize=1200,600",
             "timestamp": 1781254800,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "e37c9bd47ef8d2b71b2add24fb5a6c8a",
@@ -1405,7 +1405,7 @@
             "image": "http://files.smashing.media/articles/impact-humanoid-robots-humanity/impact-humanoid-robots-humanity.jpg",
             "timestamp": 1781251200,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "bed3391f54f2023dcc00688f06c33537",
@@ -1417,7 +1417,7 @@
             "image": "https://cdn.stackoverflow.co/images/jo7n4k8s/production/e35a0c5eb319e7928c9ac0a2c2c782d29e644876-3120x1640.png?rect=0,1,3120,1638&w=1200&h=630&auto=format",
             "timestamp": 1781250000,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "e5e9bd93110473577483334ee2693c72",
@@ -1429,7 +1429,7 @@
             "image": "",
             "timestamp": 1781222400,
             "date": "2026-06-12",
-            "isNew": true
+            "isNew": false
         },
         {
             "id": "32a4db3c27ad85220e6e7174829080cf",
@@ -1441,7 +1441,7 @@
             "image": "",
             "timestamp": 1781213415,
             "date": "2026-06-11",
-            "isNew": true
+            "isNew": false
         }
     ]
 }

@@ -19,7 +19,7 @@
   <meta name="keywords"      content="projets développeur web, JavaScript, PHP, Python, Node.js, C#, WinUI3, SQLite, portfolio, GitHub, Wenceslas BOUITY">
   <meta name="author"        content="Wenceslas BOUITY">
   <meta name="robots"        content="index, follow">
-  <meta name="theme-color"   content="#C41E3A">
+  <meta name="theme-color"   content="#2564CF">
 
   <meta property="og:title"       content="Projets — Wenceslas BOUITY · Portfolio">
   <meta property="og:description" content="Projets full-stack, jeux, e-commerce et applications desktop réalisés par Wenceslas BOUITY.">

@@ -13,7 +13,7 @@ $canonical = $protocol . $host . $path;
 $base      = rtrim($protocol . $host, '/');
 $ogImage   = $base . '/assets/images/Image.jude.jpg';
 $name      = "Wenceslas BOUITY";
-$jobTitle  = "Développeur Web & Logiciel";
+$jobTitle  = "Etudiant en DATA/IA";
 $desc      = "Wenceslas BOUITY — Développeur Web & Logiciel passionné, basé à Paris. Portfolio présentant projets full-stack, compétences JavaScript/PHP/Python, veille technologique IA et coordonnées. Disponible pour alternance.";
 $keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, JavaScript, PHP, Python, SQL, Node.js, full-stack, alternance 2026, EFREI Paris, veille technologique IA, projets web";
 ?>
@@ -26,7 +26,7 @@ $keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, 
 <meta name="language"      content="fr">
 <meta name="geo.region"    content="FR-IDF">
 <meta name="geo.placename" content="Paris, France">
-<meta name="theme-color"   content="#C41E3A">
+<meta name="theme-color"   content="#2564CF">
 
 <link rel="canonical" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
 <link rel="alternate" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>" hreflang="fr">
@@ -122,7 +122,7 @@ $keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, 
             <span class="hero-eyebrow">Bonjour, je suis</span>
             <h1 class="hero-title">
               Wenceslas BOUITY
-              <span class="highlight">Développeur Web &amp; Logiciel</span>
+              <span class="highlight">Etudiant en &amp; DATA/IA</span>
             </h1>
 
             <p class="hero-description">

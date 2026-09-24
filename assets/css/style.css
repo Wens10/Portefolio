@@ -1,6 +1,7 @@
 /* ═══════════════════════════════════════════════════════
    WENCESLAS BOUITY — Portfolio
-   Thème principal : Sombre · Accent : Rouge sang #C41E3A
+   Thème : Fluent / Microsoft 365 — Bleu · Teal · Violet
+   Glassmorphism ("liquid glass") sur les éléments clés
 ═══════════════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap');
@@ -11,50 +12,68 @@ html { scroll-behavior: smooth; }
 
 /* ══ THÈME SOMBRE (défaut) ══════════════════════════════ */
 :root {
-  --bg:          #0F1117;
-  --bg-soft:     #161B22;
-  --bg-card:     #1A1F2E;
-  --bg-hover:    #1E2736;
+  --bg:          #0A0E1A;
+  --bg-soft:     #10151F;
+  --bg-card:     #151B28;
+  --bg-hover:    #1B2333;
 
-  --txt:         #F1F5F9;
-  --txt-muted:   #94A3B8;
-  --txt-light:   #64748B;
+  --txt:         #F3F6FB;
+  --txt-muted:   #99A3B5;
+  --txt-light:   #6B7688;
 
-  --accent:      #C41E3A;
-  --accent-h:    #A31530;
-  --accent-lit:  rgba(196, 30, 58, 0.12);
-  --accent-lit2: rgba(196, 30, 58, 0.07);
+  --accent:      #2564CF;
+  --accent-h:    #194B9E;
+  --accent2:     #00B7C3;
+  --accent3:     #8764B8;
+  --accent-lit:  rgba(37, 100, 207, 0.16);
+  --accent-lit2: rgba(37, 100, 207, 0.08);
 
-  --border:      #2D3748;
+  --wave: linear-gradient(120deg, var(--accent) 0%, var(--accent2) 50%, var(--accent3) 100%);
+
+  --border:      #232B3D;
   --border-lite: rgba(255,255,255,0.06);
   --shadow-sm:   0 1px 4px rgba(0,0,0,0.35);
   --shadow:      0 4px 24px rgba(0,0,0,0.45);
   --shadow-lg:   0 12px 48px rgba(0,0,0,0.55);
-  --shadow-a:    0 8px 32px rgba(196,30,58,0.28);
+  --shadow-a:    0 8px 32px rgba(37,100,207,0.32);
 
-  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Verre liquide */
+  --glass-bg:     rgba(21, 27, 40, 0.55);
+  --glass-bg-2:   rgba(21, 27, 40, 0.35);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-shine:  rgba(255, 255, 255, 0.14);
+  --glass-blur:   blur(20px) saturate(180%);
+
+  --font: 'Segoe UI Variable Text', 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
   --mono: 'DM Mono', 'Fira Code', monospace;
-  --tr:     0.2s ease;
-  --radius: 12px;
+  --tr:      0.2s ease;
+  --radius:    14px;
+  --radius-sm: 9px;
+  --radius-lg: 22px;
 }
 
 /* ══ THÈME CLAIR (secondaire) ═══════════════════════════ */
 html[data-theme="light"] {
-  --bg:          #FFFFFF;
-  --bg-soft:     #F7F5F2;
+  --bg:          #F6F7FB;
+  --bg-soft:     #EEF1F7;
   --bg-card:     #FFFFFF;
-  --bg-hover:    #FFF5F5;
+  --bg-hover:    #EEF4FC;
 
-  --txt:         #111827;
-  --txt-muted:   #6B7280;
-  --txt-light:   #9CA3AF;
+  --txt:         #1B1F2A;
+  --txt-muted:   #5B6272;
+  --txt-light:   #8A93A3;
 
-  --border:      #E5E7EB;
+  --border:      #E2E6EF;
   --border-lite: rgba(0,0,0,0.06);
-  --shadow-sm:   0 1px 4px rgba(0,0,0,0.05);
-  --shadow:      0 4px 24px rgba(0,0,0,0.07);
-  --shadow-lg:   0 12px 48px rgba(0,0,0,0.1);
-  --shadow-a:    0 8px 32px rgba(196,30,58,0.18);
+  --shadow-sm:   0 1px 4px rgba(16,24,40,0.06);
+  --shadow:      0 8px 24px rgba(16,24,40,0.08);
+  --shadow-lg:   0 20px 48px rgba(16,24,40,0.12);
+  --shadow-a:    0 10px 30px rgba(37,100,207,0.22);
+
+  --glass-bg:     rgba(255, 255, 255, 0.55);
+  --glass-bg-2:   rgba(255, 255, 255, 0.35);
+  --glass-border: rgba(255, 255, 255, 0.65);
+  --glass-shine:  rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -67,7 +86,43 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  transition: background var(--tr), color var(--tr);
 }
+
+/* Halos de couleur en fond — profondeur "liquid glass" */
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+body::before {
+  top: -12%; right: -12%;
+  width: 46vw; height: 46vw;
+  max-width: 640px; max-height: 640px;
+  background: radial-gradient(circle, var(--accent) 0%, var(--accent2) 55%, transparent 75%);
+  animation: blobFloat1 20s ease-in-out infinite;
+}
+
+body::after {
+  bottom: -16%; left: -12%;
+  width: 40vw; height: 40vw;
+  max-width: 560px; max-height: 560px;
+  background: radial-gradient(circle, var(--accent3) 0%, var(--accent) 60%, transparent 75%);
+  animation: blobFloat2 24s ease-in-out infinite;
+}
+
+html[data-theme="light"] body::before,
+html[data-theme="light"] body::after { opacity: 0.16; }
+
+@keyframes blobFloat1 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-40px,30px) scale(1.08); } }
+@keyframes blobFloat2 { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(30px,-40px) scale(1.05); } }
 
 main { flex: 1; padding-top: 72px; }
 
@@ -79,28 +134,26 @@ main { flex: 1; padding-top: 72px; }
 ::selection { background: var(--accent-lit); color: var(--accent); }
 
 /* ══════════════════════════════════
-   HEADER
+   HEADER — verre liquide
 ══════════════════════════════════ */
 
 .main-header {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: rgba(15,17,23,0.88);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: none;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--glass-border);
   padding: 0;
-  transition: box-shadow var(--tr);
+  transition: box-shadow var(--tr), background var(--tr);
 }
 
 .main-header:hover,
 .main-header.scrolled { box-shadow: var(--shadow-sm); }
 
-html[data-theme="light"] .main-header {
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .main-header { background: var(--bg-card); }
 }
 
 .navbar { padding: 0 !important; }
@@ -114,7 +167,7 @@ html[data-theme="light"] .main-header {
 
 .navbar-brand.logo a img {
   width: 36px; height: 36px;
-  filter: invert(18%) sepia(90%) saturate(2000%) hue-rotate(340deg) brightness(90%);
+  filter: invert(28%) sepia(84%) saturate(1800%) hue-rotate(202deg) brightness(92%);
   transition: transform var(--tr);
 }
 
@@ -138,7 +191,7 @@ html[data-theme="light"] .main-header {
   position: absolute;
   left: 18px; bottom: 8px;
   width: 0; height: 2px;
-  background: var(--accent);
+  background: var(--wave);
   border-radius: 2px;
   transition: width 0.28s ease;
 }
@@ -157,14 +210,12 @@ html[data-theme="light"] .main-header {
   box-shadow: none !important;
 }
 
-/* Icône burger — claire par défaut (fond sombre) */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(241,245,249,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(243,246,251,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-/* Icône burger sombre en mode clair */
 html[data-theme="light"] .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(107,114,128,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(91,98,114,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 .navbar-toggler:focus { box-shadow: none !important; outline: none !important; }
@@ -179,16 +230,7 @@ html[data-theme="light"] .navbar-toggler-icon {
   align-items: center;
   padding: 80px 0;
   position: relative;
-  background: var(--bg);
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: -60px; right: -120px;
-  width: 700px; height: 700px;
-  background: radial-gradient(ellipse, rgba(196,30,58,0.08) 0%, transparent 65%);
-  pointer-events: none;
+  background: transparent;
 }
 
 .hero-eyebrow {
@@ -201,7 +243,7 @@ html[data-theme="light"] .navbar-toggler-icon {
 }
 
 .hero-title {
-  font-size: clamp(36px, 5vw, 68px);
+  font-size: clamp(34px, 5vw, 68px);
   font-weight: 800;
   line-height: 1.05;
   color: var(--txt);
@@ -211,7 +253,10 @@ html[data-theme="light"] .navbar-toggler-icon {
 }
 
 .highlight {
-  color: var(--accent) !important;
+  background: var(--wave) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
   font-size: clamp(24px, 3.5vw, 48px) !important;
   font-weight: 700 !important;
   letter-spacing: -1px !important;
@@ -261,7 +306,7 @@ html[data-theme="light"] .navbar-toggler-icon {
   padding: 14px 28px !important;
   font-size: 14px !important;
   font-weight: 600 !important;
-  border-radius: 8px !important;
+  border-radius: var(--radius-sm) !important;
   transition: all var(--tr) !important;
   text-decoration: none !important;
   cursor: pointer;
@@ -269,23 +314,25 @@ html[data-theme="light"] .navbar-toggler-icon {
 }
 
 .hero-buttons .btn-primary {
-  background: var(--accent) !important;
-  border: 2px solid var(--accent) !important;
+  background: var(--wave) !important;
+  border: 2px solid transparent !important;
   color: #fff !important;
-  box-shadow: 0 4px 16px rgba(196,30,58,0.35);
+  box-shadow: 0 4px 16px rgba(37,100,207,0.35);
+  background-size: 160% 160%;
 }
 
 .hero-buttons .btn-primary:hover {
-  background: var(--accent-h) !important;
-  border-color: var(--accent-h) !important;
+  background-position: 100% 0;
   transform: translateY(-2px) !important;
   box-shadow: var(--shadow-a) !important;
 }
 
 .hero-buttons .btn-secondary {
-  background: transparent !important;
+  background: var(--glass-bg-2) !important;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   color: var(--txt) !important;
-  border: 2px solid var(--border) !important;
+  border: 2px solid var(--glass-border) !important;
 }
 
 .hero-buttons .btn-secondary:hover {
@@ -306,9 +353,11 @@ html[data-theme="light"] .navbar-toggler-icon {
   align-items: center !important;
   justify-content: center !important;
   width: 42px !important; height: 42px !important;
-  border: 1.5px solid var(--border) !important;
-  border-radius: 10px !important;
-  background: var(--bg-card) !important;
+  border: 1.5px solid var(--glass-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--glass-bg-2) !important;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   transition: all var(--tr) !important;
   text-decoration: none !important;
   margin-right: 0 !important;
@@ -331,11 +380,11 @@ html[data-theme="light"] .navbar-toggler-icon {
 
 .social-icons a:hover .social-icon,
 .social-icons a:hover img {
-  filter: invert(18%) sepia(90%) saturate(2000%) hue-rotate(340deg) brightness(90%) !important;
+  filter: invert(28%) sepia(84%) saturate(1800%) hue-rotate(202deg) brightness(92%) !important;
   transform: none !important;
 }
 
-/* Avatar */
+/* Avatar — cadre en verre liquide */
 .avatar-container {
   position: relative !important;
   display: inline-block !important;
@@ -344,20 +393,35 @@ html[data-theme="light"] .navbar-toggler-icon {
   margin: auto;
 }
 
+.avatar-container::before {
+  content: '';
+  position: absolute;
+  inset: -30px;
+  background: var(--wave);
+  filter: blur(60px);
+  opacity: 0.4;
+  border-radius: 40px;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .avatar-container::after {
   content: '';
   position: absolute;
   top: 16px; right: -16px;
   width: 100%; height: 100%;
-  border: 2.5px solid var(--accent);
-  border-radius: 14px;
+  background: var(--glass-bg-2);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1.5px solid var(--glass-border);
+  border-radius: var(--radius-lg);
   z-index: 0;
   transition: all var(--tr);
   pointer-events: none;
-  opacity: 0.4;
+  opacity: 0.85;
 }
 
-.avatar-container:hover::after { top: 8px; right: -8px; opacity: 0.7; }
+.avatar-container:hover::after { top: 8px; right: -8px; opacity: 1; }
 
 #realPhoto {
   position: relative !important;
@@ -366,7 +430,7 @@ html[data-theme="light"] .navbar-toggler-icon {
   height: auto !important;
   max-width: 340px !important;
   max-height: 480px !important;
-  border-radius: 14px !important;
+  border-radius: var(--radius-lg) !important;
   object-fit: cover !important;
   display: block !important;
   box-shadow: var(--shadow-lg) !important;
@@ -418,7 +482,7 @@ h2[style*="text-align: center"] {
   padding: 80px 0;
   min-height: auto;
   display: block;
-  background: var(--bg);
+  background: transparent;
 }
 
 .resumeArticle {
@@ -476,13 +540,16 @@ h2[style*="text-align: center"] {
 
 .check:hover { transform: scale(1.4); background: var(--accent-lit); }
 
+/* Cartes verre liquide */
 .companyContainer,
 .companyContainerLeft {
   flex: 1;
-  background: var(--bg-card);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   padding: 1.25rem 1.5rem;
   border-radius: var(--radius);
-  border: 1.5px solid var(--border);
+  border: 1.5px solid var(--glass-border);
   box-shadow: var(--shadow-sm);
   transition: all var(--tr);
 }
@@ -530,16 +597,18 @@ h2[style*="text-align: center"] {
 }
 
 /* ══════════════════════════════════
-   ABOUT / BTS
+   ABOUT / BTS — verre liquide
 ══════════════════════════════════ */
 
 .about-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2.5rem;
-  background: var(--bg-card);
-  border-radius: 16px;
-  border: 1.5px solid var(--border);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--glass-border);
   box-shadow: var(--shadow-sm);
 }
 
@@ -571,13 +640,13 @@ h2[style*="text-align: center"] {
 
 .para_1 {
   padding: 1.5rem;
-  background: var(--bg-soft);
-  border-radius: 10px;
-  border: 1.5px solid var(--border);
+  background: var(--glass-bg-2);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-radius: var(--radius);
+  border: 1.5px solid var(--glass-border);
   transition: all var(--tr);
 }
-
-.para_1::before { display: none; }
 
 .para_1:hover {
   transform: translateY(-4px);
@@ -606,18 +675,18 @@ h2[style*="text-align: center"] {
   width: 100%; max-width: 560px; height: 240px;
   background-image: url("/assets/images/emploi_apres_bts_sio_250.jpg");
   background-size: cover; background-position: center;
-  border-radius: 10px; border: 1.5px solid var(--border);
+  border-radius: var(--radius); border: 1.5px solid var(--border);
 }
 
 .image-container2 {
   width: 100%; max-width: 560px; height: 240px;
   background-image: url("/assets/images/Formation_Technicien_Infrastructure_Informatique_Securite_Chiffres_Cles_mewo.jpg");
   background-size: cover; background-position: center;
-  border-radius: 10px; border: 1.5px solid var(--border);
+  border-radius: var(--radius); border: 1.5px solid var(--border);
 }
 
 /* ══════════════════════════════════
-   PORTFOLIO / PROJETS
+   PORTFOLIO / PROJETS — verre liquide
 ══════════════════════════════════ */
 
 .portfolio-section {
@@ -644,15 +713,17 @@ h2[style*="text-align: center"] {
 
 .portfolio-grid {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr)) !important;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
   gap: 24px !important;
   justify-content: center;
 }
 
 .portfolio-card {
-  background: var(--bg-card);
-  border: 1.5px solid var(--border);
-  border-radius: 14px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1.5px solid var(--glass-border);
+  border-radius: var(--radius);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -703,22 +774,21 @@ h2[style*="text-align: center"] {
 .access-btn {
   display: inline-flex;
   align-items: center; gap: 6px;
-  background: var(--accent);
+  background: var(--wave);
   border: none;
   color: #fff !important;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   text-decoration: none !important;
   font-size: 13px; font-weight: 600;
   letter-spacing: 0.2px;
   transition: all var(--tr);
   margin: 0 22px 18px;
   width: fit-content;
-  box-shadow: 0 2px 10px rgba(196,30,58,0.3);
+  box-shadow: 0 2px 10px rgba(37,100,207,0.3);
 }
 
 .access-btn:hover {
-  background: var(--accent-h);
   transform: translateY(-2px);
   box-shadow: var(--shadow-a);
   color: #fff !important;
@@ -741,11 +811,13 @@ h2[style*="text-align: center"] {
   display: none;
   margin: 0 22px 16px;
   padding: 14px 18px;
-  background: var(--bg-soft);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border-left: 3px solid var(--accent);
   font-style: italic;
   color: var(--txt-muted);
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   font-size: 14px;
 }
 
@@ -808,7 +880,7 @@ h2[style*="text-align: center"] {
   width: 36px; height: 36px;
   display: flex; align-items: center; justify-content: center;
   border: 1.5px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   background: var(--bg-card);
   transition: all var(--tr); text-decoration: none;
 }
@@ -826,7 +898,7 @@ h2[style*="text-align: center"] {
 }
 
 .footer-social a:hover img {
-  filter: invert(18%) sepia(90%) saturate(2000%) hue-rotate(340deg) brightness(90%);
+  filter: invert(28%) sepia(84%) saturate(1800%) hue-rotate(202deg) brightness(92%);
 }
 
 .footer-col h4 {
@@ -866,9 +938,11 @@ h2[style*="text-align: center"] {
 .footer-badge {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: 12px; color: var(--txt-muted);
-  border: 1.5px solid var(--border);
+  border: 1.5px solid var(--glass-border);
   padding: 4px 12px; border-radius: 999px;
-  background: var(--bg-card);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
 }
 
 /* ══════════════════════════════════
@@ -887,26 +961,27 @@ h2[style*="text-align: center"] {
 }
 
 .btn-primary {
-  background: var(--accent) !important;
-  border-color: var(--accent) !important;
+  background: var(--wave) !important;
+  border-color: transparent !important;
   color: #fff !important;
 }
 
 .btn-primary:hover {
-  background: var(--accent-h) !important;
-  border-color: var(--accent-h) !important;
+  filter: brightness(1.08);
 }
 
 /* ══════════════════════════════════
-   THEME TOGGLE
+   THEME TOGGLE — verre liquide
 ══════════════════════════════════ */
 
 .theme-toggle {
   width: 36px; height: 36px;
   display: flex; align-items: center; justify-content: center;
-  background: transparent;
-  border: 1.5px solid var(--border);
-  border-radius: 8px;
+  background: var(--glass-bg-2);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1.5px solid var(--glass-border);
+  border-radius: var(--radius-sm);
   cursor: pointer;
   color: var(--txt-muted);
   transition: all var(--tr);
@@ -931,19 +1006,26 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: block; }
    RESPONSIVE
 ══════════════════════════════════ */
 
+@media (max-width: 1200px) {
+  .portfolio-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important; }
+}
+
 @media (max-width: 992px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .option { grid-template-columns: 1fr; }
   .image-container1, .image-container2 { max-width: 100%; height: 200px; }
+  body::before, body::after { width: 60vw; height: 60vw; }
 }
 
 @media (max-width: 991px) {
-  /* Nav mobile sombre (défaut) */
+  /* Nav mobile — verre liquide */
   #navbarNav {
-    background: var(--bg-card);
-    border-top: 1px solid var(--border);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-top: 1px solid var(--glass-border);
     padding: 12px 0;
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 var(--radius) var(--radius);
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   }
   .nav-menu .nav-link { padding: 10px 20px !important; }
@@ -952,7 +1034,8 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: block; }
 @media (max-width: 768px) {
   main { padding-top: 65px; }
   .hero-section { padding: 40px 0; text-align: center; }
-  .hero-description { max-width: 100%; }
+  .hero-description { max-width: 100%; margin-left: auto; margin-right: auto; }
+  .hero-list { text-align: left; max-width: 420px; margin-left: auto; margin-right: auto; }
   .hero-buttons { justify-content: center; }
   .social-icons { justify-content: center !important; }
   .hero-title { letter-spacing: -0.5px; }
@@ -962,17 +1045,27 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: block; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .about-content { padding: 1.5rem; }
-  .avatar-container::after { display: none; }
+  .avatar-container::after, .avatar-container::before { display: none; }
   .portfolio-grid { grid-template-columns: 1fr !important; }
+  #realPhoto { max-width: 260px !important; max-height: 360px !important; }
 }
 
 @media (max-width: 576px) {
+  .container { padding-left: 18px; padding-right: 18px; }
   .hero-buttons { flex-direction: column; }
   .hero-buttons .btn { width: 100%; text-align: center; }
   .portfolio-card h3 { padding: 16px 16px 0; }
   .portfolio-card p { padding: 0 16px; }
   .portfolio-card ul { padding: 0 16px 0 30px; }
   .access-btn { margin: 0 16px 14px; }
+  .about-content { padding: 1.25rem; border-radius: var(--radius); }
+  .nav-menu .nav-link { padding: 9px 16px !important; font-size: 15px; }
+}
+
+@media (max-width: 380px) {
+  .hero-title { font-size: 30px; letter-spacing: -1px; }
+  .highlight { font-size: 22px !important; }
+  .footer-inner { padding: 0 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

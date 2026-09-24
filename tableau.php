@@ -6,7 +6,7 @@
   <title>Tableau de synthèse BTS SIO — Wenceslas BOUITY</title>
   <meta name="description" content="Tableau de synthèse des compétences acquises dans le cadre du BTS SIO par Wenceslas BOUITY.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#C41E3A">
+  <meta name="theme-color" content="#2564CF">
 
   <link rel="icon"             type="image/png"     href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon"             type="image/svg+xml" href="/favicon.svg">

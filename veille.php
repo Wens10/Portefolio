@@ -18,7 +18,7 @@ $keywords = "veille technologique, intelligence artificielle, développement web
 <meta name="keywords"    content="<?php echo htmlspecialchars($keywords, ENT_QUOTES, 'UTF-8'); ?>">
 <meta name="author"      content="Wenceslas BOUITY">
 <meta name="robots"      content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#C41E3A">
+<meta name="theme-color" content="#2564CF">
 
 <link rel="canonical"  href="<?php echo $canonical; ?>">
 <link rel="alternate"  href="<?php echo $canonical; ?>" hreflang="fr">

@@ -9,7 +9,7 @@
   <meta name="keywords"    content="BTS SIO, SLAM, SISR, informatique, formation, développement, réseaux, Wenceslas BOUITY">
   <meta name="author"      content="Wenceslas BOUITY">
   <meta name="robots"      content="index, follow">
-  <meta name="theme-color" content="#C41E3A">
+  <meta name="theme-color" content="#2564CF">
 
   <meta property="og:title"       content="BTS SIO — Wenceslas BOUITY · Portfolio">
   <meta property="og:description" content="Tout sur le BTS SIO : options SLAM et SISR, épreuves et débouchés professionnels.">
