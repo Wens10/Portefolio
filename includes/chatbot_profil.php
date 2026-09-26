@@ -52,7 +52,6 @@ COMPÉTENCES
 - Notions : LLM et IA générative, prompt engineering, agents IA, Machine Learning.
 - Outils : VS Code, Figma, Canva, WordPress, Trello.
 - Méthodes : analyse du besoin, Agile / Scrum.
-- Certifications Cisco Networking Academy : JavaScript Essentials 1 (déc. 2025), HTML Essentials (avril 2026).
 - Langues : français (natif), anglais (intermédiaire).
 - Soft skills : créativité, sens du produit, autonomie, curiosité technologique, esprit d'équipe.
 - Centres d'intérêt : entrepreneuriat, musculation, basketball, piano (composition).

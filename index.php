@@ -6,48 +6,46 @@
 <meta name="google-site-verification" content="4rI-M6EY-53N63JuNY3T18z2Izd-1GiD2YxCxZqBW-A" />
 
 <?php
-$protocol  = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
-$host      = $_SERVER['HTTP_HOST'] ?? 'localhost';
-$path      = strtok($_SERVER['REQUEST_URI'], '?');
-$canonical = $protocol . $host . $path;
-$base      = rtrim($protocol . $host, '/');
+/* URL canonique fixe : évite que /, /index.php ou /?x=… soient vus comme des doublons */
+$base      = 'https://wenceslas-bouity.ovh';
+$canonical = $base . '/';
 $ogImage   = $base . '/assets/images/Image.jude.jpg';
 $name      = "Wenceslas BOUITY";
-$jobTitle  = "Etudiant en DATA/IA";
-$desc      = "Wenceslas BOUITY — Développeur Web & Logiciel passionné, basé à Paris. Portfolio présentant projets full-stack, compétences JavaScript/PHP/Python, veille technologique IA et coordonnées. Disponible pour alternance.";
-$keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, JavaScript, PHP, Python, SQL, Node.js, full-stack, alternance 2026, EFREI Paris, veille technologique IA, projets web";
+$title     = "Wenceslas BOUITY — Alternance Développeur IA générative (LLM) · Paris";
+$desc      = "Wenceslas BOUITY, étudiant en Bachelor IA à l'ECE Paris, cherche une alternance 2026-2027 en IA générative (LLM, agents IA). Développeur full-stack Python/JS.";
+$keywords  = "Wenceslas BOUITY, alternance IA, alternance développeur IA générative, alternance LLM Paris, Bachelor IA ECE Paris, développeur full-stack Python, agents IA, portfolio étudiant IA";
 ?>
 
-<title><?php echo htmlspecialchars($name); ?> — Développeur Web &amp; Logiciel · Portfolio</title>
+<title><?php echo htmlspecialchars($title); ?></title>
 <meta name="description"   content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
 <meta name="keywords"      content="<?php echo htmlspecialchars($keywords, ENT_QUOTES); ?>">
 <meta name="author"        content="<?php echo htmlspecialchars($name, ENT_QUOTES); ?>">
 <meta name="robots"        content="index, follow, max-image-preview:large">
-<meta name="language"      content="fr">
 <meta name="geo.region"    content="FR-IDF">
 <meta name="geo.placename" content="Paris, France">
 <meta name="theme-color"   content="#2564CF">
 
-<link rel="canonical" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
-<link rel="alternate" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>" hreflang="fr">
+<link rel="canonical" href="<?php echo $canonical; ?>">
 
-<!-- Open Graph -->
-<meta property="og:type"         content="website">
-<meta property="og:title"        content="<?php echo htmlspecialchars($name . ' — Développeur Web & Logiciel · Portfolio', ENT_QUOTES); ?>">
+<!-- Open Graph (LinkedIn, Facebook…) -->
+<meta property="og:type"         content="profile">
+<meta property="og:title"        content="<?php echo htmlspecialchars($title, ENT_QUOTES); ?>">
 <meta property="og:description"  content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
-<meta property="og:url"          content="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>">
-<meta property="og:site_name"    content="<?php echo htmlspecialchars($name, ENT_QUOTES); ?> · Portfolio">
-<meta property="og:image"        content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
-<meta property="og:image:alt"    content="Portrait de <?php echo htmlspecialchars($name, ENT_QUOTES); ?>">
-<meta property="og:image:width"  content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:url"          content="<?php echo $canonical; ?>">
+<meta property="og:site_name"    content="Wenceslas BOUITY · Portfolio">
+<meta property="og:image"        content="<?php echo $ogImage; ?>">
+<meta property="og:image:alt"    content="Portrait de Wenceslas BOUITY">
+<meta property="og:image:width"  content="411">
+<meta property="og:image:height" content="515">
 <meta property="og:locale"       content="fr_FR">
+<meta property="profile:first_name" content="Wenceslas">
+<meta property="profile:last_name"  content="BOUITY">
 
-<!-- Twitter Card -->
-<meta name="twitter:card"        content="summary_large_image">
-<meta name="twitter:title"       content="<?php echo htmlspecialchars($name . ' — Développeur Web & Logiciel', ENT_QUOTES); ?>">
+<!-- Twitter / X -->
+<meta name="twitter:card"        content="summary">
+<meta name="twitter:title"       content="<?php echo htmlspecialchars($title, ENT_QUOTES); ?>">
 <meta name="twitter:description" content="<?php echo htmlspecialchars($desc, ENT_QUOTES); ?>">
-<meta name="twitter:image"       content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+<meta name="twitter:image"       content="<?php echo $ogImage; ?>">
 
 <!-- Favicons -->
 <link rel="icon"             type="image/png"     href="/favicon-96x96.png" sizes="96x96">
@@ -61,49 +59,66 @@ $keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
+<link rel="preload" as="image" href="assets/images/photo.jpg" fetchpriority="high">
 
 <!-- CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 
-<!-- JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "name": "<?php echo $name; ?>",
-      "url": "<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>",
-      "image": "<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>",
-      "jobTitle": "Développeur Web & Logiciel",
-      "description": "<?php echo addslashes($desc); ?>",
-      "knowsAbout": ["JavaScript","PHP","Python","Node.js","SQL","HTML","CSS","Git","Bootstrap","React","Intelligence Artificielle"],
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "EFREI Paris",
-        "address": {"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"}
-      },
-      "address": {"@type":"PostalAddress","addressLocality":"Paris","addressCountry":"FR"},
-      "sameAs": [
-        "https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/",
-        "https://github.com/Wens10",
-        "https://www.instagram.com/mr_wenss/"
-      ],
-      "email": "wenceslasbouity92@gmail.com"
-    },
-    {
-      "@type": "WebSite",
-      "url": "<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>",
-      "name": "<?php echo $name; ?> — Portfolio",
-      "description": "<?php echo addslashes($desc); ?>",
-      "inLanguage": "fr-FR",
-      "author": {"@type":"Person","name":"<?php echo $name; ?>"}
-    }
-  ]
-}
-</script>
+<!-- JSON-LD : page de profil (format reconnu par Google pour les profils de personnes) -->
+<?php
+$jsonLd = [
+    '@context' => 'https://schema.org',
+    '@graph'   => [
+        [
+            '@type'      => 'ProfilePage',
+            '@id'        => $canonical . '#profile',
+            'url'        => $canonical,
+            'name'       => $title,
+            'inLanguage' => 'fr-FR',
+            'dateModified' => date('c', filemtime(__FILE__)),
+            'mainEntity' => ['@id' => $canonical . '#person'],
+            'isPartOf'   => ['@id' => $canonical . '#website'],
+        ],
+        [
+            '@type'       => 'Person',
+            '@id'         => $canonical . '#person',
+            'name'        => $name,
+            'givenName'   => 'Wenceslas',
+            'familyName'  => 'BOUITY',
+            'url'         => $canonical,
+            'image'       => $ogImage,
+            'jobTitle'    => 'Étudiant en Bachelor Intelligence Artificielle — alternance Développeur IA générative',
+            'description' => $desc,
+            'email'       => 'mailto:wenceslasbouity92@gmail.com',
+            'address'     => ['@type' => 'PostalAddress', 'addressLocality' => 'Paris', 'addressRegion' => 'Île-de-France', 'addressCountry' => 'FR'],
+            'affiliation' => ['@type' => 'CollegeOrUniversity', 'name' => 'ECE Paris', 'url' => 'https://www.ece.fr'],
+            'alumniOf'    => [
+                ['@type' => 'CollegeOrUniversity', 'name' => 'EFREI Paris', 'url' => 'https://www.efrei.fr'],
+            ],
+            'hasCredential' => [
+                ['@type' => 'EducationalOccupationalCredential', 'name' => 'BTS SIO option SLAM', 'credentialCategory' => 'Diplôme'],
+            ],
+            'knowsAbout'  => ['Intelligence artificielle', 'IA générative', 'LLM', 'Agents IA', 'Prompt engineering', 'Machine Learning', 'Python', 'JavaScript', 'TypeScript', 'Node.js', 'PHP', 'SQL', 'API REST', 'C#', 'Docker'],
+            'knowsLanguage' => ['fr', 'en'],
+            'sameAs'      => [
+                'https://www.linkedin.com/in/wenceslas-jude-bouity-905430331/',
+                'https://github.com/Wens10',
+                'https://www.instagram.com/mr_wenss/',
+            ],
+        ],
+        [
+            '@type'      => 'WebSite',
+            '@id'        => $canonical . '#website',
+            'url'        => $canonical,
+            'name'       => 'Wenceslas BOUITY · Portfolio',
+            'inLanguage' => 'fr-FR',
+            'publisher'  => ['@id' => $canonical . '#person'],
+        ],
+    ],
+];
+?>
+<script type="application/ld+json"><?php echo json_encode($jsonLd, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?></script>
 </head>
 
 <?php include('includes/script.php'); ?>
@@ -122,17 +137,17 @@ $keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, 
             <span class="hero-eyebrow">Bonjour, je suis</span>
             <h1 class="hero-title">
               Wenceslas BOUITY
-              <span class="highlight">Etudiant en &amp; DATA/IA</span>
+              <span class="highlight">Alternance Développeur IA générative</span>
             </h1>
 
             <p class="hero-description">
-              Passionné par le développement depuis l'enfance, je conçois des applications web et logicielles performantes. Actuellement à EFREI Paris, je cherche à rejoindre des équipes ambitieuses pour créer des produits qui ont un impact réel.
+              Étudiant en <strong>Bachelor Intelligence Artificielle à l'ECE Paris</strong> après un BTS SIO à l'EFREI, je recherche une <strong>alternance 2026-2027</strong> pour concevoir des applications d'IA générative : assistants, agents IA et automatisation de processus métier.
             </p>
 
             <ul class="hero-list">
-              <li>Projets full-stack réalisés en cours et en autonomie</li>
-              <li>Compétences en JavaScript, PHP, Python &amp; SQL</li>
-              <li>Veille active sur l'IA &amp; les nouvelles technologies</li>
+              <li>Intégration de LLM dans des outils concrets (ex. l'assistant IA de ce site)</li>
+              <li>Développeur full-stack : Python, JavaScript/TypeScript, API REST, SQL</li>
+              <li>Rythme 3 semaines entreprise / 2 semaines école — mobile partout en France</li>
             </ul>
 
             <div class="hero-buttons">
@@ -158,8 +173,9 @@ $keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, 
             <div class="avatar-container">
               <img id="realPhoto"
                    src="assets/images/photo.jpg"
-                   alt="Portrait de Wenceslas BOUITY, développeur web"
-                   loading="eager">
+                   alt="Portrait de Wenceslas BOUITY, étudiant en Bachelor IA et développeur IA générative"
+                   width="1095" height="1600"
+                   loading="eager" fetchpriority="high">
             </div>
           </div>
 
@@ -201,18 +217,13 @@ $keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, 
       <?php include('includes/compétences.php'); ?>
     </section>
 
-    <!-- ─── CERTIFICATIONS ─── -->
-    <section aria-label="Certifications">
-      <?php include('includes/certifications.php'); ?>
-    </section>
-
     <!-- ─── STAGE ─── -->
-    <section style="background: var(--bg-soft);" aria-label="Expériences professionnelles">
+    <section aria-label="Expériences professionnelles">
       <?php include('includes/stage.php'); ?>
     </section>
 
     <!-- ─── CONTACT ─── -->
-    <section id="contact" aria-label="Contact" style="padding: 80px 0 40px;">
+    <section id="contact" aria-label="Contact" style="padding: 80px 0 40px; background: var(--bg-soft);">
       <div class="container">
         <h2 style="text-align: center; color: var(--accent);">Contactez-moi</h2>
       </div>
@@ -225,7 +236,6 @@ $keywords  = "Wenceslas BOUITY, portfolio développeur, développeur web Paris, 
 
   <?php include('includes/footer.php'); ?>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
   document.addEventListener('DOMContentLoaded', () => {
     const sections = Array.from(document.querySelectorAll('section[id]'));

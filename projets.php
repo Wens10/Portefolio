@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projets — Wenceslas BOUITY · Portfolio</title>
+  <title>Projets IA, web &amp; logiciel — Wenceslas BOUITY · Portfolio</title>
 
   <?php
-  $scheme     = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-  $base       = $scheme . '://' . $_SERVER['HTTP_HOST'];
-  $currentUrl = $base . $_SERVER['REQUEST_URI'];
+  $base       = 'https://wenceslas-bouity.ovh';
+  $currentUrl = $base . '/projets.php'; // canonique fixe (sans paramètres)
   $ogImage    = $base . '/assets/images/Image.jude.jpg';
   ?>
 
@@ -28,7 +27,7 @@
   <meta property="og:image"       content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
   <meta property="og:locale"      content="fr_FR">
 
-  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:card"        content="summary">
   <meta name="twitter:title"       content="Projets — Wenceslas BOUITY">
   <meta name="twitter:description" content="Projets web et logiciels de Wenceslas BOUITY avec GitHub et démos.">
   <meta name="twitter:image"       content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
@@ -54,7 +53,7 @@
     "description": "Projets full-stack, jeux JavaScript, applications desktop et infrastructure réalisés par Wenceslas BOUITY.",
     "url": "<?php echo htmlspecialchars($currentUrl, ENT_QUOTES); ?>",
     "inLanguage": "fr-FR",
-    "author": { "@type": "Person", "name": "Wenceslas BOUITY" }
+    "author": { "@type": "Person", "@id": "https://wenceslas-bouity.ovh/#person", "name": "Wenceslas BOUITY" }
   }
   </script>
 </head>

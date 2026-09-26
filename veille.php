@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <?php
-$scheme   = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-$base     = $scheme . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost');
-$canonical= htmlspecialchars($base . $_SERVER['REQUEST_URI'], ENT_QUOTES, 'UTF-8');
+$base     = 'https://wenceslas-bouity.ovh';
+$canonical= $base . '/veille.php'; // canonique fixe (sans paramètres)
 $ogImage  = htmlspecialchars($base . '/assets/images/Image.jude.jpg', ENT_QUOTES, 'UTF-8');
 $metaDesc = "Veille technologique de Wenceslas BOUITY sur l'intelligence artificielle dans le développement web — assistants de code, LLMs, impact sur les développeurs, sécurité et limites de l'IA en 2024–2025.";
 $keywords = "veille technologique, intelligence artificielle, développement web, GitHub Copilot, LLM, GPT-4, Claude, Cursor, sécurité IA, assistants de code, Wenceslas BOUITY";
@@ -30,11 +29,11 @@ $keywords = "veille technologique, intelligence artificielle, développement web
 <meta property="og:description" content="<?php echo htmlspecialchars($metaDesc, ENT_QUOTES, 'UTF-8'); ?>">
 <meta property="og:url"         content="<?php echo $canonical; ?>">
 <meta property="og:image"       content="<?php echo $ogImage; ?>">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="411">
+<meta property="og:image:height" content="515">
 
 <!-- Twitter -->
-<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:card"        content="summary">
 <meta name="twitter:title"       content="Veille Technologique IA — Wenceslas BOUITY">
 <meta name="twitter:description" content="<?php echo htmlspecialchars($metaDesc, ENT_QUOTES, 'UTF-8'); ?>">
 <meta name="twitter:image"       content="<?php echo $ogImage; ?>">
@@ -64,7 +63,7 @@ $keywords = "veille technologique, intelligence artificielle, développement web
   "url": "<?php echo $canonical; ?>",
   "description": "<?php echo addslashes($metaDesc); ?>",
   "inLanguage": "fr-FR",
-  "author": { "@type": "Person", "name": "Wenceslas BOUITY", "url": "<?php echo htmlspecialchars($base, ENT_QUOTES); ?>" },
+  "author": { "@type": "Person", "@id": "https://wenceslas-bouity.ovh/#person", "name": "Wenceslas BOUITY", "url": "<?php echo htmlspecialchars($base, ENT_QUOTES); ?>" },
   "about": { "@type": "Thing", "name": "Intelligence Artificielle dans le développement web" }
 }
 </script>

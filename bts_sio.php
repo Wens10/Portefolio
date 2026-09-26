@@ -11,9 +11,15 @@
   <meta name="robots"      content="index, follow">
   <meta name="theme-color" content="#2564CF">
 
+  <link rel="canonical" href="https://wenceslas-bouity.ovh/bts_sio.php">
+
   <meta property="og:title"       content="BTS SIO — Wenceslas BOUITY · Portfolio">
   <meta property="og:description" content="Tout sur le BTS SIO : options SLAM et SISR, épreuves et débouchés professionnels.">
   <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://wenceslas-bouity.ovh/bts_sio.php">
+  <meta property="og:image"       content="https://wenceslas-bouity.ovh/assets/images/Image.jude.jpg">
+  <meta property="og:locale"      content="fr_FR">
+  <meta name="twitter:card"       content="summary">
 
   <link rel="icon"             type="image/png"     href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon"             type="image/svg+xml" href="/favicon.svg">
